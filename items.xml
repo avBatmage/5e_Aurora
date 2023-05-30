@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+  <!-- Wondrous -->
+  <element name="Charmed Hat" type="Magic Item" source="Batav" id="ID_BATAV_CHARMED_HAT">
+    <description>
+      <p>
+        This tall, furred hat set with a silver pin is often worn by merchants to aid in negotiations. While worn, the wearer gains a +1 bonus to Intelligence, Wisdom, and Charisma ability checks and saving throws. </p>
+    </description>
+    <setters>
+      <set name="keywords">ability checks, saving throws</set>
+      <set name="category">Wondrous Items</set>
+      <set name="cost" currency="gp">0.5</set>
+      <set name="weight" lb="0">0 lb.</set>
+      <set name="slot">head</set>
+      <set name="type">Wondrous Item</set>
+      <set name="attunement">true</set>
+      <set name="rarity">Common</set>
+    </setters>
+    <rules>
+      <stat name="intelligence:save:misc" value="1" />
+      <stat name="wisdom:save:misc" value="1" />
+      <stat name="charisma:save:misc" value="1" />
+      
+      <stat name="animal handling:misc" value="1" />
+      <stat name="arcana:misc" value="1" />
+      <stat name="deception:misc" value="1" />
+      <stat name="history:misc" value="1" />
+      <stat name="insight:misc" value="1" />
+      <stat name="intimidation:misc" value="1" />
+      <stat name="investigation:misc" value="1" />
+      <stat name="medicine:misc" value="1" />
+      <stat name="nature:misc" value="1" />
+      <stat name="perception:misc" value="1" />
+      <stat name="performance:misc" value="1" />
+      <stat name="persuasion:misc" value="1" />
+      <stat name="religion:misc" value="1" />
+      <stat name="survival:misc" value="1" />
+    </rules>
+  </element>
+  
+
+</elements>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+  <!-- Magic Weapons -->
+  <element name="Flame's Bite" type="Magic Item" source="Batav" id="ID_BATAV_FLAMES_BITE">
+    <description>
+      <p>This dagger has a bright blade with a faint deep red glow hinting at its danger.</p>
+      <p class="indent">You gain a +2 bonus to attack rolls and damage rolls. The blade also deals +5 fire damage and It can set common objects on fire.</p>
+    </description>
+    <setters>
+      <set name="keywords">dagger</set>
+      <set name="category">Magic Weapons</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="type" addition="dagger">Weapon</set>
+      <set name="rarity">Rare</set>
+      <set name="weapon">Dagger</set>
+      <set name="enhancement">2</set>
+    </setters>
+  </element>
+  <element name="Gods Fury" type="Magic Item" source="Batav" id="ID_BATAV_GODS_FURY">
+    <description>
+      <p>This dagger has a black blade with a silver lining at it's edge and a jagged blue bolt engraved into the center.</p>
+      <p class="indent">You gain a +2 bonus to attack rolls and damage rolls. The blade also deals 1d6 lightning damage and will paralyse an enemy upon rolling a 20 to-hit.</p>
+    </description>
+    <setters>
+      <set name="keywords">dagger</set>
+      <set name="category">Magic Weapons</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="type" addition="dagger">Weapon</set>
+      <set name="rarity">Rare</set>
+      <set name="weapon">Dagger</set>
+      <set name="enhancement">2</set>
+    </setters>
+  </element>
+
+</elements>
