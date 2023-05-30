@@ -3,7 +3,9 @@
 	<info>
 		<name>Wizard Wisdom</name>
 		<description>The Wizard class from the Player’s Handbook using Wisdom.</description>
-    <update></update>
+    <update> version="0.0.1">
+      <file name="class-wizard_wisdom.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-wizard_wisdom.xml" />
+    </update>
 	</info>
 
 	<element name="Wizard_Wisdom" type="Class" source="Batav" id="ID_BATAV_CLASS_WIZARD_WISDOM">
