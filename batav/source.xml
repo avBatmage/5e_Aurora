@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="sources.xml" url="" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batav/source.xml" />
 		</update>
 	</info>
 	<element name="Batav's Additions" type="Source" source="Core" id="ID_BATAV_SOURCE_BATAVS_ADDITIONS">
