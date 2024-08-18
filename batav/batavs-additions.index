@@ -18,7 +18,9 @@
 		<!-- backgrounds -->		
 
 		<!-- items -->
-
+		<file name="items" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batav/items.xml" />
+		<file name="weapons" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batav/Weapons.xml" />
+		
 		<!-- misc -->
 	</files>
 </index>
