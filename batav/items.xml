@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-
+  <info>
+		  <name>Items</name>
+		  <description></description>
+		  <author url="https://github.com/avBatmage">Batav</author>
+		  <update version="0.0.1">
+			  <file name="items.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/items.xml" />
+		  </update>
+	</info>
   <!-- Wondrous -->
   <element name="Charmed Hat" type="Magic Item" source="Batav" id="ID_BATAV_CHARMED_HAT">
     <description>
