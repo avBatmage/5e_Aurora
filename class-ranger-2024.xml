@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<!--test-->
-	<element name="Ranger 2024" type="Class" source="Batav" id="ID_BATAV_PHB_CLASS_RANGER">
+	<element name="Ranger 2024" type="Class" source="Batav" id="ID_BATAV_CLASS_RANGER">
 		<description>
 			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
 			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
