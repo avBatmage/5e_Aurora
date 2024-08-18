@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="" />
+		</update>
+	</info>
+	<element name="Batav's Additions" type="Source" source="Core" id="ID_BATAV_SOURCE_BATAVS_ADDITIONS">
+		<description>
+			<![CDATA[<p><strong>My personal Additions</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">BATAV</set>
+			<set name="url">https://github.com/avBatmage</set>
+			<set name="author" abbreviation="BATAV" url="https://github.com/avBatmage">Batav's Additions</set>
+			<set name="official">false</set>
+			<set name="Batav">true</set>
+			<set name="release">20240818</set>
+		</setters>
+	</element>
+</elements>

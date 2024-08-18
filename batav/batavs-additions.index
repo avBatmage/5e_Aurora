@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Batav's Additions</name>
+		<description>Homebrew additions for the Gamer Guys</description>
+		<author url="https://github.com/avBatmage/5e_Aurora">Batav</author>
+		<update version="0.1">
+			<file name="batavs-additions.index" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batav.index" />
+		</update>
+	</info>
+	<files>	
+		
+		<!-- races -->
+		<file name="class-ranger-2024" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
+
+		<!-- classes -->
+
+		<!-- backgrounds -->		
+
+		<!-- items -->
+
+		<!-- misc -->
+	</files>
+</index>
