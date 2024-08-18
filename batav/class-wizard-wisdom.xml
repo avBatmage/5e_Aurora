@@ -4,11 +4,11 @@
 		<name>Wizard Wisdom</name>
 		<description>The Wizard class from the Player’s Handbook using Wisdom.</description>
     <update> version="0.0.1">
-      <file name="class-wizard_wisdom.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-wizard_wisdom.xml" />
+      <file name="class-wizard-wisdom.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-wizard-wisdom.xml" />
     </update>
 	</info>
 
-	<element name="Wizard_Wisdom" type="Class" source="Batav" id="ID_BATAV_CLASS_WIZARD_WISDOM">
+	<element name="Wizard-Wisdom" type="Class" source="Batav" id="ID_BATAV_CLASS_WIZARD_WISDOM">
 		<description>
 			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
 			<p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
