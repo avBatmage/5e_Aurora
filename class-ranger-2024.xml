@@ -264,8 +264,7 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger 2024" />
 		</rules>
 	</element>
-	
-	<element name="Ranger Archetype" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
+	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
 		</description>
@@ -374,6 +373,7 @@
 			<description>Once on each of your turns, you can add {{wisdom:modifier}} to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</description>
 		</sheet>
 	</element>
+
 	<!--Hunter-->
 	<element name="Hunter 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
@@ -385,7 +385,7 @@
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY" />
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.</description>
 		</sheet>
 		<rules>
@@ -399,9 +399,8 @@
 	<element name="Hunter’s Lore" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
 		<description>
 			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter’s Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
-			
 		</description>
-		<sheet >
+		<sheet>
 			<description>While a creature is marked by your Hunter’s Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
 		</sheet>
 		<rules>
