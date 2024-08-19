@@ -211,7 +211,7 @@
 			<description>You can cast your chosen spells without expending a spell slot or using any spell slots you have of the appropriate level.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_HUNTERS_MARK" />
+			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" />
 		</rules>
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER">
