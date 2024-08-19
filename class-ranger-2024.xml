@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Ranger 2024</name>
-		<description>The Ranger class from the 2024 Batav's Additions.</description>
+		<description>The Ranger class from the 2024 Player's Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
 		</update>
 	</info>
 	<!--test-->
-	<element name="Ranger 2024" type="Class" source="Batav" id="ID_BATAV_CLASS_RANGER">
+	<element name="Ranger 2024" type="Class" source="Batav's Additions" id="ID_BATAV_CLASS_RANGER_2024">
 		<description>
 			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
 			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
@@ -216,25 +216,24 @@
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER">
 		<description>
-			<p>You are an unsurpassed explorer. Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
+			<p>You are an unsurpassed explorer. At 2nd level, Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
 			<p>In addition, choose two languages. </p>
 		</description>
 		<sheet display="false" />
 		<rules>
+			<select type="Class Feature" name="Expertise (Ranger 2024)" level="2" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 			<select type="Language" name="Language (Deft Explorer)" level="2" />
 			<select type="Language" name="Language (Deft Explorer)" level="2" />
 		</rules>
 	</element>
 	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE">
 		<description>
-			<p> At 2nd level, choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-			<p> At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit. </p>
+			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
 		</description>
 		<sheet display="false">
 			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Expertise (Ranger 2024)" level="2" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
 	</element>
@@ -376,14 +375,14 @@
 		</sheet>
 	</element>
 	<!--Hunter-->
-	<element name="Hunter" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
+	<element name="Hunter 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" />
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" />
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" />
-			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_MULTIATTACK" />
+			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY" />
 			<div element="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" />
 		</description>
 		<sheet>
@@ -393,11 +392,11 @@
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" level="3" />
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" level="3" />
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" level="7" />
-			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_MULTIATTACK" level="11" />
+			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY" level="11" />
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
 		</rules>
 	</element>
-	<element name="Hunter’s Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
+	<element name="Hunter’s Lore" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
 		<description>
 			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter’s Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
 			
@@ -406,19 +405,18 @@
 			<description>While a creature is marked by your Hunter’s Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
 		</sheet>
 		<rules>
-			<select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Pray" />
+			<select type="Archetype Feature" name="Hunter’s Lore" supports="Hunters Lore" />
 		</rules>
 	</element>
 	<element name="Hunter’s Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
 		<description>
 			<p>You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p>
 			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
-			<p class="indent"><strong><em>Giant Killer.</em></strong> When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
 			<p class="indent"><strong><em>Horde Breaker.</em></strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Prey" />
+			<select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Prey 2024" />
 		</rules>
 	</element>
 	<element name="Defensive Tactics" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
@@ -427,13 +425,14 @@
 			<p class="indent"><strong><em>Evasion.</em></strong> When you are subjected to an effect that lets you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.</p>
 			<p class="indent"><strong><em>Hunter's Leap.</em></strong> If an enemy you can see enters a space within 5 feet of you, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
 			<p class="indent"><strong><em>Uncanny Dodge.</em></strong> When an attacker that you can see hits you with an attack roll, you can use your Reaction to halve the attack’s damage against you (round down).</p>
+			<p> You can change your choice when you finish a Short or Long Rest.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype Feature" name="Defensive Tactics" supports="Defensive Tactics" />
+			<select type="Archetype Feature" name="Defensive Tactics" supports="Defensive Tactics 2024" />
 		</rules>
 	</element>
-	<element name="Superior Hunter's Defence" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENCE">
+	<element name="Superior Hunter's Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY">
 		<description>
 			<p>Once per turn, when you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</p>
 		</description>
@@ -451,7 +450,7 @@
 	</element>
 
 	<element name="Colossus Slayer" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
-		<supports>Hunters Prey</supports>
+		<supports>Hunters Prey 2024</supports>
 		<description>
 			<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
 		</description>
@@ -460,7 +459,7 @@
 		</sheet>
 	</element>
 	<element name="Horde Breaker" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
-		<supports>Hunters Prey</supports>
+		<supports>Hunters Prey 2024</supports>
 		<description>
 			<p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
 		</description>
@@ -469,7 +468,7 @@
 		</sheet>
 	</element>
 	<element name="Evasion" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_EVASION">
-		<supports>Defensive Tactics</supports>
+		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 		</description>
@@ -478,7 +477,7 @@
 		</sheet>
 	</element>
 	<element name="Hunter's Leap" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_HUNTERS_LEAP">
-		<supports>Defensive Tactics</supports>
+		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>If an enemy you can see enters a space within 5 feet of you, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
@@ -487,7 +486,7 @@
 		</sheet>
 	</element>
 	<element name="Uncanny Dodge" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_UNCANNY_DODGE">
-		<supports>Defensive Tactics</supports>
+		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
 		</description>
@@ -496,7 +495,7 @@
 		</sheet>
 	</element>
 	<!--Beast Master-->
-	<element name="Beast Master" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
+	<element name="Beast Master 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
