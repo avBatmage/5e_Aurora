@@ -84,6 +84,7 @@
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" />
+			<div element="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_ASI" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_EXTRA_ATTACK" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_ROVING" />
@@ -116,9 +117,10 @@
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_ASI" level="4"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_EXTRA_ATTACK" level="5"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_ROVING" level="8"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_ROVING" level="6"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE" level="9"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS" level="10"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
@@ -203,15 +205,19 @@
 	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY">
 		<description>
 			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
-			<p class="indent">You are adept at focusing on a single foe. You always have the Hunter’s Mark spell prepared.</p>
-			<p class="indent">You can cast it twice at level 1 without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
-			<p class="indent">This number increases with your Proficiency Bonus as you level up.</p>
+			<p class="indent">You are adept at focusing on a single foe. You can apply your Hunter's Mark as a Bonus Action.</p>
+			<p class="indent">You can cast it twice at level 1, and you regain all expended uses of this ability when you finish a Long Rest.</p>
+			<p class="indent">This number increases with your Proficiency Bonus from levels in Ranger as you level up.</p>
 		</description>
-		<sheet usage="Proficiency Bonus/Long Rest">
-			<description>You can cast your chosen spells without expending a spell slot or using any spell slots you have of the appropriate level.</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature on a subsequent turn of yours.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" />
+			
+			<stat name="hunters mark:dice" value="6" bonus="hunters mark" />
+			<stat name="hunters mark:dice" value="8" bonus="hunters mark" level="13" />
+			<stat name="hunters mark:dice" value="10" bonus="hunters mark" level="20" />
+			
 		</rules>
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER">
@@ -222,19 +228,7 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Expertise (Ranger 2024)" level="2" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
-			<select type="Language" name="Language (Deft Explorer)" level="2" />
-			<select type="Language" name="Language (Deft Explorer)" level="2" />
-		</rules>
-	</element>
-	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE">
-		<description>
-			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
-		</description>
-		<sheet display="false">
-			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
-		</sheet>
-		<rules>
-			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Language" name="Language (Deft Explorer)"  level="2" number="2" supports="Standard||Exotic"/>
 		</rules>
 	</element>
 	<element name="Fighting Style" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE">
@@ -260,6 +254,9 @@
 		<description>
 			<p>Instead of taking a fighting style, you can choose to know 2 Druid cantrips.</p>
 		</description>
+		<sheet>
+			<description>You know 2 Druid cantrips.</description>
+		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger 2024" />
 		</rules>
@@ -272,6 +269,16 @@
 		<rules>
 			<select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
 		</rules>
+	</element>
+	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_PRIMEVAL_AWARENESS</requirements>
+		<description>
+			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can expend one ranger spell slot to focus your awareness on the region around you.
+			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
+		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_ASI">
 		<compendium display="false" />
@@ -300,7 +307,7 @@
 	</element>
 	<element name="Roving" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_ROVING">
 		<description>
-			<p>Your Speed increases by 10 feet while you aren’t wearing Heavy Armor.</p>
+			<p>Starting at 6th level, Your Speed increases by 10 feet while you aren’t wearing Heavy Armor.</p>
 			<p>You also have a Climb Speed and a Swim Speed equal to your Speed.</p>
 		</description>
 		<sheet>
@@ -309,46 +316,66 @@
 		</sheet>
 		<rules>
 			<stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
+			<stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
 			<stat name="speed:climb" value="speed" bonus="base" />
 			<stat name="speed:swim" value="speed" bonus="base" />
-			<stat name="innate speed:climb:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:climb:1]" />
-			<stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]" />
-			<stat name="innate speed:swim:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:swim:1]" />
-			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE">
+		<description>
+			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
 	</element>
 	<element name="Tireless" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS">
 		<description>
-			<p>Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
+			<p>Reaching 10th level, Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
 			<p class="indent">Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.</p>
 		</description>
 		<sheet>
-			<description>Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
-			Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
+			<description>
+				Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS"/>
+		</rules>
+	</element>
+	<element name="Temporary Hit Points" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
+		<compendium display="false" />
+		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
+			<description>
+				As an action, you can give yourself a number of Temporary Hit Points equal to 1d8+{{wisdom:modifier}}
 			</description>
 		</sheet>
 	</element>
 	<element name="Relentless Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_RELENTLESS_HUNTER">
 		<description>
-			<p>Damage can no longer break your concentration on the Hunter's Mark spell.</p>
+			<p>At 13th level, Your Hunter's Mark Feature no longer requires any concentration and it's damage die increases to d8.</p>
 		</description>
 		<sheet>
-			<description>Damage can no longer break your concentration on the Hunter's Mark spell.</description>
+			<description>Your Hunter's Mark Feature no longer requires any concentration.</description>
 		</sheet>
 	</element>
 	<element name="Nature's Veil" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_NATURES_VEIL">
 		<description>
-			<p>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
+			<p>At 14th  level, You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet usage="Wisdom/Long Rest">
+		<sheet action="Bonus Action" usage="{{wisdom:modifier}}/Long Rest">
 			<description>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Precise Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_PRECISE_HUNTER">
 		<description>
-			<p>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
+			<p>At 17th level, You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
 		</description>
 		<sheet>
 			<description>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</description>
@@ -357,21 +384,29 @@
 
 	<element name="Feral Senses" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FERAL_SENSES">
 		<description>
-			<p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.</p>
-			<p class="indent">You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</p>
+			<p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
 		</description>
 		<sheet>
-			<description>When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it. 
-			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</description>
+			<description>Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</description>
 		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+		</rules>
 	</element>
 	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER">
 		<description>
-			<p>At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</p>
+			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
 		</description>
-		<sheet>
-			<description>Once on each of your turns, you can add {{wisdom:modifier}} to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</description>
+		<sheet display="false">
+			<description>You embody the power of the wilds. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22.</description>
+			<description>The damage die of your Hunter's Mark increases to 1d10.</description>
 		</sheet>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="wisdom" value="2" />
+			<stat name="dexterity:max" value="2" />
+			<stat name="wisdom:max" value="2" />
+		</rules>
 	</element>
 
 	<!--Hunter-->
@@ -403,9 +438,6 @@
 		<sheet>
 			<description>While a creature is marked by your Hunter’s Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
 		</sheet>
-		<rules>
-			<select type="Archetype Feature" name="Hunter’s Lore" supports="Hunters Lore" />
-		</rules>
 	</element>
 	<element name="Hunter’s Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
 		<description>
@@ -443,7 +475,7 @@
 		<description>
 			<p>You can take a reaction to give yourself resistance to damage when you take damage until the end of your current turn.</p>	
 		</description>
-		<sheet Usage="Reaction">
+		<sheet Action="Reaction">
 			<description>Give yourself resistance to damage when you take damage until the end of your current turn.</description>
 		</sheet>
 	</element>
@@ -513,7 +545,7 @@
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15" />
 		</rules>
 	</element>
-	<element name="Ranger’s Companion" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION">
+	<element name="Ranger’s Companion" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION">
 		<description>
 			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
 			<p class="indent">In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action, unless you take a Bonus Action on your turn to command it to take a different action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you have the Incapacitated condition, the beast can take any action of its choice, not just Dodge.</p>
