@@ -5,7 +5,7 @@
 		<description>The Barbarian class from the 2024 Players' Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
+			<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/class-barbarian-2024.xml" />
 		</update>
 	</info>
 	<element name="Barbarian" type="Class" source="Batav's Aditions" id="ID_BATAV_PHB_CLASS_BARBARIAN">
