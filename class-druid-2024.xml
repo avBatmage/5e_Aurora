@@ -56,28 +56,28 @@
 			<h5 class="caption">THE DRUID</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Wild Shapes</td><td class="col-10">Cantrips Known</td><td class="col-10">Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Druidic, Spellcasting</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 2nd</td><td class="left">Wild Shape, Druid Circle</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td class="left">—</td><td>2</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>3</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td class="left">Druid Circle feature</td><td>3</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>3</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td class="left">Druid Circle feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td class="left">Druid Circle feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td class="left">Timeless Body, Beast Spells</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td class="left">Archdruid</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 1st</td><td class="left">Spellcasting, Druidic, Primal Order</td><td>-</td><td>2</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Wild Shape, Wild Companion</td><td>2</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Druid Subclass</td><td>2</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Wild Resurgence</td><td>2</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass Feature</td><td>3</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Elemental Fury</td><td>3</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>3</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Subclass Feature</td><td>3</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Subclass Feature</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Improved Elemental Fury</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>4</td><td>4</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Beast Spells</td><td>4</td><td>4</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td><td>4</td><td>4</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Archdruid</td><td>4</td><td>4</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_BATAV_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
 			<div element="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUIDIC" />
@@ -111,9 +111,12 @@
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUIDIC" level="1"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER" level="1"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="2"/>
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4"/>
-			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY" level="18"/>
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5"/>
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7"/>
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY" level="15"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
 		</rules>
@@ -179,8 +182,26 @@
 			<stat name="druid:spellcasting:slots:7" value="1" level="20" />
 			<stat name="druid:spellcasting:slots:8" value="1" level="15" />
 			<stat name="druid:spellcasting:slots:9" value="1" level="17" />
-			<stat name="druid:spellcasting:prepare" value="wisdom:modifier" />
-			<stat name="druid:spellcasting:prepare" value="level:druid 2024" />
+			<stat name="druid:spellcasting:prepare" value="4" level="1" />
+			<stat name="druid:spellcasting:prepare" value="1" level="2" />
+			<stat name="druid:spellcasting:prepare" value="1" level="3" />
+			<stat name="druid:spellcasting:prepare" value="1" level="4" />
+			<stat name="druid:spellcasting:prepare" value="2" level="5" />
+			<stat name="druid:spellcasting:prepare" value="1" level="6" />
+			<stat name="druid:spellcasting:prepare" value="1" level="7" />
+			<stat name="druid:spellcasting:prepare" value="1" level="8" />
+			<stat name="druid:spellcasting:prepare" value="2" level="9" />
+			<stat name="druid:spellcasting:prepare" value="1" level="10" />
+			<stat name="druid:spellcasting:prepare" value="1" level="11" />
+			<stat name="druid:spellcasting:prepare" value="0" level="12" />
+			<stat name="druid:spellcasting:prepare" value="1" level="13" />
+			<stat name="druid:spellcasting:prepare" value="0" level="14" />
+			<stat name="druid:spellcasting:prepare" value="1" level="15" />
+			<stat name="druid:spellcasting:prepare" value="0" level="16" />
+			<stat name="druid:spellcasting:prepare" value="1" level="17" />
+			<stat name="druid:spellcasting:prepare" value="1" level="18" />
+			<stat name="druid:spellcasting:prepare" value="1" level="19" />
+			<stat name="druid:spellcasting:prepare" value="1" level="20" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Druid" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Druid" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid" />
@@ -196,7 +217,7 @@
 		</sheet>
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
-			<grant type="spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
 	<element name="Primal Order" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
@@ -206,7 +227,7 @@
 			<p>Warden. Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
 		</description>
 		<sheet>
-			<description>You can use it to leave hidden messages.  You and others who know Druidic automatically spot such a message. Others spot the message’s presence with a successful DC 15 Intelligence (Investigation) check but can’t decipher it without magic.</description>
+			<description>You have dedicated yourself to the following sacred role of your choice.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Primal Order" supports="Primal Order, Druid" level="1"/>
@@ -236,15 +257,19 @@
 				<li>Objects.Your ability to handle objects is determined by the form’s limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it’s practical for the new form to wear a piece of equipment based on the creature’s size and shape. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you’re in that form.</li>
 			</ul>
 		</description>
-		<sheet action="Bonus Action" usage="{{druid wildshape:uses}}/Short Rest">
-			<description level="2">You can shape-shift into a Beast form that you have learned.
-			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you have the Incapacitated condition, or die.</description>
+		<sheet action="Bonus Action" usage="{{druid wildshape:uses}}/Short Rest" >
+			<description level="2">
+				You can shape-shift into one of your {{druid wildshape:forms}} Beast forms. You stay in that form for {{druid wildshape:hours}} hours or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.
+			</description>
 		</sheet>
 		<rules>
 			<stat name="druid wildshape:uses" value="2" level="2"/>
 			<stat name="druid wildshape:uses" value="1" level="6"/>
 			<stat name="druid wildshape:uses" value="1" level="17"/>
 			<stat name="druid wildshape:hours" value="level:druid 2024:half"/>
+			<stat name="druid wildshape:forms" value="4" level="2"/>
+			<stat name="druid wildshape:forms" value="2" level="4"/>
+			<stat name="druid wildshape:forms" value="2" level="8"/>
 		</rules>
 	</element>
 	<element name="Wild Companion" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
@@ -253,10 +278,10 @@
 			<p>When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Action">
-			<description>Expend a spell slot or use of Wild Shape to cast Find Familiar without material components. They dissapear after a short rest</description>
+			<description>Expend a spell slot or use of Wild Shape to cast Find Familiar without material components. They dissapear after a Long Rest</description>
 		</sheet>
 		<rules>
-			<grant type="spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" level="2" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
 	<element name="Druid Subclass" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
@@ -289,9 +314,8 @@
 			<p>Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
 			<p>In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can’t do so again until you finish a Long Rest.</p>
 		</description>
-		<sheet>
-			<description><p>1/Turn, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot</p>
-			<p>1/Long Rest, expend one use of Wild Shape to give yourself a level 1 spell slot</p></description>
+		<sheet usage="1/Turn" >
+			<description>if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot. 1/Long Rest, expend one use of Wild Shape to give yourself a level 1 spell slot </description>
 		</sheet>
 	</element>
 	<element name="Elemental Fury" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
@@ -331,8 +355,8 @@
 		<sheet>
 			<description>
 				<p>Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
-				<p>Nature Magician. You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can’t do so again until you finish a Long Rest.</p>
-				<p>Longevity. The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
+				<p> You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels.  Once you use this benefit, you can’t do so again until you finish a Long Rest.</p>
+				<p> The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
 			</description>
 		</sheet>
 	</element>
@@ -344,12 +368,12 @@
 			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
 		</description>
 		<sheet>
-			<description>You gain a +{{wisdom:modifier}} bonus to Intelligence(Arcana or Nature) checks.</description>
+			<description display="false">You gain a +{{wisdom:modifier}} bonus to Intelligence(Arcana or Nature) checks and a Druid cantrip.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Druid" />
-			<stat name="arcana:" value="wisdom:modifier" />
-			<stat name="nature" value="wisdom:modifier" />
+			<stat name="arcana:misc" value="wisdom:modifier" />
+			<stat name="nature:misc" value="wisdom:modifier" />
 		</rules>
 	</element>
 	<element name="Warden" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_PRIMAL_ORDER_WARDEN">
@@ -358,7 +382,7 @@
 			<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
 		</description>
 		<sheet>
-			<description>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</description>
+			<description display="false">Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
@@ -374,7 +398,7 @@
 		</description>
 		<sheet>
 			<description>Add +{{wisdom:modifier}} to the damage you deal with any Druid cantrip.</description>
-			<description level="15">When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet.</description>
+			<description level="15">When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet and you add +{{wisdom:modifier}} to the damage you deal.</description>
 		</sheet>
 	</element>
 	<element name="Primal Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ELEMENTAL_FURY_PRIMAL_STRIKE">
@@ -388,7 +412,48 @@
 		</sheet>
 	</element>
 	
-
+	<!-- Druid Spells -->
+	<element name="Starry Wisp" type="Spell" source="Batav's Additions" id="ID_BATAV_SPELL_STARRY_WISP">
+		<supports>Bard, Druid</supports>
+		<description>
+			<p>You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fount of Moonlight" type="Spell" source="Batav's Additions" id="ID_BATAV_SPELL_FOUNT_OF_MOONLIGHT">
+		<supports>Bard, Druid</supports>
+		<description>
+			<p>A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	<!-- Druid Subclass -->
 	<element name="Circle of the Moon 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_CIRCLEOFTHEMOON">
 		<supports>Druid Circle</supports>
@@ -421,12 +486,9 @@
 		</description>
 		<sheet>
 			<description>
-			<p>You can use your Wild Shape to transform into a beast with a CR as high as {{circle forms:cr}}.</p>
-			<p>You have learned ancient techniques that allow you to channel lunar magic when you assume a Wild Shape form, granting you the following benefits:</p>
-			<p class="indent">Challenge Rating. The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
-			<p class="indent">Armor Class. Your AC equals 13 plus your Wisdom modifier or the Beast AC (whichever one is higher), until you leave the form.</p>
-			<p class="indent">Temporary Hit Points. You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
+			<p>You can wildshape into a beast with a CR up to {{circle forms:cr}}, your AC equals {{circle forms:ac}} or the Beast's AC (whichever one is higher) and you gain {{circle forms:thp}} Temporary Hit Points.</p>
 			</description>
+
 		</sheet>
 		<rules>
 			<stat name="circle forms:cr" value="1" bonus="base" />
@@ -435,6 +497,11 @@
 			<stat name="circle forms:cr" value="4" level="12" bonus="base" />
 			<stat name="circle forms:cr" value="5" level="15" bonus="base" />
 			<stat name="circle forms:cr" value="6" level="18" bonus="base" />
+			<stat name="circle forms:ac" value="13" level="3" />
+			<stat name="circle forms:ac" value="wisdom:modifier" level="3" />
+			<stat name="circle forms:thp" value="level:druid 2024" level="3" />
+			<stat name="circle forms:thp" value="level:druid 2024" level="3" />
+			<stat name="circle forms:thp" value="level:druid 2024" level="3" />
 		</rules>
 	</element>
 	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS">
@@ -442,16 +509,31 @@
 			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
 			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
 		</description>
-		<sheet>
+		<sheet level="3">
 			<description>
 				<p> You can cast the following spells while Wild Shaped: </p>
-				<p level="3">Cure Wounds, Moonbeam, Starry Wisp </p>
-				<p level="5">Conjure Animals </p>
-				<p level="7">Fount of Moonlight </p>
-				<p level="9">Mass Cure Wounds </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam </p>
+			</description>
+			<description level="5">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals </p>
+			</description>
+			<description level="7">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals, Fount of Moonlight </p>
+			</description>
+			<description level="9">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals, Fount of Moonlight, Mass Cure Wounds </p>
 			</description>
 		</sheet>
 		<rules>
+			<grant type="Spell" id="ID_BATAV_SPELL_STARRY_WISP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_BATAV_SPELL_FOUNT_OF_MOONLIGHT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
 
 		</rules>
 	</element>
@@ -461,23 +543,29 @@
 			<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
 			<p>Increased Toughness. You can add your Wisdom modifier to your Constitution saving throws.</p>
 		</description>
-		<sheet>
-			<description>
+		<sheet display="false">
+			<description >
 				<p>While in a Wild Shape form, you gain the following benefits:</p>
 				<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
 				<p>Increased Toughness. You can add your {{wisdom:modifier}} to your Constitution saving throws.</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE" />
+			<grant type="Archetype Feature" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS" />
+		</rules>
 	</element>
 	<element name="Moonlight Step" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
 		<description>
 			<p>You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).</p>
 		</description>
-		<sheet>
+		<sheet usage="Bonus Action, {{wisdom:modifier}}/Long Rest" >
 			<description>
-				<p>You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
-				<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).</p>
+				You teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll this turn. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).
+			</description>
+			<description level="14" >
+				You teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll this turn. You can also teleport one willing creature within 10 feet, and teleport it to an unoccupied space you can see within 10 feet of your destination space. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).
 			</description>
 		</sheet>
 	</element>
@@ -487,10 +575,30 @@
 			<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
 			<p>Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
 		</description>
+		<sheet display="false" >
+			<description >
+				Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.
+			</description>
+		</sheet>
+	</element>
+
+	<!-- Improved Circle Forms -->
+	<element name="Lunar Radiance" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE">
+		<description display="false" />
 		<sheet>
 			<description>
-				<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
-				<p>Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
+				Whenever your Wild Shape attacks hit you can choose to deal Normal or Radiant damage.
+			</description>
+			<description level="14" >
+				Whenever your Wild Shape attacks hit, you can choose to deal Normal or Radiant damage. Additionally each of your attacks deals an extra 1d10 Radiant damage on a hit. 
+			</description>
+		</sheet>
+	</element>
+	<element name="Increased Toughness" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS">
+		<description display="false" />
+		<sheet>
+			<description>
+				<p>In Wild Shape you can add {{wisdom:modifier}} to your Constitution saving throws.</p>
 			</description>
 		</sheet>
 	</element>
