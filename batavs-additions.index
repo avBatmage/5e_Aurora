@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>	
-		<file name="source" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/source.xml" />
 		<!-- races -->
 		
 		<!-- classes -->
