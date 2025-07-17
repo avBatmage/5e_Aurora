@@ -210,7 +210,7 @@
 			<p class="indent">This number increases with your Proficiency Bonus from levels in Ranger as you level up.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
-			<description>You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature on a subsequent turn of yours.</description>
+			<description>You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. This mark lasts for one hour or until you lose concentration, although it can be concentrated on alongside other spells. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a Physical attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature as a Bonus Action on a subsequent turn of yours.</description>
 		</sheet>
 		<rules>
 			

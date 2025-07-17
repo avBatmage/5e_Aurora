@@ -1,0 +1,42 @@
+<elements>
+	<info>
+		<name>Weapon Masteries</name>
+		<description>The Weapon Masteries from the 2024 Players' Handbook.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/weapon-masteries.xml" />
+		</update>
+	</info>
+
+    <element name="" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_WEAPON_MASTERIES">
+		<description>
+			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">DRUIDIC WARRIOR</h5>
+			<p>Instead of taking a fighting style, you can choose to know 2 Druid cantrips.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Ranger" level="2"/>
+		</rules>
+	</element>
+	<element name="Battleaxe" type="Class Feature" source="Batav's Additions" id="ID_BATAV_UA2015_CLASS_FEATURE_WEAPONMASTERY_BATTLEAXE">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>Instead of taking a fighting style, you can choose to know 2 Druid cantrips.</p>
+		</description>
+		<sheet>
+			<description>You know 2 Druid cantrips.</description>
+		</sheet>
+		<rules>
+			<select type="Item" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger 2024" />
+		</rules>
+	</element>
+
+</elements>
