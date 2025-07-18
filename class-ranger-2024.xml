@@ -3,12 +3,11 @@
 	<info>
 		<name>Ranger 2024</name>
 		<description>The Ranger class from the 2024 Player's Handbook.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
 		</update>
 	</info>
-	<!--test-->
+
 	<element name="Ranger 2024" type="Class" source="Batav's Additions" id="ID_BATAV_CLASS_RANGER_2024">
 		<description>
 			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
@@ -58,21 +57,21 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Spellcasting, Favored Enemy</td>			<td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 1st</td><td class="left">Spellcasting, Favored Enemy, Weapon Mastery</td>			<td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 2nd</td><td class="left">Deft Explorer, Fighting Style</td>		<td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td class="left">Ranger Archetype, Primeval Awareness</td>	<td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Ranger Subclass, Primeval Awareness</td>	<td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 4th</td><td class="left">Ability Score Improvement</td>			<td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 5th</td><td class="left">Extra Attack</td>							<td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 6th</td><td class="left">Roving</td>								<td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td class="left">Ranger Archetype feature</td>				<td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Ranger Subclass feature</td>				<td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 8th</td><td class="left">Ability Score Improvement</td>			<td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 9th</td><td class="left">Expertise</td>							<td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
 				<tr><td>10th</td><td class="left">Tireless</td>								<td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td class="left">Ranger Archetype feature</td>				<td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">Ranger Subclass feature</td>				<td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				<tr><td>12th</td><td class="left">Ability Score Improvement</td>			<td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				<tr><td>13th</td><td class="left">Relentless Hunter</td>					<td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
 				<tr><td>14th</td><td class="left">Nature’s Veil</td>						<td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>15th</td><td class="left">Ranger Archetype feature</td>				<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Ranger Subclass feature</td>				<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				<tr><td>16th</td><td class="left">Ability Score Improvement</td>			<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				<tr><td>17th</td><td class="left">Precise Hunter</td>						<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
 				<tr><td>18th</td><td class="left">Feral Senses</td>							<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
@@ -81,6 +80,7 @@
 			</table>
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_SPELLCASTING" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY" />
+			<div element="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" />
 			<div element="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" />
@@ -114,6 +114,7 @@
 			<select type="Proficiency" name="Skill Proficiency" supports="Skill,Ranger" number="3" requirements="!ID_BATAV_MULTICLASS_RANGER_2024" />
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_SPELLCASTING" level="1"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY" level="1"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" level="2"/>
 			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
@@ -213,11 +214,21 @@
 			<description>You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. This mark lasts for one hour or until you lose concentration, although it can be concentrated on alongside other spells. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a Physical attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature as a Bonus Action on a subsequent turn of yours.</description>
 		</sheet>
 		<rules>
-			
 			<stat name="hunters mark:dice" value="6" bonus="hunters mark" />
 			<stat name="hunters mark:dice" value="8" bonus="hunters mark" level="13" />
 			<stat name="hunters mark:dice" value="10" bonus="hunters mark" level="20" />
-			
+		</rules>
+	</element>
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
+			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
 		</rules>
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER">
@@ -246,13 +257,13 @@
 			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Ranger" level="2"/>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Ranger" level="2"/>
 		</rules>
 	</element>
 	<element name="Druidic Warrior" type="Class Feature" source="Batav's Additions" id="ID_BATAV_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_DRUIDIC_WARRIOR">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>Instead of taking a fighting style, you can choose to know 2 Druid cantrips.</p>
+			<p>You learn two Druid cantrips of your choice (see the Druid class’s section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
 		</description>
 		<sheet>
 			<description>You know 2 Druid cantrips.</description>
@@ -273,11 +284,11 @@
 	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_PRIMEVAL_AWARENESS</requirements>
 		<description>
-			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
+			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
 		</description>
 		<sheet action="Action">
 			<description>You can expend one ranger spell slot to focus your awareness on the region around you.
-			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
+			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_ASI">
@@ -390,12 +401,12 @@
 			<description>Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</description>
 		</sheet>
 		<rules>
-			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" value="30" />
 		</rules>
 	</element>
 	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER">
 		<description>
-			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
+			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
 		</description>
 		<sheet display="false">
 			<description>You embody the power of the wilds. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22.</description>
