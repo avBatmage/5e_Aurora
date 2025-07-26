@@ -4,7 +4,7 @@
 		<name>Batav's Additions</name>
 		<description>Homebrew additions for the Gamer Guys</description>
 		<author url="https://github.com/avBatmage/5e_Aurora">Batav</author>
-		<update version="0.1">
+		<update version="0.0.2">
 			<file name="batavs-additions.index" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batavs-additions.index" />
 		</update>
 	</info>
@@ -13,10 +13,11 @@
 		<!-- races -->
 		
 		<!-- classes -->
-		<file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
 		<file name="class-wizard-wisdom.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-wizard-wisdom.xml" />
 		<file name="class-barbarian-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-barbarian-2024.xml" />
 		<file name="class-druid-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-druid-2024.xml" />
+		<file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
+		<file name="class-rogue-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-rogue-2024.xml" />
 		<!-- backgrounds -->		
 
 		<!-- items -->
@@ -24,5 +25,6 @@
 		<file name="weapons.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/Weapons.xml" />
 		
 		<!-- misc -->
+		<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/weapon-masteries.xml" />
 	</files>
 </index>

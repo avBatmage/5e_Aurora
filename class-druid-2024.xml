@@ -509,8 +509,8 @@
 			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
 			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
 		</description>
-		<sheet level="3">
-			<description>
+		<sheet>
+			<description level="3">
 				<p> You can cast the following spells while Wild Shaped: </p>
 				<p>Starry Wisp, Cure Wounds, Moonbeam </p>
 			</description>

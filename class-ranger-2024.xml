@@ -352,7 +352,7 @@
 		</description>
 		<sheet>
 			<description>
-				Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
+				Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
 			</description>
 		</sheet>
 		<rules>
