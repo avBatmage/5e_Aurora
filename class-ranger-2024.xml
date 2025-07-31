@@ -402,6 +402,7 @@
 		</sheet>
 		<rules>
 			<grant type="Vision" id="ID_VISION_BLINDSIGHT" value="30" />
+			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
 	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER">
