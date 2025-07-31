@@ -78,23 +78,23 @@
 				<tr><td>19th</td><td class="left">Ability Score Improvement</td>			<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 				<tr><td>20th</td><td class="left">Foe Slayer</td>							<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 			</table>
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_SPELLCASTING" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_ASI" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_EXTRA_ATTACK" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_ROVING" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_RELENTLESS_HUNTER" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_NATURES_VEIL" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_PRECISE_HUNTER" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_FERAL_SENSES" />
-			<div element="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_FIGHTING_STYLE" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_ASI" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_EXTRA_ATTACK" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_ROVING" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_EXPERTISE" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_NATURES_VEIL" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_FERAL_SENSES" />
+			<div element="ID_BATAV_CLASS_FEATURE_RANGER_FOE_SLAYER" />
 		</description>
 		<sheet display="false">
 			<description>A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</description>
@@ -112,23 +112,23 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_BATAV_MULTICLASS_RANGER_2024" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_BATAV_MULTICLASS_RANGER_2024" />
 			<select type="Proficiency" name="Skill Proficiency" supports="Skill,Ranger" number="3" requirements="!ID_BATAV_MULTICLASS_RANGER_2024" />
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_SPELLCASTING" level="1"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY" level="1"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY" level="1"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER" level="2"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE" level="2"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_ASI" level="4"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_EXTRA_ATTACK" level="5"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_ROVING" level="6"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE" level="9"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS" level="10"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_NATURES_VEIL" level="14"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_PRECISE_HUNTER" level="17"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FERAL_SENSES" level="18"/>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER" level="20"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY" level="1"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER" level="2"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_ASI" level="4"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_ROVING" level="6"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_EXPERTISE" level="9"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS" level="10"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_NATURES_VEIL" level="14"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_PRECISE_HUNTER" level="17"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_FERAL_SENSES" level="18"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_FOE_SLAYER" level="20"/>
 		</rules>
 		<multiclass id="ID_BATAV_MULTICLASS_RANGER_2024">
 			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
@@ -147,7 +147,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_SPELLCASTING">
+	<element name="Spellcasting" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING">
 		<description>
 			<p>You have learned to channel the magical essence of nature to cast spells. See the Batav's Additions for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
 			<h5>SPELL SLOTS</h5>
@@ -203,7 +203,7 @@
 			<stat name="ranger:spellcasting:prepare" value="1" level="19" />
 		</rules>
 	</element>
-	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FAVORED_ENEMY">
+	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
 			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
 			<p class="indent">You are adept at focusing on a single foe. You can apply your Hunter's Mark as a Bonus Action.</p>
@@ -211,7 +211,7 @@
 			<p class="indent">This number increases with your Proficiency Bonus from levels in Ranger as you level up.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
-			<description>You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. This mark lasts for one hour or until you lose concentration, although it can be concentrated on alongside other spells. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a Physical attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature as a Bonus Action on a subsequent turn of yours.</description>
+			<description level="3">You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. This mark lasts for one hour or until you lose concentration, although it can be concentrated on alongside other spells. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a Physical attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature as a Bonus Action on a subsequent turn of yours.</description>
 		</sheet>
 		<rules>
 			<stat name="hunters mark:dice" value="6" bonus="hunters mark" />
@@ -219,7 +219,8 @@
 			<stat name="hunters mark:dice" value="10" bonus="hunters mark" level="20" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_WEAPON_MASTERY">
+	
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
@@ -231,7 +232,7 @@
 			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
 		</rules>
 	</element>
-	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_DEFT_EXPLORER">
+	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
 		<description>
 			<p>You are an unsurpassed explorer. At 2nd level, Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
 			<p>In addition, choose two languages. </p>
@@ -242,7 +243,7 @@
 			<select type="Language" name="Language (Deft Explorer)"  level="2" number="2" supports="Standard||Exotic"/>
 		</rules>
 	</element>
-	<element name="Fighting Style" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FIGHTING_STYLE">
+	<element name="Fighting Style" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
 		<description>
 			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
 			<h5 class="caption">ARCHERY</h5>
@@ -272,7 +273,7 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger 2024" />
 		</rules>
 	</element>
-	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_BATAV_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
+	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_BATAV_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
 		</description>
@@ -281,7 +282,7 @@
 			<select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
 		</rules>
 	</element>
-	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
+	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_PRIMEVAL_AWARENESS</requirements>
 		<description>
 			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
@@ -291,7 +292,7 @@
 			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_ASI">
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_ASI">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -305,7 +306,7 @@
 			<select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" level="19" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
@@ -316,7 +317,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Roving" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_ROVING">
+	<element name="Roving" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_ROVING">
 		<description>
 			<p>Starting at 6th level, Your Speed increases by 10 feet while you aren’t wearing Heavy Armor.</p>
 			<p>You also have a Climb Speed and a Swim Speed equal to your Speed.</p>
@@ -333,7 +334,7 @@
 			<stat name="speed:swim" value="speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_EXPERTISE">
+	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_EXPERTISE">
 		<description>
 			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
 		</description>
@@ -344,7 +345,7 @@
 			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
 	</element>
-	<element name="Tireless" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS">
+	<element name="Tireless" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS">
 		<description>
 			<p>Reaching 10th level, Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
 			<p class="indent">Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
@@ -356,10 +357,10 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS"/>
+			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS"/>
 		</rules>
 	</element>
-	<element name="Temporary Hit Points" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
+	<element name="Temporary Hit Points" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
 		<compendium display="false" />
 		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
 			<description>
@@ -367,15 +368,15 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Relentless Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_RELENTLESS_HUNTER">
+	<element name="Relentless Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
 		<description>
 			<p>At 13th level, Your Hunter's Mark Feature no longer requires any concentration and it's damage die increases to d8.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Your Hunter's Mark Feature no longer requires any concentration.</description>
 		</sheet>
 	</element>
-	<element name="Nature's Veil" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_NATURES_VEIL">
+	<element name="Nature's Veil" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_NATURES_VEIL">
 		<description>
 			<p>At 14th  level, You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
@@ -384,28 +385,28 @@
 			<description>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Precise Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_PRECISE_HUNTER">
+	<element name="Precise Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
 		<description>
 			<p>At 17th level, You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</description>
 		</sheet>
 	</element>
 
-	<element name="Feral Senses" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FERAL_SENSES">
+	<element name="Feral Senses" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FERAL_SENSES">
 		<description>
 			<p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
 		</description>
-		<sheet>
-			<description>Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</description>
+		<sheet display="false">
+			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Vision" id="ID_VISION_BLINDSIGHT" value="30" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
 			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
-	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_RANGER_FOE_SLAYER">
+	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FOE_SLAYER">
 		<description>
 			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
 		</description>

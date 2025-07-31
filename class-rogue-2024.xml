@@ -128,7 +128,7 @@
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ELUSIVE" level="18"/>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK" level="20"/>
 		</rules>
-		<multiclass id="ID_BATAV_PHB_MULTICLASS_ROGUE">
+		<multiclass id="ID_BATAV_PHB_MULTICLASS_ROGUE" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE">
 			<prerequisite>Dexterity 13</prerequisite>
 			<requirements>[dex:13]</requirements>
 			<setters>
@@ -192,10 +192,10 @@
 			In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</description>
 		</sheet>
 		<rules>
-			<grant type="Language" id="ID_BATAV_PHB_LANGUAGE_THIEVES_CANT" />
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASSFEATURE_ROGUE_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
@@ -265,10 +265,12 @@
 				Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_TRIP" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_WITHDRAW" />
 		</rules>
 	</element>
 	<element name="Poison" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON">
@@ -307,7 +309,7 @@
 			<description>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10</description>
 		</sheet>
 	</element>
-	<element name="Improved Cunning Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_">
+	<element name="Improved Cunning Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_IMPROVEDCUNNINGSTRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
 		<description>
 			<p>Starting at 11th level, You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
@@ -316,7 +318,7 @@
 			<description>You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</description>
 		</sheet>
 	</element>
-	<element name="Devious Strikes" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_">
+	<element name="Devious Strikes" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
 		<description>
 			<p>Starting at 14th level, You’ve practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
@@ -661,7 +663,7 @@
 		<description>
 			<p>Your proficiency bonus is doubled for any Thieves’ Tools check you make.</p>
 			<div class="reference">
-				<div element="ID_BATAV_PHB_ITEM_TOOL_THIEVES_TOOLS" />
+				<div element="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS" />
 			</div>
 		</description>
 		<sheet>
