@@ -209,7 +209,7 @@
 	</element>
 	<element name="Druidic" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
 		<description>
-			<p>You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
+			<p>At 1st level, You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
 			<p>You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message’s presence with a successful DC 15 Intelligence (Investigation) check but can’t decipher it without magic.</p>
 		</description>
 		<sheet>
@@ -222,7 +222,7 @@
 	</element>
 	<element name="Primal Order" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
 		<description>
-			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p>At 1st level, You have dedicated yourself to one of the following sacred roles of your choice.</p>
 			<p>Magician. You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
 			<p>Warden. Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
 		</description>
@@ -235,7 +235,7 @@
 	</element>
 	<element name="Wildshape" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
 		<description>
-			<p>The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
+			<p>At 2nd level, The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
 			<p class="indent">Number of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table.</p>
 			<p class="indent">Known Forms. You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed (see "Creature Stat Blocks" for stat block options). The Rat, Riding Horse, Spider, and Wolf are recommended. Whenever you finish a Long Rest, you can replace one of your known forms with another eligible form.</p>
@@ -274,7 +274,7 @@
 	</element>
 	<element name="Wild Companion" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
 		<description>
-			<p>You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
+			<p>At 2nd level, You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
 			<p>When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Action">
@@ -286,7 +286,7 @@
 	</element>
 	<element name="Druid Subclass" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
 		<description>
-			<p>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+			<p>At 3rd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
 		</description>
 		<sheet display="false">
 			<description>You choose to identify with a circle of druids.</description>
@@ -311,7 +311,7 @@
 	</element>
 	<element name="Wild Resurgence" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
 		<description>
-			<p>Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
+			<p>At 5th level, Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
 			<p>In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can’t do so again until you finish a Long Rest.</p>
 		</description>
 		<sheet usage="1/Turn" >
@@ -320,7 +320,7 @@
 	</element>
 	<element name="Elemental Fury" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
 		<description>
-			<p>The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p>At 7th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
 			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form’s attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
 		</description>
@@ -331,7 +331,7 @@
 	</element>
 	<element name="Improved Elemental Fury" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY">
 		<description>
-			<p>The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p>At 15th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet.</p>
 			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form’s attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
 		</description>
@@ -339,7 +339,7 @@
 	</element>
 	<element name="Beast Spells" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
 		<description>
-			<p>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
+			<p>At 18th level, While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
 		</description>
 		<sheet>
 			<description>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</description>
@@ -347,7 +347,7 @@
 	</element>
 	<element name="Archdruid" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
 		<description>
-			<p>The vitality of nature constantly blooms within you, granting you the following benefits.</p>
+			<p>At 20th level, The vitality of nature constantly blooms within you, granting you the following benefits.</p>
 			<p>Evergreen Wild Shape. Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
 			<p>Nature Magician. You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can’t do so again until you finish a Long Rest.</p>
 			<p>Longevity. The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
