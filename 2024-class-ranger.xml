@@ -75,7 +75,7 @@
 				<tr><td>16th</td><td class="left">Ability Score Improvement</td>			<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				<tr><td>17th</td><td class="left">Precise Hunter</td>						<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
 				<tr><td>18th</td><td class="left">Feral Senses</td>							<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td>			<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td>			<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 				<tr><td>20th</td><td class="left">Foe Slayer</td>							<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 			</table>
 			<div element="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING" />
@@ -262,7 +262,7 @@
 		</rules>
 	</element>
 	<element name="Druidic Warrior" type="Class Feature" source="Batav's Additions" id="ID_BATAV_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_DRUIDIC_WARRIOR">
-		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<supports>Fighting Style, Ranger</supports>
 		<description>
 			<p>You learn two Druid cantrips of your choice (see the Druid class’s section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
 		</description>
