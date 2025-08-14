@@ -9,12 +9,12 @@
 		</update>
 	</info>
 
-	<element name="" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_">
-		<prerequisite>level 19</prerequisite>
-		<requirements>[level:19]</requirements>
+	<element name="Expertise" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_EXPERTISE">
+		<prerequisite>Wizard</prerequisite>
+		<requirements>[class:wizard]</requirements>
 		<description>
 			<ul>
-				<li>Ability Score Increase: Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li>One Expertise</li>
 				<li> </li>
 			</ul>
 		</description>
@@ -22,7 +22,7 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
+			<select type="Proficiency" name="Proficiency, Expertise" supports="Skill" />
 		</rules>
 	</element>
 	<element name="Boon of Combat Prowess" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_COMBAT_PROWESS">
