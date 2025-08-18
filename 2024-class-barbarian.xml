@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Barbarian 2024</name>
+		<name>2024 Barbarian</name>
 		<description>The Barbarian class from the 2024 Players' Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.2">
-			<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/class-barbarian-2024.xml" />
+			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/class-barbarian-2024.xml" />
 		</update>
 	</info>
-	<element name="Barbarian 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_BARBARIAN">
+	<element name="2024 Barbarian" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_BARBARIAN">
 		<description>
 			<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people’s elk herd.</p>
 			<p class="indent">A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.</p>
