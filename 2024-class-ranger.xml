@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Ranger 2024" type="Class" source="Batav's Additions" id="ID_BATAV_CLASS_RANGER_2024">
+	<element name="Ranger 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_RANGER_2024">
 		<description>
 			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
 			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
@@ -147,9 +147,9 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING">
+	<element name="Spellcasting" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_SPELLCASTING">
 		<description>
-			<p>You have learned to channel the magical essence of nature to cast spells. See the Batav's Additions for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
+			<p>You have learned to channel the magical essence of nature to cast spells. See the Batav's Additions 2024 for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
 			<h5>SPELL SLOTS</h5>
 			<p>The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
 			<p class="indent">For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.</p>
@@ -203,7 +203,7 @@
 			<stat name="ranger:spellcasting:prepare" value="1" level="19" />
 		</rules>
 	</element>
-	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
+	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
 			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
 			<p class="indent">You are adept at focusing on a single foe. You can apply your Hunter's Mark as a Bonus Action.</p>
@@ -220,7 +220,7 @@
 		</rules>
 	</element>
 	
-	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
@@ -232,7 +232,7 @@
 			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
 		</rules>
 	</element>
-	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
+	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
 		<description>
 			<p>You are an unsurpassed explorer. At 2nd level, Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
 			<p>In addition, choose two languages. </p>
@@ -243,7 +243,7 @@
 			<select type="Language" name="Language (Deft Explorer)"  level="2" number="2" supports="Standard||Exotic"/>
 		</rules>
 	</element>
-	<element name="Fighting Style" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
+	<element name="Fighting Style" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
 		<description>
 			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
 			<h5 class="caption">ARCHERY</h5>
@@ -261,7 +261,7 @@
 			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Ranger" level="2"/>
 		</rules>
 	</element>
-	<element name="Druidic Warrior" type="Class Feature" source="Batav's Additions" id="ID_BATAV_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_DRUIDIC_WARRIOR">
+	<element name="Druidic Warrior" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_DRUIDIC_WARRIOR">
 		<supports>Fighting Style, Ranger</supports>
 		<description>
 			<p>You learn two Druid cantrips of your choice (see the Druid class’s section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
@@ -270,7 +270,7 @@
 			<description>You know 2 Druid cantrips.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger 2024" />
+			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="2024 Ranger" />
 		</rules>
 	</element>
 	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_BATAV_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
@@ -282,7 +282,7 @@
 			<select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
 		</rules>
 	</element>
-	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS">
+	<element name="Primeval Awareness" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_PRIMEVAL_AWARENESS</requirements>
 		<description>
 			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
@@ -292,7 +292,7 @@
 			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_ASI">
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_ASI">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -306,7 +306,7 @@
 			<select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" level="19" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
@@ -317,7 +317,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Roving" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_ROVING">
+	<element name="Roving" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_ROVING">
 		<description>
 			<p>Starting at 6th level, Your Speed increases by 10 feet while you aren’t wearing Heavy Armor.</p>
 			<p>You also have a Climb Speed and a Swim Speed equal to your Speed.</p>
@@ -334,7 +334,7 @@
 			<stat name="speed:swim" value="speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_EXPERTISE">
+	<element name="Expertise" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_EXPERTISE">
 		<description>
 			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
 		</description>
@@ -345,7 +345,7 @@
 			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
 	</element>
-	<element name="Tireless" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS">
+	<element name="Tireless" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS">
 		<description>
 			<p>Reaching 10th level, Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
 			<p class="indent">Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
@@ -360,7 +360,7 @@
 			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS"/>
 		</rules>
 	</element>
-	<element name="Temporary Hit Points" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
+	<element name="Temporary Hit Points" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
 		<compendium display="false" />
 		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
 			<description>
@@ -368,7 +368,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Relentless Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
+	<element name="Relentless Hunter" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
 		<description>
 			<p>At 13th level, Your Hunter's Mark Feature no longer requires any concentration and it's damage die increases to d8.</p>
 		</description>
@@ -376,7 +376,7 @@
 			<description>Your Hunter's Mark Feature no longer requires any concentration.</description>
 		</sheet>
 	</element>
-	<element name="Nature's Veil" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_NATURES_VEIL">
+	<element name="Nature's Veil" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_NATURES_VEIL">
 		<description>
 			<p>At 14th  level, You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
@@ -385,7 +385,7 @@
 			<description>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Precise Hunter" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
+	<element name="Precise Hunter" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
 		<description>
 			<p>At 17th level, You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
 		</description>
@@ -394,7 +394,7 @@
 		</sheet>
 	</element>
 
-	<element name="Feral Senses" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FERAL_SENSES">
+	<element name="Feral Senses" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_FERAL_SENSES">
 		<description>
 			<p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
 		</description>
@@ -406,7 +406,7 @@
 			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
-	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions" id="ID_BATAV_CLASS_FEATURE_RANGER_FOE_SLAYER">
+	<element name="Foe Slayer" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_FOE_SLAYER">
 		<description>
 			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
 		</description>
@@ -423,7 +423,7 @@
 	</element>
 
 	<!--Hunter-->
-	<element name="Hunter 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
+	<element name="Hunter 2024" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
@@ -444,7 +444,7 @@
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
 		</rules>
 	</element>
-	<element name="Hunter’s Lore" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
+	<element name="Hunter’s Lore" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
 		<description>
 			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter’s Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
 		</description>
@@ -452,7 +452,7 @@
 			<description>While a creature is marked by your Hunter’s Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
 		</sheet>
 	</element>
-	<element name="Hunter’s Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
+	<element name="Hunter’s Prey" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
 		<description>
 			<p>You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p>
 			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
@@ -463,7 +463,7 @@
 			<select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Prey 2024" />
 		</rules>
 	</element>
-	<element name="Defensive Tactics" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
+	<element name="Defensive Tactics" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
 		<description>
 			<p>At 7th level, you gain one of the following features of your choice.</p>
 			<p class="indent"><strong><em>Evasion.</em></strong> When you are subjected to an effect that lets you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.</p>
@@ -476,7 +476,7 @@
 			<select type="Archetype Feature" name="Defensive Tactics" supports="Defensive Tactics 2024" />
 		</rules>
 	</element>
-	<element name="Superior Hunter's Prey" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY">
+	<element name="Superior Hunter's Prey" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY">
 		<description>
 			<p>Once per turn, when you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</p>
 		</description>
@@ -484,7 +484,7 @@
 			<description>When you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</description>
 		</sheet>
 	</element>
-	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
+	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
 		<description>
 			<p>You can take a reaction to give yourself resistance to damage when you take damage until the end of your current turn.</p>	
 		</description>
@@ -493,7 +493,7 @@
 		</sheet>
 	</element>
 
-	<element name="Colossus Slayer" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+	<element name="Colossus Slayer" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
 		<supports>Hunters Prey 2024</supports>
 		<description>
 			<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
@@ -502,7 +502,7 @@
 			<description>When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hp maximum.</description>
 		</sheet>
 	</element>
-	<element name="Horde Breaker" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+	<element name="Horde Breaker" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
 		<supports>Hunters Prey 2024</supports>
 		<description>
 			<p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
@@ -511,7 +511,7 @@
 			<description>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
 		</sheet>
 	</element>
-	<element name="Evasion" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_EVASION">
+	<element name="Evasion" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_EVASION">
 		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
@@ -520,7 +520,7 @@
 			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
-	<element name="Hunter's Leap" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_HUNTERS_LEAP">
+	<element name="Hunter's Leap" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_HUNTERS_LEAP">
 		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>If an enemy you can see enters a space within 5 feet of you, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
@@ -529,7 +529,7 @@
 			<description>If an enemy you can see enters a space within 5 feet of you, move up to half your Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 	</element>
-	<element name="Uncanny Dodge" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_UNCANNY_DODGE">
+	<element name="Uncanny Dodge" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_UNCANNY_DODGE">
 		<supports>Defensive Tactics 2024</supports>
 		<description>
 			<p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
@@ -539,7 +539,7 @@
 		</sheet>
 	</element>
 	<!--Beast Master-->
-	<element name="Beast Master 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
+	<element name="Beast Master 2024" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
@@ -558,7 +558,7 @@
 			<grant type="Archetype Feature" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15" />
 		</rules>
 	</element>
-	<element name="Ranger’s Companion" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION">
+	<element name="Ranger’s Companion" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION">
 		<description>
 			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
 			<p class="indent">In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action, unless you take a Bonus Action on your turn to command it to take a different action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you have the Incapacitated condition, the beast can take any action of its choice, not just Dodge.</p>
@@ -583,7 +583,7 @@
 			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
 		</rules>
 	</element>
-	<element name="Exceptional Training" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
+	<element name="Exceptional Training" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
 		<description>
 			<p>When you use your Bonus Action to command your Primal Companion beast to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action as a Bonus Action.</p>
 			<p class="indent">In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
@@ -593,7 +593,7 @@
 			In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</description>
 		</sheet>
 	</element>
-	<element name="Bestial Fury" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
+	<element name="Bestial Fury" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
 		<description>
 			<p>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.</p>
 			<p>In addition, the first time each turn it hits a creature under the effect of your Hunter’s Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
@@ -603,7 +603,7 @@
 			In addition, the first time each turn it hits a creature under the effect of your Hunter’s Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.</description>
 		</sheet>
 	</element>
-	<element name="Share Spells" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
+	<element name="Share Spells" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
 		<description>
 			<p>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.</p>
 		</description>
@@ -613,7 +613,7 @@
 	</element>
 	
 	<!-- Expertise -->
-	<element name="Skill Expertise (Acrobatics)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ACROBATICS">
+	<element name="Skill Expertise (Acrobatics)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ACROBATICS">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
 		<description>
@@ -627,7 +627,7 @@
 			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ANIMALHANDLING">
+	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ANIMALHANDLING">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
 		<description>
@@ -641,7 +641,7 @@
 			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ARCANA">
+	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ARCANA">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
 		<description>
@@ -655,7 +655,7 @@
 			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Athletics)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ATHLETICS">
+	<element name="Skill Expertise (Athletics)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ATHLETICS">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 		<description>
@@ -669,7 +669,7 @@
 			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Deception)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_DECEPTION">
+	<element name="Skill Expertise (Deception)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_DECEPTION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
 		<description>
@@ -683,7 +683,7 @@
 			<stat name="deception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (History)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_HISTORY">
+	<element name="Skill Expertise (History)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_HISTORY">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
 		<description>
@@ -697,7 +697,7 @@
 			<stat name="history:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Insight)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INSIGHT">
+	<element name="Skill Expertise (Insight)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INSIGHT">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
 		<description>
@@ -711,7 +711,7 @@
 			<stat name="insight:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Intimidation)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INTIMIDATION">
+	<element name="Skill Expertise (Intimidation)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INTIMIDATION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
 		<description>
@@ -725,7 +725,7 @@
 			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Investigation)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INVESTIGATION">
+	<element name="Skill Expertise (Investigation)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INVESTIGATION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
 		<description>
@@ -739,7 +739,7 @@
 			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Medicine)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_MEDICINE">
+	<element name="Skill Expertise (Medicine)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_MEDICINE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
 		<description>
@@ -753,7 +753,7 @@
 			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Nature)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_NATURE">
+	<element name="Skill Expertise (Nature)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_NATURE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
 		<description>
@@ -767,7 +767,7 @@
 			<stat name="nature:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Perception)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERCEPTION">
+	<element name="Skill Expertise (Perception)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERCEPTION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
 		<description>
@@ -781,7 +781,7 @@
 			<stat name="perception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Performance)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERFORMANCE">
+	<element name="Skill Expertise (Performance)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERFORMANCE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
 		<description>
@@ -795,7 +795,7 @@
 			<stat name="performance:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Persuasion)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERSUASION">
+	<element name="Skill Expertise (Persuasion)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERSUASION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
 		<description>
@@ -809,7 +809,7 @@
 			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Religion)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_RELIGION">
+	<element name="Skill Expertise (Religion)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_RELIGION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
 		<description>
@@ -823,7 +823,7 @@
 			<stat name="religion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND">
+	<element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
 		<description>
@@ -837,7 +837,7 @@
 			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Stealth)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_STEALTH">
+	<element name="Skill Expertise (Stealth)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_STEALTH">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
 		<description>
@@ -851,7 +851,7 @@
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Survival)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_SURVIVAL">
+	<element name="Skill Expertise (Survival)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_SURVIVAL">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
 		<description>

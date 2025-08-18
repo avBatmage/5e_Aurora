@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Druid 2024</name>
-		<description>The Druid class from the 2024 Batav's Additions.</description>
+		<description>The Druid class from the 2024 Batav's Additions 2024.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="class-druid-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-druid-2024.xml" />
 		</update>
 	</info>
 
-	<element name="Druid 2024" type="Class" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_DRUID_2024">
+	<element name="Druid 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_DRUID_2024">
 		<description>
 			<!-- <p class="flavor">A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms.</p> -->
 			<p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
@@ -133,7 +133,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+	<element name="Spellcasting" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
 		<description>
 			<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
 			<h5>CANTRIPS</h5>
@@ -207,7 +207,7 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid" />
 		</rules>
 	</element>
-	<element name="Druidic" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
+	<element name="Druidic" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
 		<description>
 			<p>At 1st level, You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
 			<p>You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message’s presence with a successful DC 15 Intelligence (Investigation) check but can’t decipher it without magic.</p>
@@ -220,7 +220,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
-	<element name="Primal Order" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
+	<element name="Primal Order" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
 		<description>
 			<p>At 1st level, You have dedicated yourself to one of the following sacred roles of your choice.</p>
 			<p>Magician. You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
@@ -233,7 +233,7 @@
 			<select type="Class Feature" name="Primal Order" supports="Primal Order, Druid" level="1"/>
 		</rules>
 	</element>
-	<element name="Wildshape" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
+	<element name="Wildshape" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
 		<description>
 			<p>At 2nd level, The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
 			<p class="indent">Number of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
@@ -272,7 +272,7 @@
 			<stat name="druid wildshape:forms" value="2" level="8"/>
 		</rules>
 	</element>
-	<element name="Wild Companion" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
+	<element name="Wild Companion" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
 		<description>
 			<p>At 2nd level, You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
 			<p>When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
@@ -284,7 +284,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" level="2" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
-	<element name="Druid Subclass" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
+	<element name="Druid Subclass" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
 		<description>
 			<p>At 3rd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
 		</description>
@@ -295,7 +295,7 @@
 			<select type="Archetype" name="Druid Circle" supports="Druid Circle" level="2"/>
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -309,7 +309,7 @@
 			<select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" level="19" />
 		</rules>
 	</element>
-	<element name="Wild Resurgence" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
+	<element name="Wild Resurgence" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
 		<description>
 			<p>At 5th level, Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
 			<p>In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can’t do so again until you finish a Long Rest.</p>
@@ -318,7 +318,7 @@
 			<description>if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot. 1/Long Rest, expend one use of Wild Shape to give yourself a level 1 spell slot </description>
 		</sheet>
 	</element>
-	<element name="Elemental Fury" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
+	<element name="Elemental Fury" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
 		<description>
 			<p>At 7th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
@@ -329,7 +329,7 @@
 			<select type="Class Feature" name="Elemental Fury" supports="Elemental Fury, Druid" level="7"/>
 		</rules>
 	</element>
-	<element name="Improved Elemental Fury" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY">
+	<element name="Improved Elemental Fury" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY">
 		<description>
 			<p>At 15th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet.</p>
@@ -337,7 +337,7 @@
 		</description>
 		<sheet display="false"/>
 	</element>
-	<element name="Beast Spells" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
+	<element name="Beast Spells" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
 		<description>
 			<p>At 18th level, While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
 		</description>
@@ -345,7 +345,7 @@
 			<description>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</description>
 		</sheet>
 	</element>
-	<element name="Archdruid" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
+	<element name="Archdruid" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
 		<description>
 			<p>At 20th level, The vitality of nature constantly blooms within you, granting you the following benefits.</p>
 			<p>Evergreen Wild Shape. Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
@@ -362,7 +362,7 @@
 	</element>
 
 	<!-- Primal Orders -->
-	<element name="Magician" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_PRIMAL_ORDER_MAGICIAN">
+	<element name="Magician" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PRIMAL_ORDER_MAGICIAN">
 		<supports>Primal Order, Druid</supports>
 		<description>
 			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
@@ -376,7 +376,7 @@
 			<stat name="nature:misc" value="wisdom:modifier" />
 		</rules>
 	</element>
-	<element name="Warden" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_PRIMAL_ORDER_WARDEN">
+	<element name="Warden" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PRIMAL_ORDER_WARDEN">
 		<supports>Primal Order, Druid</supports>
 		<description>
 			<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
@@ -391,7 +391,7 @@
 	</element>
 
 	<!-- Elemental Fury -->
-	<element name="Potent Spellcasting" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ELEMENTAL_FURY_POTENT_SPELLCASTING">
+	<element name="Potent Spellcasting" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ELEMENTAL_FURY_POTENT_SPELLCASTING">
 		<supports>Elemental Fury, Druid</supports>
 		<description>
 			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
@@ -401,7 +401,7 @@
 			<description level="15">When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet and you add +{{wisdom:modifier}} to the damage you deal.</description>
 		</sheet>
 	</element>
-	<element name="Primal Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ELEMENTAL_FURY_PRIMAL_STRIKE">
+	<element name="Primal Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ELEMENTAL_FURY_PRIMAL_STRIKE">
 		<supports>Elemental Fury, Druid</supports>
 		<description>
 			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form’s attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
@@ -413,7 +413,7 @@
 	</element>
 	
 	<!-- Druid Spells -->
-	<element name="Starry Wisp" type="Spell" source="Batav's Additions" id="ID_BATAV_SPELL_STARRY_WISP">
+	<element name="Starry Wisp" type="Spell" source="Batav's Additions 2024" id="ID_BATAV_SPELL_STARRY_WISP">
 		<supports>Bard, Druid</supports>
 		<description>
 			<p>You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.</p>
@@ -434,7 +434,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Fount of Moonlight" type="Spell" source="Batav's Additions" id="ID_BATAV_SPELL_FOUNT_OF_MOONLIGHT">
+	<element name="Fount of Moonlight" type="Spell" source="Batav's Additions 2024" id="ID_BATAV_SPELL_FOUNT_OF_MOONLIGHT">
 		<supports>Bard, Druid</supports>
 		<description>
 			<p>A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.</p>
@@ -455,7 +455,7 @@
 		</setters>
 	</element>
 	<!-- Druid Subclass -->
-	<element name="Circle of the Moon 2024" type="Archetype" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_CIRCLEOFTHEMOON">
+	<element name="Circle of the Moon 2024" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_CIRCLEOFTHEMOON">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of the Moon draw on the magic of the moon to transform themselves and to guard the wilds. Their order gathers under the full moon to share news and perform rituals. They wander the deepest parts of the wilderness, where they might go for weeks before crossing paths with another person, let alone another Druid.</p>
@@ -477,7 +477,7 @@
 			<grant type="Archetype Feature" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" />
 		</rules>
 	</element>
-	<element name="Circle Forms" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS">
+	<element name="Circle Forms" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS">
 		<description>
 			<p>You have learned ancient techniques that allow you to channel lunar magic when you assume a Wild Shape form, granting you the following benefits:</p>
 			<p class="indent">Challenge Rating. The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
@@ -504,7 +504,7 @@
 			<stat name="circle forms:thp" value="level:druid 2024" level="3" />
 		</rules>
 	</element>
-	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS">
+	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS">
 		<description>
 			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
 			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
@@ -537,7 +537,7 @@
 
 		</rules>
 	</element>
-	<element name="Improved Circle Forms" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS">
+	<element name="Improved Circle Forms" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS">
 		<description>
 			<p>While in a Wild Shape form, you gain the following benefits:</p>
 			<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
@@ -555,7 +555,7 @@
 			<grant type="Archetype Feature" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS" />
 		</rules>
 	</element>
-	<element name="Moonlight Step" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
+	<element name="Moonlight Step" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
 		<description>
 			<p>You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).</p>
@@ -569,7 +569,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Lunar Form" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
+	<element name="Lunar Form" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
 		<description>
 			<p>The power of the moon suffuses you, granting you the following benefits:</p>
 			<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
@@ -583,7 +583,7 @@
 	</element>
 
 	<!-- Improved Circle Forms -->
-	<element name="Lunar Radiance" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE">
+	<element name="Lunar Radiance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE">
 		<description display="false" />
 		<sheet>
 			<description>
@@ -594,7 +594,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Increased Toughness" type="Archetype Feature" source="Batav's Additions" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS">
+	<element name="Increased Toughness" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS">
 		<description display="false" />
 		<sheet>
 			<description>

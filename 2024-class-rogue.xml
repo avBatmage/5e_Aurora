@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-	<element name="Rogue 2024" type="Class" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_ROGUE">
+	<element name="Rogue 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_ROGUE">
 		<description>
 			<p>Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.</p>
 			<p class="indent">A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target—a notorious slaver—passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin’s blade cuts his throat before he can make a sound.</p>
@@ -142,7 +142,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Expertise" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_EXPERTISE">
+	<element name="Expertise" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_EXPERTISE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EXPERTISE</requirements>
 		<description>
 			<p> At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
@@ -156,7 +156,7 @@
 			<select type="Class Feature" name="Expertise (Rogue)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
 	</element>
-	<element name="Sneak Attack" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK">
+	<element name="Sneak Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SNEAK_ATTACK</requirements>
 		<description>
 			<p>Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
@@ -181,7 +181,7 @@
 			<stat name="sneak-attack:die" value="6" bonus="die" />
 		</rules>
 	</element>
-	<element name="Thieves’ Cant" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT">
+	<element name="Thieves’ Cant" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_THIEVES_CANT</requirements>
 		<description>
 			<p>During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
@@ -195,7 +195,7 @@
 			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
@@ -207,7 +207,7 @@
 			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
 		</rules>
 	</element>
-	<element name="Cunning Action" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION">
+	<element name="Cunning Action" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_CUNNING_ACTION</requirements>
 		<description>
 			<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
@@ -216,17 +216,17 @@
 			<description>You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</description>
 		</sheet>
 	</element>
-	<element name="Roguish Archetype" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE">
+	<element name="Roguish Archetype" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ROGUISH_ARCHETYPE</requirements>
 		<description>
-			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Batav's Additions for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
+			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Batav's Additions 2024 for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Archetype" name="Roguish Archetype" supports="Roguish Archetype" level="3"/>
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE">
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
@@ -242,7 +242,7 @@
 			<select type="Class Feature" name="Improvement Option (Rogue 19)" supports="Improvement Option,Rogue,19" level="19" />
 		</rules>
 	</element>
-	<element name="Uncanny Dodge" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
+	<element name="Uncanny Dodge" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_UNCANNY_DODGE</requirements>
 		<description>
 			<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
@@ -251,7 +251,7 @@
 			<description>When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you.</description>
 		</sheet>
 	</element>
-	<element name="Cunning Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE">
+	<element name="Cunning Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_UNCANNY_DODGE</requirements>
 		<description>
 			<p>You have developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack’s damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack’s damage before rolling.
@@ -273,25 +273,25 @@
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_WITHDRAW" />
 		</rules>
 	</element>
-	<element name="Poison" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON">
+	<element name="Poison" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON">
 		<description display="false" />
 		<sheet>
 			<description Cost="1d6">You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
-	<element name="Trip" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_TRIP">
+	<element name="Trip" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_TRIP">
 		<description display="false" />
 		<sheet>
 			<description Cost="1d6">If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</description>
 		</sheet>
 	</element>
-	<element name="Withdraw" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_WITHDRAW">
+	<element name="Withdraw" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_WITHDRAW">
 		<description display="false" />
 		<sheet>
 			<description Cost="1d6">Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 	</element>
-	<element name="Evasion" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_EVASION">
+	<element name="Evasion" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_EVASION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EVASION</requirements>
 		<description>
 			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
@@ -300,7 +300,7 @@
 			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
 		</sheet>
 	</element>
-	<element name="Reliable Talent" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT">
+	<element name="Reliable Talent" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_RELIABLE_TALENT</requirements>
 		<description>
 			<p>By 7th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10</p>
@@ -309,7 +309,7 @@
 			<description>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10</description>
 		</sheet>
 	</element>
-	<element name="Improved Cunning Strike" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_IMPROVEDCUNNINGSTRIKE">
+	<element name="Improved Cunning Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_IMPROVEDCUNNINGSTRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
 		<description>
 			<p>Starting at 11th level, You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
@@ -318,7 +318,7 @@
 			<description>You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</description>
 		</sheet>
 	</element>
-	<element name="Devious Strikes" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
+	<element name="Devious Strikes" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
 		<description>
 			<p>Starting at 14th level, You’ve practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
@@ -338,25 +338,25 @@
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_OBSCURE" />
 		</rules>
 	</element>
-	<element name="Daze" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_DAZE">
+	<element name="Daze" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_DAZE">
 		<description display="false" />
 		<sheet>
 			<description Cost="2d6">The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</description>
 		</sheet>
 	</element>
-	<element name="Knock Out" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_KNOCKOUT">
+	<element name="Knock Out" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_KNOCKOUT">
 		<description display="false" />
 		<sheet>
 			<description Cost="6d6">The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
-	<element name="Obscure" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_OBSCURE">
+	<element name="Obscure" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_OBSCURE">
 		<description display="false" />
 		<sheet>
 			<description Cost="3d6">The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="Slippery Mind" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND">
+	<element name="Slippery Mind" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SLIPPERY_MIND</requirements>
 		<description>
 			<p>By 15th level, your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.</p>
@@ -369,7 +369,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Elusive" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ELUSIVE">
+	<element name="Elusive" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_ELUSIVE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ELUSIVE</requirements>
 		<description>
 			<p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated.</p>
@@ -378,7 +378,7 @@
 			<description>No attack roll has advantage against you while you aren’t incapacitated.</description>
 		</sheet>
 	</element>
-	<element name="Stroke of Luck" type="Class Feature" source="Batav's Additions" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK">
+	<element name="Stroke of Luck" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_STROKE_OF_LUCK</requirements>
 		<description>
 			<p>You have an uncanny knack for succeeding when you need to. If you fail a d20 Test, you can turn the roll into a 20.</p>
@@ -405,7 +405,7 @@
 	<element name="Stroke of Luck Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_STROKE_OF_LUCK" />
 
 	<!-- Expertise -->
-	<element name="Skill Expertise (Acrobatics)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ACROBATICS">
+	<element name="Skill Expertise (Acrobatics)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ACROBATICS">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
 		<description>
@@ -419,7 +419,7 @@
 			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ANIMALHANDLING">
+	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ANIMALHANDLING">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
 		<description>
@@ -433,7 +433,7 @@
 			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ARCANA">
+	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ARCANA">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
 		<description>
@@ -447,7 +447,7 @@
 			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Athletics)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_ATHLETICS">
+	<element name="Skill Expertise (Athletics)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_ATHLETICS">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 		<description>
@@ -461,7 +461,7 @@
 			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Deception)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_DECEPTION">
+	<element name="Skill Expertise (Deception)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_DECEPTION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
 		<description>
@@ -475,7 +475,7 @@
 			<stat name="deception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (History)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_HISTORY">
+	<element name="Skill Expertise (History)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_HISTORY">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
 		<description>
@@ -489,7 +489,7 @@
 			<stat name="history:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Insight)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INSIGHT">
+	<element name="Skill Expertise (Insight)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INSIGHT">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
 		<description>
@@ -503,7 +503,7 @@
 			<stat name="insight:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Intimidation)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INTIMIDATION">
+	<element name="Skill Expertise (Intimidation)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INTIMIDATION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
 		<description>
@@ -517,7 +517,7 @@
 			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Investigation)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_INVESTIGATION">
+	<element name="Skill Expertise (Investigation)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_INVESTIGATION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
 		<description>
@@ -531,7 +531,7 @@
 			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Medicine)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_MEDICINE">
+	<element name="Skill Expertise (Medicine)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_MEDICINE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
 		<description>
@@ -545,7 +545,7 @@
 			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Nature)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_NATURE">
+	<element name="Skill Expertise (Nature)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_NATURE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
 		<description>
@@ -559,7 +559,7 @@
 			<stat name="nature:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Perception)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERCEPTION">
+	<element name="Skill Expertise (Perception)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERCEPTION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
 		<description>
@@ -573,7 +573,7 @@
 			<stat name="perception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Performance)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERFORMANCE">
+	<element name="Skill Expertise (Performance)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERFORMANCE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
 		<description>
@@ -587,7 +587,7 @@
 			<stat name="performance:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Persuasion)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_PERSUASION">
+	<element name="Skill Expertise (Persuasion)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_PERSUASION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
 		<description>
@@ -601,7 +601,7 @@
 			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Religion)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_RELIGION">
+	<element name="Skill Expertise (Religion)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_RELIGION">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
 		<description>
@@ -615,7 +615,7 @@
 			<stat name="religion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND">
+	<element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
 		<description>
@@ -629,7 +629,7 @@
 			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Stealth)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_STEALTH">
+	<element name="Skill Expertise (Stealth)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_STEALTH">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
 		<description>
@@ -643,7 +643,7 @@
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Skill Expertise (Survival)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_SKILL_SURVIVAL">
+	<element name="Skill Expertise (Survival)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_SKILL_SURVIVAL">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
 		<description>
@@ -657,7 +657,7 @@
 			<stat name="survival:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Tool Expertise (Thieves’ Tools)" type="Class Feature" source="Batav's Additions" id="ID_EXPERTISE_TOOL_THIEVES_TOOLS">
+	<element name="Tool Expertise (Thieves’ Tools)" type="Class Feature" source="Batav's Additions 2024" id="ID_EXPERTISE_TOOL_THIEVES_TOOLS">
 		<supports>Expertise, Tool, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS</requirements>
 		<description>

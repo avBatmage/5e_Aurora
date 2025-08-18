@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Epic Boon Feats</name>
-		<description>Epic Boon Feats from the 2024 Batav's Additions.</description>
+		<description>Epic Boon Feats from the 2024 Batav's Additions 2024.</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="2024-epic-boon-feats.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-epic-boon-feats.xml" />
 		</update>
 	</info>
 
-	<element name="Expertise" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_EXPERTISE">
+	<element name="Expertise" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_EXPERTISE">
 		<prerequisite>Wizard</prerequisite>
 		<requirements>[class:wizard]</requirements>
 		<description>
@@ -25,7 +25,7 @@
 			<select type="Proficiency" name="Proficiency, Expertise" supports="Skill" />
 		</rules>
 	</element>
-	<element name="Boon of Combat Prowess" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_COMBAT_PROWESS">
+	<element name="Boon of Combat Prowess" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_COMBAT_PROWESS">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -41,7 +41,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Dimensional Travel" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_DIMENSIONAL_TRAVEL">
+	<element name="Boon of Dimensional Travel" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_DIMENSIONAL_TRAVEL">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -57,7 +57,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Energy Resistance" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_ENERGY_RESISTANCE">
+	<element name="Boon of Energy Resistance" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_ENERGY_RESISTANCE">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -75,7 +75,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Fate" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_FATE">
+	<element name="Boon of Fate" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_FATE">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -91,7 +91,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Fortitude" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_FORTITUDE">
+	<element name="Boon of Fortitude" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_FORTITUDE">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -107,7 +107,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Irresistible Offense" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_">
+	<element name="Boon of Irresistible Offense" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -125,7 +125,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="ID_BATAV_EPIC_BOON_ASI_STRENGTH|ID_BATAV_EPIC_BOON_ASI_DEXTERITY" />
 		</rules>
 	</element>
-	<element name="Boon of Recovery" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_RECOVERY">
+	<element name="Boon of Recovery" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_RECOVERY">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -143,7 +143,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Skill" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_SKILL">
+	<element name="Boon of Skill" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_SKILL">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -160,7 +160,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Speed" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_SPEED">
+	<element name="Boon of Speed" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_SPEED">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -177,7 +177,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Spell Recall" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_SPELL_RECALL">
+	<element name="Boon of Spell Recall" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_SPELL_RECALL">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -193,7 +193,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="ID_BATAV_FEAT_ASI_INTELLIGENCE|ID_BATAV_FEAT_ASI_WISDOM|ID_BATAV_FEAT_ASI_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Boon of the Night Spirit" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_THE_NIGHT_SPIRIT">
+	<element name="Boon of the Night Spirit" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_THE_NIGHT_SPIRIT">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -211,7 +211,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, Epic Boon" supports="Epic Boon" />
 		</rules>
 	</element>
-	<element name="Boon of Truesight" type="Feat" source="Batav's Additions" id="ID_BATAV_FEAT_BOON_OF_">
+	<element name="Boon of Truesight" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>
 		<description>
@@ -230,7 +230,7 @@
 
 
 	<!--Feat Ability Score Increase-->
-	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_EPIC_BOON_ASI_STRENGTH">
+	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_EPIC_BOON_ASI_STRENGTH">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
@@ -243,7 +243,7 @@
 			<stat name="strength" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_FEAT_ASI_DEXTERITY">
+	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_FEAT_ASI_DEXTERITY">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
@@ -256,7 +256,7 @@
 			<stat name="dexterity" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_FEAT_ASI_CONSTITUTION">
+	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_FEAT_ASI_CONSTITUTION">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
@@ -269,7 +269,7 @@
 			<stat name="constitution" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_FEAT_ASI_INTELLIGENCE">
+	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_FEAT_ASI_INTELLIGENCE">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
@@ -282,7 +282,7 @@
 			<stat name="intelligence" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_FEAT_ASI_WISDOM">
+	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_FEAT_ASI_WISDOM">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
@@ -295,7 +295,7 @@
 			<stat name="wisdom" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="Batav's Additions" id="ID_BATAV_FEAT_ASI_CHARISMA">
+	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="Batav's Additions 2024" id="ID_BATAV_FEAT_ASI_CHARISMA">
 		<compendium display="false" />
 		<supports>Epic Boon</supports>
 		<description>
