@@ -3,7 +3,7 @@
 		<name>2024 Weapon Masteries</name>
 		<description>The Weapon Masteries from the 2024 Players' Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/2024-weapon-masteries.xml" />
 		</update>
 	</info>

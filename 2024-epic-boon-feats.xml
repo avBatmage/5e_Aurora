@@ -4,27 +4,11 @@
 		<name>Epic Boon Feats</name>
 		<description>Epic Boon Feats from the 2024 Batav's Additions 2024.</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-epic-boon-feats.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-epic-boon-feats.xml" />
 		</update>
 	</info>
 
-	<element name="Expertise" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_EXPERTISE">
-		<prerequisite>Wizard</prerequisite>
-		<requirements>[class:wizard]</requirements>
-		<description>
-			<ul>
-				<li>One Expertise</li>
-				<li> </li>
-			</ul>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-		<rules>
-			<select type="Proficiency" name="Proficiency, Expertise" supports="Skill" />
-		</rules>
-	</element>
 	<element name="Boon of Combat Prowess" type="Feat" source="Batav's Additions 2024" id="ID_BATAV_FEAT_BOON_OF_COMBAT_PROWESS">
 		<prerequisite>level 19</prerequisite>
 		<requirements>[level:19]</requirements>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Ranger 2024</name>
+		<name>2024 Ranger</name>
 		<description>The Ranger class from the 2024 Player's Handbook.</description>
-		<update version="0.0.3">
-			<file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-ranger-2024.xml" />
+		<update version="0.0.4">
+			<file name="2024-class-ranger.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-ranger.xml" />
 		</update>
 	</info>
 
-	<element name="Ranger 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_RANGER_2024">
+	<element name="2024 Ranger" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_2024_RANGER">
 		<description>
 			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
 			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
@@ -205,21 +205,20 @@
 	</element>
 	<element name="Favored Enemy" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
-			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
-			<p class="indent">You are adept at focusing on a single foe. You can apply your Hunter's Mark as a Bonus Action.</p>
-			<p class="indent">You can cast it twice at level 1, and you regain all expended uses of this ability when you finish a Long Rest.</p>
-			<p class="indent">This number increases with your Proficiency Bonus from levels in Ranger as you level up.</p>
+			<p>Beginning at 1st level, You always have the Hunter’s Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
+			<p class="indent">The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
-			<description level="3">You choose a creature you can see within 90 ft and physically indicate towards them to mystically mark it as your quarry. This mark lasts for one hour or until you lose concentration, although it can be concentrated on alongside other spells. Until the ability ends, you deal an extra 1d{{hunters mark:dice}} damage to the target whenever you hit it with a Physical attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can mark a new creature as a Bonus Action on a subsequent turn of yours.</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest" >
+			<description level="1">You can cast the Hunter’s Mark Spell without expending a spell slot. Your hunter's mark deals d{{hunters mark:dice}} force damage and you can concentrate on it alongside other concentration features.</description>
+			<description level="13">You can cast the Hunter’s Mark Spell without expending a spell slot. Your hunter's mark deals d{{hunters mark:dice}} force damage and no longer requires concentration.</description>
 		</sheet>
 		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="1" spellcasting="Ranger" prepared="true" />
 			<stat name="hunters mark:dice" value="6" bonus="hunters mark" />
 			<stat name="hunters mark:dice" value="8" bonus="hunters mark" level="13" />
 			<stat name="hunters mark:dice" value="10" bonus="hunters mark" level="20" />
 		</rules>
 	</element>
-	
 	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
@@ -229,7 +228,7 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
 		</rules>
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
@@ -423,7 +422,7 @@
 	</element>
 
 	<!--Hunter-->
-	<element name="Hunter 2024" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
+	<element name="2024 Hunter" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
@@ -539,7 +538,7 @@
 		</sheet>
 	</element>
 	<!--Beast Master-->
-	<element name="Beast Master 2024" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
+	<element name="2024 Beast Master" type="Archetype" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPE_RANGER_BEAST_MASTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
@@ -576,10 +575,10 @@
 			<stat name="companion:ac" value="proficiency" />
 			<stat name="companion:attack" value="proficiency" />
 			<stat name="companion:damage" value="proficiency" />			
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
 			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
 		</rules>
 	</element>
@@ -600,7 +599,7 @@
 		</description>
 		<sheet>
 			<description>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.
-			In addition, the first time each turn it hits a creature under the effect of your Hunter’s Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.</description>
+			In addition, the first time each turn it hits a creature under the effect of your Hunter’s Mark spell, the beast deals d{{hunters mark:dice}} extra Force damage.</description>
 		</sheet>
 	</element>
 	<element name="Share Spells" type="Archetype Feature" source="Batav's Additions 2024" id="ID_BATAV_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">

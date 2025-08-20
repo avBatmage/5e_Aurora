@@ -4,12 +4,12 @@
 		<name>Items</name>
 		<description></description>
 		<author url="https://github.com/avBatmage">Batav</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/weapons.xml" />
 		</update>
 	</info>
 	<!-- Magic Weapons -->
-	<element name="Flame's Bite" type="Magic Item" source="Batav" id="ID_BATAV_FLAMES_BITE">
+	<element name="Flame's Bite" type="Magic Item" source="Batav's Additions" id="ID_BATAV_MAGIC_ITEM_WEAPON_FLAMES_BITE">
 		<description>
 			<p>This dagger has a bright blade with a faint deep red glow hinting at its danger.</p>
 			<p class="indent">You gain a +2 bonus to attack rolls and damage rolls. The blade also deals +5 fire damage and It can set common objects on fire.</p>
@@ -24,7 +24,7 @@
 			<set name="enhancement">2</set>
 		</setters>
 	</element>
-	<element name="Gods Fury" type="Magic Item" source="Batav" id="ID_BATAV_GODS_FURY">
+	<element name="Gods Fury" type="Magic Item" source="Batav's Additions" id="ID_BATAV_MAGIC_ITEM_WEAPON_GODS_FURY">
 		<description>
 			<p>This dagger has a black blade with a silver lining at it's edge and a jagged blue bolt engraved into the center.</p>
 			<p class="indent">You gain a +2 bonus to attack rolls and damage rolls. The blade also deals 1d6 lightning damage and will paralyse an enemy upon rolling a 20 to-hit.</p>

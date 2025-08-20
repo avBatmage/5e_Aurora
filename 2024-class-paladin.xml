@@ -4,12 +4,12 @@
 		<name>2024 Paladin</name>
 		<description>The Paladin class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
 		</update>
 	</info>
 
-	<element name="2024 Paladin" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_PALADIN">
+	<element name="2024 Paladin" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_2024_PALADIN">
 		<description>
 			<p>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man’s wounds knit closed, and his eyes open wide with amazement.</p>
 			<p class="indent">A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.</p>
@@ -191,30 +191,30 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-			<stat name="2024 paladin:spellcasting:slots:1" value="2" level="1" />
-			<stat name="2024 paladin:spellcasting:slots:1" value="1" level="3" />
-			<stat name="2024 paladin:spellcasting:slots:1" value="1" level="5" />
-			<stat name="2024 paladin:spellcasting:slots:2" value="2" level="5" />
-			<stat name="2024 paladin:spellcasting:slots:2" value="1" level="7" />
-			<stat name="2024 paladin:spellcasting:slots:3" value="2" level="9" />
-			<stat name="2024 paladin:spellcasting:slots:3" value="1" level="11" />
-			<stat name="2024 paladin:spellcasting:slots:4" value="1" level="13" />
-			<stat name="2024 paladin:spellcasting:slots:4" value="1" level="15" />
-			<stat name="2024 paladin:spellcasting:slots:4" value="1" level="17" />
-			<stat name="2024 paladin:spellcasting:slots:5" value="1" level="17" />
-			<stat name="2024 paladin:spellcasting:slots:5" value="1" level="19" />
-			<stat name="2024 paladin:spellcasting:prepare" value="2" level="1" />
-			<stat name="2024 paladin:spellcasting:prepare" value="3" level="2" />
-			<stat name="2024 paladin:spellcasting:prepare" value="4" level="3" />
-			<stat name="2024 paladin:spellcasting:prepare" value="5" level="4" />
-			<stat name="2024 paladin:spellcasting:prepare" value="6" level="5" />
-			<stat name="2024 paladin:spellcasting:prepare" value="7" level="7" />
-			<stat name="2024 paladin:spellcasting:prepare" value="8" level="9" />
-			<stat name="2024 paladin:spellcasting:prepare" value="10" level="11" />
-			<stat name="2024 paladin:spellcasting:prepare" value="11" level="13" />
-			<stat name="2024 paladin:spellcasting:prepare" value="12" level="15" />
-			<stat name="2024 paladin:spellcasting:prepare" value="14" level="17" />
-			<stat name="2024 paladin:spellcasting:prepare" value="15" level="19" />
+			<stat name="paladin:spellcasting:slots:1" value="2" level="1" />
+			<stat name="paladin:spellcasting:slots:1" value="1" level="3" />
+			<stat name="paladin:spellcasting:slots:1" value="1" level="5" />
+			<stat name="paladin:spellcasting:slots:2" value="2" level="5" />
+			<stat name="paladin:spellcasting:slots:2" value="1" level="7" />
+			<stat name="paladin:spellcasting:slots:3" value="2" level="9" />
+			<stat name="paladin:spellcasting:slots:3" value="1" level="11" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="13" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="15" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="17" />
+			<stat name="paladin:spellcasting:slots:5" value="1" level="17" />
+			<stat name="paladin:spellcasting:slots:5" value="1" level="19" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="1" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="2" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="3" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="4" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="5" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="7" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="9" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="11" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="13" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="15" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="17" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="19" />
 		</rules>
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_WEAPON_MASTERY">
@@ -226,7 +226,7 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
 		</rules>
 	</element>
 	<element name="Fighting Style" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
@@ -261,24 +261,37 @@
 	<element name="Paladin's Smite" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_PALADINS_SMITE">
 		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE</requirements>
 		<description>
-			<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.</p>
+			<p>Starting at 2nd level, You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.</p>
 		</description>
-		<sheet>
-			<description>When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.</description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Divine Smite spell prepared and you can cast it without expending a spell slot.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINE_SMITE" level="2" spellcasting="Paladin" prepared="true" />
+		</rules>
+
 	</element>
 	<element name="Channel Divinity" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
 		<description>
-			<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow</i> spell.</p>
-			<p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+			<p>At level 3, You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class’s Channel Divinity, you choose which effect from this class to create.</p>
+			<p class="indent">You can use this class’s Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.</p>
+			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class’s Spellcasting feature.</p>
 		</description>
-		<sheet usage="{{channel divinity:count}}/Long Rest" action="Action">
-			<description>You can open your awareness to detect presence of strong evil. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated.</description>
+		<sheet usage="{{channel divinity:count}}/Long Rest">
 		</sheet>
 		<rules>
+			<grant Type="Class Feature" ID="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE" />
 			<stat name="channel divinity:count" value="2" level="3" />
 			<stat name="channel divinity:count" value="1" level="11" />
 		</rules>
+	</element>
+	<element name="Divine Sense" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
+		<description>
+			<p>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Bonus Action">
+			<description>You can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</description>
+		</sheet>
 	</element>
 	<element name="Paladin's Subclass" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_PALADIN_PALADIN_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SACRED_OATH</requirements>
@@ -332,7 +345,7 @@
 			<p>You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared.</p>
 			<p>You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.</p>
 		</description>
-		<sheet Action="Action" Usage="1/Long Rest">
+		<sheet action="Action" usage="1/Long Rest">
 			<description>As an Action you can cast the Find Steed spell without expending a spell slot.</description>
 		</sheet>
 		<rules>
@@ -362,7 +375,7 @@
 			<p>As a Magic action, you can expend one use of this class’s Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself.</p>
 			<p>Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p>
 		</description>
-		<sheet Action="Action" Usage="Channel Divinity">
+		<sheet action="Action" usage="Channel Divinity">
 			<description>As you present your Holy Symbol or weapon, you can target {{charisma:modifier}} creatures that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</description>
 		</sheet>
 		<rules>
@@ -399,6 +412,30 @@
 			<description>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don’t also restore Hit Points to the creature.</description>
 		</sheet>
 	</element>
+
+	<!--Spells-->
+	<element name="Divine Smite" type="Spell" source="Batav's Additions 2024" id="ID_PHB_SPELL_DIVINE_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 
 	<!--Feature Replacement Grants-->
 	<element name="Divine Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />

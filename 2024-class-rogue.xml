@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Rogue 2024</name>
-		<update version="0.0.1">
-			<file name="class-rogue-2024.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-rogue-2024.xml" />
+		<name>2024 Rogue</name>
+		<update version="0.0.2">
+			<file name="2024-class-rogue.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-rogue.xml" />
 		</update>
 	</info>
 
-	<element name="Rogue 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_ROGUE">
+	<element name="2024 Rogue" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_2024_ROGUE">
 		<description>
 			<p>Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.</p>
 			<p class="indent">A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target—a notorious slaver—passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin’s blade cuts his throat before he can make a sound.</p>
@@ -204,7 +204,7 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
 		</rules>
 	</element>
 	<element name="Cunning Action" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION">
@@ -265,7 +265,8 @@
 				Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet>
-			<description>You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.</description>
+			<description usage="1/Sneak Attack">When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects, removing the cost from your Sneak Attack damage.</description>
+			<description usage="2/Sneak Attack" level="11">When you deal Sneak Attack damage, you can add two of the following Cunning Strike effects, removing the cost from your Sneak Attack damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON" />
@@ -276,19 +277,19 @@
 	<element name="Poison" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_POISON">
 		<description display="false" />
 		<sheet>
-			<description Cost="1d6">You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.</description>
+			<description usage="Cost: 1d6">You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
 	<element name="Trip" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_TRIP">
 		<description display="false" />
 		<sheet>
-			<description Cost="1d6">If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</description>
+			<description usage="Cost: 1d6">If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</description>
 		</sheet>
 	</element>
 	<element name="Withdraw" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_CUNNINGSTRIKE_WITHDRAW">
 		<description display="false" />
 		<sheet>
-			<description Cost="1d6">Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</description>
+			<description usage="Cost: 1d6">Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 	</element>
 	<element name="Evasion" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_EVASION">
@@ -314,9 +315,7 @@
 		<description>
 			<p>Starting at 11th level, You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
 		</description>
-		<sheet>
-			<description>You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</description>
-		</sheet>
+		<sheet display="false" />
 	</element>
 	<element name="Devious Strikes" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
@@ -330,7 +329,7 @@
 				Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>The following effects are now among your Cunning Strike options.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_DAZE" />
@@ -341,19 +340,19 @@
 	<element name="Daze" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_DAZE">
 		<description display="false" />
 		<sheet>
-			<description Cost="2d6">The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</description>
+			<description usage="Cost: 2d6">The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</description>
 		</sheet>
 	</element>
 	<element name="Knock Out" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_KNOCKOUT">
 		<description display="false" />
 		<sheet>
-			<description Cost="6d6">The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</description>
+			<description usage="Cost: 6d6">The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
 	<element name="Obscure" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES_OBSCURE">
 		<description display="false" />
 		<sheet>
-			<description Cost="3d6">The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</description>
+			<description usage="Cost: 3d6">The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</description>
 		</sheet>
 	</element>
 	<element name="Slippery Mind" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND">

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Barbarian 2024</name>
+		<name>2024 Barbarian</name>
 		<description>The Barbarian class from the 2024 Players' Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.2">
-			<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/class-barbarian-2024.xml" />
+			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/2024-class-barbarian.xml" />
 		</update>
 	</info>
-	<element name="Barbarian 2024" type="Class" source="Batav's Additions 2024" id="ID_BATAV_CLASS_BARBARIAN">
+	<element name="2024 Barbarian" type="Class" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_2024_BARBARIAN">
 		<description>
 			<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people’s elk herd.</p>
 			<p class="indent">A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.</p>
@@ -77,24 +77,24 @@
 				<tr><td>19th</td><td>6</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>20th</td><td>Unlimited</td><td>+4</td><td class="left">Primal Champion</td></tr>
 			</table>
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_RAGE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE"/>
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" />
-			<div element="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RAGE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE"/>
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" />
+			<div element="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" />
 		</description>
 		<sheet display="false">
 			<description>A fierce warrior of primitive background who can enter a battle rage.</description>
@@ -112,24 +112,24 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
 			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill,Barbarian" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RAGE" level="1" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" level="1" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" level="1" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" level="2" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" level="3" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" level="3" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" level="4" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" level="5" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" level="5" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" level="7" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" level="9" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" level="11" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" level="13" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE" level="15" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" level="17" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" level="18" />
-			<grant type="Class Feature" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RAGE" level="1" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" level="1" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" level="1" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" level="2" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" level="3" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" level="3" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" level="5" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" level="7" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" level="9" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" level="11" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" level="13" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE" level="15" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" level="17" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" level="18" />
+			<grant type="Class Feature" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
 		</rules>
 		<multiclass id="ID_BATAV_MULTICLASS_BARBARIAN">
 			<prerequisite>Strength 13</prerequisite>
@@ -145,7 +145,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RAGE">
+	<element name="Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RAGE</requirements>
 		<description>
 			<p>You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren’t wearing Heavy armor.</p>
@@ -185,7 +185,7 @@
 			<stat name="barbarian rage:damage" value="1" level="16" />
 		</rules>
 	</element>
-	<element name="Unarmored Defense" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
+	<element name="Unarmored Defense" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE</requirements>
 		<description>
 			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
@@ -205,7 +205,7 @@
 			<stat name="ac:calculation" value="ac:unarmored defense barbarian" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Barbarian)" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
@@ -214,10 +214,10 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="2"/>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
 		</rules>
 	</element>
-	<element name="Reckless Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
+	<element name="Reckless Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK</requirements>
 		<description>
 			<p>You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
@@ -226,7 +226,7 @@
 			<description>When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</description>
 		</sheet>
 	</element>
-	<element name="Danger Sense" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
+	<element name="Danger Sense" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE</requirements>
 		<description>
 			<p>You gain an uncanny sense of when things aren’t as they should be, giving you an edge when you dodge perils.</p>
@@ -239,7 +239,7 @@
 			<!--<stat name="advantage:Dexterity Saving Throws" condition="against effects that you can see, such as traps and spells. While not blinded, deafened, or incapacitated." />-->
 		</rules>
 	</element>
-	<element name="Primal Path" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH">
+	<element name="Primal Path" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
@@ -249,7 +249,7 @@
 			<select type="Archetype" name="Primal Path" supports="Primal Path" level="3" />
 		</rules>
 	</element>
-	<element name="Primal Knowledge" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
+	<element name="Primal Knowledge" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
@@ -262,7 +262,7 @@
 			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="1" supports="Skill,Barbarian" level="3"/>
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
@@ -277,7 +277,7 @@
 			<select type="Class Feature" name="Improvement Option (Barbarian 19)" supports="Improvement Option,Barbarian,19" level="19" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
@@ -289,7 +289,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Fast Movement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
+	<element name="Fast Movement" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT</requirements>
 		<description>
 			<p>Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.</p>
@@ -305,7 +305,7 @@
 			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
-	<element name="Feral Instinct" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
+	<element name="Feral Instinct" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
 			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls. As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p> 
@@ -317,7 +317,7 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
 	</element>
-	<element name="Brutal Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
+	<element name="Brutal Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
 			<p>If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn’t have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.</p>
@@ -344,7 +344,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Relentless Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
+	<element name="Relentless Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE</requirements>
 		<description>
 			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw.If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
@@ -358,15 +358,16 @@
 			<stat name="relentles:hp" value="level:barbarian" />
 		</rules>
 	</element>
-	<element name="Improved Brutal Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE">
+	<element name="Improved Brutal Strike" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
 			<p>You have honed new ways to attack furiously. The following effects are now among your Brutal Strike options.</p>
 			<p class="indent">Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can’t make Opportunity Attacks until the start of your next turn.</p>
 			<p class="indent">Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.</p>
 		</description>
+		<sheet display="False"/>
 	</element>
-	<element name="Persistant Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
+	<element name="Persistant Rage" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG</requirements>
 		<description>
 			<p>When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can’t do so again until you finish a Long Rest.</p>
@@ -376,13 +377,14 @@
 			<description usage="1/Long Rest">When you roll Initiative, you can regain all expended uses of Rage.</description>
 		</sheet>
 	</element>
-	<element name="Improved Brutal Strike Two" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO">
+	<element name="Improved Brutal Strike Two" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
 			<p>The extra damage your Brutal Strike deals increases to 2d10. In addition, you can use two different Brutal Strike effects when you use your Brutal Strike feature.</p>
 		</description>
+		<sheet display="False"/>
 	</element>
-	<element name="Indomitable Might" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
+	<element name="Indomitable Might" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INDOMITABLE_MIGHT</requirements>
 		<description>
 			<p>If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.</p>
@@ -391,7 +393,7 @@
 			<description>If your total for a Strength check or saving throw is less than {{strength:score}}, you can use {{strength:score}} place of the total.</description>
 		</sheet>
 	</element>
-	<element name="Primal Champion" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
+	<element name="Primal Champion" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION</requirements>
 		<description>
 			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</p>

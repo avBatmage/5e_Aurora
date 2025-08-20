@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<!-- Wondrous -->
-	<element name="Charmed Hat" type="Magic Item" source="Batav's Additions" id="ID_BATAV_CHARMED_HAT">
+	<element name="Charmed Hat" type="Magic Item" source="Batav's Additions" id="ID_BATAV_MAGIC_ITEM_CHARMED_HAT">
 		<description>
 			<p>
 		        This tall, furred hat set with a silver pin is often worn by merchants to aid in negotiations. While worn, the wearer gains a +1 bonus to Intelligence, Wisdom, and Charisma ability checks and saving throws. </p>
