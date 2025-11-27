@@ -18,12 +18,12 @@
             <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and your Charisma score increases by 1.</p>
             <p class="indent"><strong><em>Age.</em></strong> Adrets reach maturity at about the same age as humans, but can live to around 150 years old.</p>
             <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
-            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall). Adrets are similar in height and build to humans, though they weigh slightly less on average.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Adrets are similar in height and build to humans, though they weigh slightly less on average. Your size is Medium.</p>
             <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet, and you have a climbing speed equal to your walking speed. It does not allow you to climb a completely flat surface. </p>
-            <p class="indent"><strong><em>Mountainous Resistance.</em></strong> You have resistance to Cold damage. Used to living in the mountains' cold atmosphere, You can tolerate below freezing temperatures. </p>
-            <p class="indent"><strong><em>Mountain Climber.</em></strong> You ignore difficult terrain caused by uneasy slopes, ice, snow, and rocks.</p>
             <p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics and Perception skill. </p>
             <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other language of your choice that you and your DM agree is appropriate for your character.</p>
+            <p class="indent"><strong><em>Mountain Climber.</em></strong> You ignore difficult terrain caused by uneasy slopes, ice, snow, and rocks.</p>
+            <p class="indent"><strong><em>Mountainous Resistance.</em></strong> You have resistance to Cold damage. Used to living in the mountains' cold atmosphere, You can tolerate below freezing temperatures. </p>
         </description>
         <sheet display="false" />
         <rules>
@@ -42,8 +42,8 @@
 			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MOUNTAINOUS_RESISTANCE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MOUNTAIN_CLIMBER" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_MOUNTAINOUS_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_MOUNTAIN_CLIMBER" />
         </rules>
     </element>
 	<element name="Mountainous Resistance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_MOUNTAINOUS_RESISTANCE">
@@ -76,7 +76,7 @@
             <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Charisma score increases by 1.</p>
             <p class="indent"><strong><em>Age.</em></strong> Canors reach maturity once they hit double digits in their age, and only live to around 80. Size. Canors are usually a bit taller and bulkier than humans. Your size is Medium.</p>
             <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
-            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species</p>
+            <p class="indent"><strong><em>Size.</em></strong> Canors are usually a bit taller and bulkier than humans. Your size is Medium.</p>
             <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
             <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
 			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics skill. </p>
@@ -100,9 +100,9 @@
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PURE_LOYALTY" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANINE_BITE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LOYAL_PROTECTION" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_PURE_LOYALTY" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_CANINE_BITE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_LOYAL_PROTECTION" />
         </rules>
     </element>
 	<element name="Pure Loyalty" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_PURE_LOYALTY">
@@ -118,7 +118,7 @@
 			<p>Your teeth are pointed like a dog's, and they act as a natural weapon which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. I you crit with this attack, you can spend your bonus action to automatically grapple the creature you are biting. This stops you from gaining the benefits of any features that allow you to attack multiple times, such as Extra Attack.</p>
 		</description>
 		<sheet>
-			<description>Your teeth are pointed like a dog's, and they act as a natural weapon which you can use to make unarmed strikes. It deals piercing damage equal to 1d4 + your Strength modifier. On a crit you can spend your bonus action to automatically grapple the creature you are biting and end your action regardless of how many attacks you could make.</description>
+			<description>Your teeth are pointed like a dog's, and they act as a natural weapon which you can use to make unarmed strikes. It deals 1d4 + {{strength:modifier}} piercing damage. On a crit you can spend your bonus action to automatically grapple the creature you are biting and end your action regardless of how many attacks you could make.</description>
 		</sheet>
 	</element>
 	<element name="Loyal Protection" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LOYAL_PROTECTION">
@@ -152,9 +152,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			
 			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
-			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Capra)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Capra)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Language (Capra)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
@@ -162,7 +160,7 @@
         </rules>
     </element>
 	<!--Subraces-->
-	<element name="Mark of Jurik" type="Sub Race" source="Player’s Handbook" id="ID_BATAV_SUB_RACE_MARK_OF_JURIK">
+	<element name="Mark of Jurik" type="Sub Race" source="Batav's Additions" id="ID_BATAV_SUB_RACE_MARK_OF_JURIK">
 		<supports>Capra</supports>
 		<description>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
@@ -183,15 +181,15 @@
 			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d4+1 points of Temporary Sanity.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d4+1 points of Temporary Sanity.</description>
+			<description>Once per Long Rest, you can choose {{proficiency}} creatures within 5 feet of you and grant them 1d4+1 points of Temporary Sanity.</description>
 		</sheet>
 	</element>
 	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_JURIK_INNATE_SPELLCASTING">
 		<description>
-			<p>You know the <i>Protection From Good and Evil</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+			<p>You know the <i>Protection From Good and Evil</i> spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the Protection From Good and Evil spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+			<description>You know the Protection From Good and Evil spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
@@ -219,7 +217,7 @@
 			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1 day worth of nourishment. Additionally, you have proficiency with Cook's Utensils.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1 day worth of nourishment. Additionally, you have proficiency with Cook's Utensils.</description>
+			<description>Once per Long Rest, you can choose {{proficiency}} creatures within 5 feet of you and grant them 1 day worth of nourishment. Additionally, you have proficiency with Cook's Utensils.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
@@ -227,10 +225,10 @@
 	</element>
 	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_NEMIT_INNATE_SPELLCASTING">
 		<description>
-			<p>You know the <i>Goodberry</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+			<p>You know the <i>Goodberry</i> spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the Goodberry spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+			<description>You know the Goodberry spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" />
@@ -259,15 +257,15 @@
 			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d8 + your Proficiency Bonus points of Temporary Hit Points.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d8 + your Proficiency Bonus points of Temporary Hit Points.</description>
+			<description>Once per Long Rest, you can choose {{proficiency}} creatures within 5 feet of you and grant them 1d8+{{proficiency}} Temporary Hit Points.</description>
 		</sheet>
 	</element>
 	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_KU_INNATE_SPELLCASTING">
 		<description>
-			<p>You know the <i>Cure Wounds</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+			<p>You know the <i>Cure Wounds</i> spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the Cure Wounds spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+			<description>You know the Cure Wounds spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
@@ -293,21 +291,26 @@
 	</element>
 	<element name="Hallowtide's Mercy" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDES_FRIGHT">
 		<description>
-			<p>Once per Long Rest you can choose a number of creatures within 30 feet of you that can see you equal to your proficiency bonus and force them to make a Wisdom saving theow, the DC being equai to 8 + your Charisma modifier + your Proficiency Bonus. Any creature that fails the saving throw takes 1d4 points of insanity.</p>
+			<p>Once per Long Rest you can choose a number of creatures within 30 feet of you that can see you equal to your proficiency bonus and force them to make a Wisdom saving throw, the DC being equal to 8 + your Charisma modifier + your Proficiency Bonus. Any creature that fails the saving throw takes 1d4 points of insanity.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest you can choose a number of creatures within 30 feet of you that can see you equal to your proficiency bonus and force them to make a Wisdom saving theow, the DC being equai to 8 + your Charisma modifier + your Proficiency Bonus. Any creature that fails the saving throw takes 1d4 points of insanity.</description>
+			<description>Once per Long Rest you can choose {{proficiency}} creatures within 30 feet of you that can see you and force them to make a DC {{hallowtides mercy:dc}} Wisdom saving throw. Any creature that fails the saving throw takes 1d4 points of insanity.</description>
 		</sheet>
+		<rules>
+			<stat name="hallowtides mercy:dc" value="8" />
+            <stat name="hallowtides mercy:dc" value="proficiency" />
+            <stat name="hallowtides mercy:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDE_INNATE_SPELLCASTING">
 		<description>
-			<p>You know the <i>Cause Fear</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+			<p>You know the <i>Cause Fear</i> spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the Cause Fear spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+			<description>You know the Cause Fear spell, and can cast it once per Long Rest without expending a spell slot or material components. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_CAUSE_FEAR" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" />
 		</rules>
 	</element>
 	<!--/Subraces-->
@@ -394,11 +397,16 @@
     </element>
 	<element name="Mothwing Dust" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_MOTHWING_DUST">
 		<description>
-			<p>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a Constitution saving throw (DC equals 8 + your Proficiency Bonus + your Constitution modifier) or be blinded intil the start of your next turn.</p>
+			<p>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a Constitution saving throw (DC equals 8 + your Proficiency Bonus + your Constitution modifier) or be blinded intil the end of your next turn.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a Constitution saving throw (DC equals 8 + your Proficiency Bonus + your Constitution modifier) or be blinded intil the start of your next turn.</description>
+			<description>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a DC {{mothwing dust:dc}} Constitution saving throw or be blinded intil the end of your next turn.</description>
 		</sheet>
+		<rules>
+			<stat name="mothwing dust:dc" value="8" />
+            <stat name="mothwing dust:dc" value="proficiency" />
+            <stat name="mothwing dust:dc" value="constitution:modifier" />
+		</rules>
 	</element>
 	<element name="Lightweight Feathering" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LIGHTWEIGHT_FEATHERING">
 		<description>
@@ -446,6 +454,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_EFFECT_RESISTANCE" />
 			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_POISON_IMMUNITY" />
         </rules>
@@ -503,16 +512,16 @@
 		<description>
 			<p>You can dash as a bonus action a number of times per Long Rest equal to your proficiency bonus.</p>
 		</description>
-		<sheet>
-			<description>You can dash as a bonus action a number of times per Long Rest equal to your proficiency bonus.</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can dash as a bonus action.</description>
 		</sheet>
 	</element>
 	<element name="Sense of Smell" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SENSE_OF_SMELL">
 		<description>
-			<p>When you make a smell based Perception check you may roll a d4 and add it to the number rolled.</p>
+			<p>When you make a smell based Perception check you may roll a d4 and add it to the total.</p>
 		</description>
 		<sheet>
-			<description>When you make a smell based Perception check you may roll a d4 and add it to the number rolled.</description>
+			<description>When you make a smell based Perception check you may roll a d4 and add it to the total.</description>
 		</sheet>
 	</element>
 	
@@ -570,6 +579,9 @@
 		<sheet>
 			<description>You have a swimming speed equal to your walking speed, and can hold your breath twice as long as humans.</description>
 		</sheet>
+        <rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
 	</element>
 	<element name="Uncanny Eyes" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_UNCANNY_EYES">
 		<description>
@@ -618,7 +630,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Language (Gremor)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
 			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_NAVAES_GUIDANCE" />
@@ -664,9 +676,8 @@
             <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
 			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics skill.</p>
             <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
-            <p class="indent"><strong><em></em></strong> </p>
-            <p class="indent"></p>
-			 <div element="" />
+			 <div element="ID_RACIAL_TRAIT_SAVAGE_ATTACKS" />
+			 <div element="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE" />
         </description>
         <sheet display="false" />
         <rules>
@@ -681,6 +692,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Language (Khan)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAVAGE_ATTACKS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE" />
         </rules>
@@ -714,6 +726,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_FEATHERY_WINGS" />
 			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_SKYS_SAFETY" />
         </rules>
@@ -728,10 +741,10 @@
 	</element>
 	<element name="Sky's Safety" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SKYS_SAFETY">
 		<description>
-			<p>You can cast the <i>Feather Fall</i> spell once per Long Rest without material components.</p>
+			<p>You can cast the <i>Feather Fall</i> spell once per Long Rest without material components. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You can cast the Feather Fall spell once per Long Rest without material components.</description>
+			<description>You can cast the Feather Fall spell once per Long Rest without material components. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
@@ -779,15 +792,19 @@
 			<p>Whenever you finish a Long Rest you gain a number of Temporary Hit Points equal to your Constitution Modifier plus your Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>Whenever you finish a Long Rest you gain a number of Temporary Hit Points equal to your Constitution Modifier plus your Proficiency Bonus.</description>
+			<description>Whenever you finish a Long Rest you gain {{improved fortitude:thp}} Temporary Hit Points.</description>
 		</sheet>
+		<rules>
+			<stat name="improved fortitude:thp" value="constitution:modifier" />
+			<stat name="improved fortitude:thp" value="proficiency" />
+		</rules>
 	</element>
 	<element name="Lifeweave" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LIFEWEAVE">
 		<description>
-			<p>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components.</p>
+			<p>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components. Intelligence is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components.</description>
+			<description>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components. Intelligence is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
