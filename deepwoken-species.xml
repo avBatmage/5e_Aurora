@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deepwoken Species</name>
+		<description>Species from the 2024 Player's Handbook.</description>
+		<author url="https://github.com/avBatmage">Batav</author>
+		<update version="0.0.1">
+			<file name="deepwoken-species.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/deepwoken-species.xml" />
+		</update>
+	</info>
+
+	<!--Adret-->
+    <element name="Adret" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_ADRET">
+        <description>
+            <p>Adrets come from the high mountains, and were only discovered when humanity was forced to migrate to higher peaks due to the Tides. They share some traits with humans, the difference being their blue skin, biue or green hair and red facial markings.</p>
+            <h4>ADRET TRAITS</h4>
+            <p>As an Adret, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Adrets reach maturity at about the same age as humans, but can live to around 150 years old.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall). Adrets are similar in height and build to humans, though they weigh slightly less on average.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet, and you have a climbing speed equal to your walking speed. It does not allow you to climb a completely flat surface. </p>
+            <p class="indent"><strong><em>Mountainous Resistance.</em></strong> You have resistance to Cold damage. Used to living in the mountains' cold atmosphere, You can tolerate below freezing temperatures. </p>
+            <p class="indent"><strong><em>Mountain Climber.</em></strong> You ignore difficult terrain caused by uneasy slopes, ice, snow, and rocks.</p>
+            <p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics and Perception skill. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other language of your choice that you and your DM agree is appropriate for your character.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Adret)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Adret)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Adret)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MOUNTAINOUS_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MOUNTAIN_CLIMBER" />
+        </rules>
+    </element>
+	<element name="Mountainous Resistance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_MOUNTAINOUS_RESISTANCE">
+		<description>
+			<p>You have resistance to Cold damage. Used to living in the mountains' cold atmosphere, You can tolerate below freezing temperatures.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to Cold damage. Used to living in the mountains' cold atmosphere, You can tolerate below freezing temperatures.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Mountain Climber" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_MOUNTAIN_CLIMBER">
+		<description>
+			<p>You ignore difficult terrain caused by uneasy slopes, ice, snow, and rocks.</p>
+		</description>
+		<sheet>
+			<description>You ignore difficult terrain caused by uneasy slopes, ice, snow, and rocks.</description>
+		</sheet>
+	</element>
+	
+	<!--Canor-->
+    <element name="Canor" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_CANOR">
+        <description>
+            <p>Canors nave a lot of features of canine species. They're known to be fiercely loyal, foiling even magic itself when it comes to helping their allies and triends.</p>
+            <p>They have slightly more hair than most others, and their hair is typically black, brown, golden brown or orange.</p>
+            <h4>CANOR TRAITS</h4>
+            <p>As an Canor, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Canors reach maturity once they hit double digits in their age, and only live to around 80. Size. Canors are usually a bit taller and bulkier than humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics skill. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
+            <div element="ID_BATAV_RACIAL_TRAIT_PURE_LOYALTY" />
+			<div element="ID_BATAV_RACIAL_TRAIT_CANINE_BITE" />
+			<div element="ID_BATAV_RACIAL_TRAIT_LOYAL_PROTECTION" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Canor)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Canor)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Canor)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PURE_LOYALTY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANINE_BITE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LOYAL_PROTECTION" />
+        </rules>
+    </element>
+	<element name="Pure Loyalty" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_PURE_LOYALTY">
+		<description>
+			<p>You have advantage on saving throws against effects that would turn you against your allies, and you have advantage on saving throws against effects that would make you charmed by an enemy.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against effects that would turn you against your allies, and you have advantage on saving throws against effects that would make you charmed by an enemy.</description>
+		</sheet>
+	</element>
+	<element name="Canine Bite" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_CANINE_BITE">
+		<description>
+			<p>Your teeth are pointed like a dog's, and they act as a natural weapon which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. I you crit with this attack, you can spend your bonus action to automatically grapple the creature you are biting. This stops you from gaining the benefits of any features that allow you to attack multiple times, such as Extra Attack.</p>
+		</description>
+		<sheet>
+			<description>Your teeth are pointed like a dog's, and they act as a natural weapon which you can use to make unarmed strikes. It deals piercing damage equal to 1d4 + your Strength modifier. On a crit you can spend your bonus action to automatically grapple the creature you are biting and end your action regardless of how many attacks you could make.</description>
+		</sheet>
+	</element>
+	<element name="Loyal Protection" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LOYAL_PROTECTION">
+		<description>
+			<p> If a creature you can see makes a melee attack against an ally within 5ft of you, you can use your reaction to move up to your speed toward the creature and make one Canine Bite attack.</p>
+		</description>
+		<sheet>
+			<description> If a creature you can see makes a melee attack against an ally within 5ft of you, you can use your reaction to move up to your speed toward the creature and make one Canine Bite attack.</description>
+		</sheet>
+	</element>
+	
+	<!--Capra-->
+    <element name="Capra" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_CAPRA">
+        <description>
+            <p>Said to be descendants of goats, Capras have horns, sometimes have full skull masks that are part of their faces and horns. </p>
+            <p>Each Capra, once they reach maturity, gains a mark that changes their skin color and shows what they will specialize in; usually meant to help allies. The mark they gain is seemingly random, but nonetheless it decides their future.</p>
+            <h4>CAPRA TRAITS</h4>
+            <p>As an Capra, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Capras live considerably longer than humans, reaching maturity at about age 30, and ving to around 300 years of age.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Capras are about the same in height, weight and build as humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Capra)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Capra)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Capra)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Sub Race" name="Subrace" supports="Capra" />
+        </rules>
+    </element>
+	<!--Subraces-->
+	<element name="Mark of Jurik" type="Sub Race" source="Player’s Handbook" id="ID_BATAV_SUB_RACE_MARK_OF_JURIK">
+		<supports>Capra</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Color Change.</em></strong> Your skin color becomes a desaturated blue, and your horns become gray.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_JURIKS_SANITY" />
+			<div element="ID_BATAV_RACIAL_TRAIT_JURIK_INNATE_SPELLCASTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mark of Jurik)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_JURIKS_SANITY" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_JURIK_INNATE_SPELLCASTING" />
+		</rules>
+	</element>
+	<element name="Jurik's Sanity" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_JURIKS_SANITY">
+		<description>
+			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d4+1 points of Temporary Sanity.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d4+1 points of Temporary Sanity.</description>
+		</sheet>
+	</element>
+	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_JURIK_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the <i>Protection From Good and Evil</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You know the Protection From Good and Evil spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+		</rules>
+	</element>
+
+	<element name="Mark of Nemit" type="Sub Race" source="Batav's Additions" id="ID_BATAV_SUB_RACE_MARK_OF_NEMIT">
+		<supports>Capra</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Color Change.</em></strong> Your skin color becomes a desaturated green or light brown, and your horns become the color of dirty bones.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_NEMITS_SUSTENANCE" />
+			<div element="ID_BATAV_RACIAL_TRAIT_NEMIT_INNATE_SPELLCASTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mark of Nemit)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_NEMITS_SUSTENANCE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_NEMIT_INNATE_SPELLCASTING" />
+		</rules>
+	</element>
+	<element name="Nemit's Sustenance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_NEMITS_SUSTENANCE">
+		<description>
+			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1 day worth of nourishment. Additionally, you have proficiency with Cook's Utensils.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1 day worth of nourishment. Additionally, you have proficiency with Cook's Utensils.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_NEMIT_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the <i>Goodberry</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You know the Goodberry spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" />
+		</rules>
+	</element>
+
+	<element name="Mark of Ku" type="Sub Race" source="Batav's Additions" id="ID_BATAV_SUB_RACE_MARK_OF_KU">
+		<supports>Capra</supports>
+		<description>
+			<p></p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Color Change.</em></strong> Your skin color becomes a desaturated red, and your horns become dark gray.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_KUS_MERCY" />
+			<div element="ID_BATAV_RACIAL_TRAIT_KU_INNATE_SPELLCASTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mark of Ku)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_KUS_MERCY" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_KU_INNATE_SPELLCASTING" />
+		</rules>
+	</element>
+	<element name="Ku's Mercy" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_KUS_MERCY">
+		<description>
+			<p>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d8 + your Proficiency Bonus points of Temporary Hit Points.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, you can choose a number of creatures within 5 feet of you equal to your proficiency bonus and grant them 1d8 + your Proficiency Bonus points of Temporary Hit Points.</description>
+		</sheet>
+	</element>
+	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_KU_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the <i>Cure Wounds</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You know the Cure Wounds spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+		</rules>
+	</element>
+
+	<element name="Mark of Hallowtide" type="Sub Race" source="Batav's Additions" id="ID_BATAV_SUB_RACE_MARK_OF_HALLOWTIDE">
+		<supports>Capra</supports>
+		<description>
+			<p></p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Color Change.</em></strong> Your skin color becomes a desaturated red, and your horns become dark gray.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_HALLOWTIDES_FRIGHT" />
+			<div element="ID_BATAV_RACIAL_TRAIT_HALLOWTIDE_INNATE_SPELLCASTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mark of Hallowtide)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDES_FRIGHT" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDE_INNATE_SPELLCASTING" />
+		</rules>
+	</element>
+	<element name="Hallowtide's Mercy" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDES_FRIGHT">
+		<description>
+			<p>Once per Long Rest you can choose a number of creatures within 30 feet of you that can see you equal to your proficiency bonus and force them to make a Wisdom saving theow, the DC being equai to 8 + your Charisma modifier + your Proficiency Bonus. Any creature that fails the saving throw takes 1d4 points of insanity.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest you can choose a number of creatures within 30 feet of you that can see you equal to your proficiency bonus and force them to make a Wisdom saving theow, the DC being equai to 8 + your Charisma modifier + your Proficiency Bonus. Any creature that fails the saving throw takes 1d4 points of insanity.</description>
+		</sheet>
+	</element>
+	<element name="Innate Spellcasting" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_HALLOWTIDE_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the <i>Cause Fear</i> spell, and can cast it once per Long Rest without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You know the Cause Fear spell, and can cast it once per Long Rest without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CAUSE_FEAR" />
+		</rules>
+	</element>
+	<!--/Subraces-->
+	
+	<!--Celtor-->
+    <element name="Celtor" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_CELTOR">
+        <description>
+            <p>Being very keen to learning, Celtors are often seen as architects or apothecaries. They had a city before the Tides, but it was the first to fall into Scyphozia.</p>
+            <p>They have green skin, birth-marks on their face, and green or black hair.</p>
+            <h4>CELTOR TRAITS</h4>
+            <p>As an Celtor, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2, your Dexterity score increases by 1, and one other ability score of your choice increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Celtors mature in their mid 20s, and live to around 150 years of age.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Celtors share almost the same average height as humans, being an inch or two shorter. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and two other standard languages of your choice.</p>
+            <p class="indent"><strong><em>Traditional Knowledge.</em></strong> You have proficiency in Cartographer's Tools, Tinker's Tools, Land Vehicles and Water Vehicles.</p>
+            <p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Nature, History and Investigation skills.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Celtor)" supports="Custom Ability Score Increase 1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Celtor)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Celtor)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Celtor)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+		</rules>
+    </element>
+
+	<!--Chrysid-->
+    <element name="Chrysid" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_CHRYSID">
+        <description>
+            <p>Chrysids are deeply spiritual folk, with the vast majority of them worshiping Nilsa, goddess of Time. They have a knack for decipnering the emotions of others while keeping their own a closed book. Tney are said to come from moths, and have some sort of feathers" sticking out of their heads, as horns would usually be. They have an uncannily low weight, they usually have gray or white skin, and hair the same color, and are not seen to show many facial expressions; usually just simple smiles, frowns, or neutral faces.</p>
+            <h4>CHRYSID TRAITS</h4>
+            <p>As an Chrysid, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Chrysids have surprisingly long life spans despite being related to moths. They mature at around age 5, and live to be up to 400 years old.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Chrysids are more slim than most humans. but are usually taller than them, ranging up to seven feet at their tallest. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Insight and Deception skills. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_MOTHWING_DUST" />
+			<div element="ID_BATAV_RACIAL_TRAIT_LIGHTWEIGHT_FEATHERING" />
+			<div element="ID_BATAV_RACIAL_TRAIT_DECIPHER_EMOTIONS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Chrysid)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Chrysid)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Chrysid)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_MOTHWING_DUST" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_LIGHTWEIGHT_FEATHERING" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_DECIPHER_EMOTIONS" />
+        </rules>
+    </element>
+	<element name="Mothwing Dust" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_MOTHWING_DUST">
+		<description>
+			<p>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a Constitution saving throw (DC equals 8 + your Proficiency Bonus + your Constitution modifier) or be blinded intil the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, as a reaction to getting hit by an attacker within 5 feet of you, you can let out mothwing dust onto them. The attacker must succeed on a Constitution saving throw (DC equals 8 + your Proficiency Bonus + your Constitution modifier) or be blinded intil the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Lightweight Feathering" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LIGHTWEIGHT_FEATHERING">
+		<description>
+			<p>You fall half as quickly as other creatures, granting you resistance to fall damage</p>
+		</description>
+		<sheet>
+			<description>You fall half as quickly as other creatures, granting you resistance to fall damage</description>
+		</sheet>
+	</element>
+	<element name="Decipher Emotions" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_DECIPHER_EMOTIONS">
+		<description>
+			<p>As an action, you can target a creature you can see within 10 feet of you and immediately learn their current emotional state. You may then, as part of the same action, make an Intelligence(lnsight) check contested by the creature's Charisma(Deception) check (if the creature is unwilling) to learn the cause of the creature's current emotional state. You may use this skill a number of times per Long Rest equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can target a creature you can see within 10 feet of you and immediately learn their current emotional state. You may then, as part of the same action, make an Intelligence(lnsight) check contested by the creature's Charisma(Deception) check (if the creature is unwilling) to learn the cause of the creature's current emotional state. You may use this skill a number of times per Long Rest equal to your proficiency bonus.</description>
+		</sheet>
+	</element>
+
+	<!--Etrean-->
+    <element name="Etrean" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_ETREAN">
+        <description>
+            <p>Etrean people are very common in the worid of Lumen, and take slight snake-like appearances, having forked tongues and pale skin, as well as pointed ears. Their hair colors can vary widely, but the most common colors are white, blue and black. Etreans are known for their passive ability to shrug off existing effects, both beneficial and harmful.</p>
+            <h4>ETREAN TRAITS</h4>
+            <p>As an Etrean, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, your Intelligence score increases by 1, and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Etreans mature at the same rate as humans and have lifespans similar length to theirs.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Etreans are about the same size and build as humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Snake's Tongue.</em></strong> You have proficiency in the Deception skill. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common, Abyssal and Draconic.</p>
+			<div element="ID_BATAV_RACIAL_TRAIT_EFFECT_RESISTANCE" />
+			<div element="ID_BATAV_RACIAL_TRAIT_POISON_IMMUNITY" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Etrean)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Etrean)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_EFFECT_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_POISON_IMMUNITY" />
+        </rules>
+    </element>
+	<element name="Effect Resistance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_EFFECT_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws made to end effects early, and all effects on you have their max duration halved.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws made to end effects early, and all effects on you have their max duration halved.</description>
+		</sheet>
+	</element>
+	<element name="Poison Immunity" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_POISON_IMMUNITY">
+		<description>
+			<p>You have resistance to poison damage and are immune to the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison damage and are immune to the poisoned condition.</description>
+		</sheet>
+	</element>
+	
+	<!--Felinor-->
+    <element name="Felinor" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_FELINOR">
+        <description>
+            <p>Felinors take on cat-like features while maintaining humanoid appearances. For many years they were prejudiced against and called nothing but a laughing stock of a race, failing to be feline and failing to be human at the same time, until one Jarmamile Talo came along and created a campaign which would eventually lead to the end of prejudice against Felinors. The only feline traits Felinors have are cat ears, a tail, feline nimbleness, and an uncanny sense of smell, as well as the occasional desaturated skin.</p>
+            <h4>FELINOR TRAITS</h4>
+            <p>As an Felinor, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Felinors have identical lifespans to Canors, maturing at age 10 and living to about age 80.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Eelinors are a handful of inches shorter than humans on average, and have ever so slightly slimmer builds. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Acrobatics skill, and can choose to have proficiency with either Stealth or Sleight of Hand.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
+            <div element="ID_BATAV_RACIAL_TRAIT_FELINE_AGILITY" />
+            <div element="ID_BATAV_RACIAL_TRAIT_SENSE_OF_SMELL" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Felinor)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Felinor)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Felinor)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_FELINE_AGILITY" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_SENSE_OF_SMELL" />
+        </rules>
+    </element>
+	<element name="Feline Agility" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_FELINE_AGILITY">
+		<description>
+			<p>You can dash as a bonus action a number of times per Long Rest equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You can dash as a bonus action a number of times per Long Rest equal to your proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="Sense of Smell" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SENSE_OF_SMELL">
+		<description>
+			<p>When you make a smell based Perception check you may roll a d4 and add it to the number rolled.</p>
+		</description>
+		<sheet>
+			<description>When you make a smell based Perception check you may roll a d4 and add it to the number rolled.</description>
+		</sheet>
+	</element>
+	
+	<!--Ganymede-->
+    <element name="Ganymede" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_GANYMEDE">
+        <description>
+            <p>Ganymedes and Vesperians share the same ancestors. A long time ago, before the Cantaclysm, both Vesperians and Ganymedes were part of the same race: Hivekin. With the rising of the Tides, they were forced to split apart, what would later be known as the Vesperians stayed with the Greathive to attempt to outgrow the Tides, meanwhile what would later be known as the Ganymedes took their travels deep below, into Scyphozia. Because of this, Ganymedes evolved to no longer need their Vesperian masks, and their skin gradually became darker as they no longer needed such dry skin, nowadays being either black or blackened purple, and their hair color is usually white, silver, or some shade of purple. </p>
+            <p>Most of today's Ganymedes have changed eyes, but some rare ones are still seen with semi-normal eye shapes. To see better in Scyphozia, Ganymedes' eye shape had completely changed to nothing but two symbols, or runes of sorts. Their eyes might be a cross, a ring, a diamond, a swirl, etc.</p>
+            <h4>GANYMEDE TRAITS</h4>
+            <p>As an Ganymede, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Intelligence score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Ganymedes have life spans identical to Vesperions, maturing at around 80, and living to about 600.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Ganymedes have the same average build and height as humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the  skill. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common, Ganymedian and one other standard language of your choice.</p>
+            <p class="indent"><strong><em>Ganymedian</em></strong> Ganymedes, like Vesperians, have developed a secret language that only their own people know. You can speak, read and write Ganymedian.</p>
+			 <div element="ID_BATAV_RACIAL_TRAIT_SCYPHOZIAN_RESISTANCE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_WAFERBORNE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_UNCANNY_EYES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ganymede)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ganymede)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Ganymede)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_SCYPHOZIAN_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_WAFERBORNE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_UNCANNY_EYES" />
+			<grant type="Language" id="ID_LANGUAGE_GANYMEDIAN" />
+        </rules>
+    </element>
+	<element name="Scyphozian Resistance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SCYPHOZIAN_RESISTANCE">
+		<description>
+			<p>You do not passively lose Sanity in the Plane of Scyphozia.</p>
+		</description>
+		<sheet>
+			<description>You do not passively lose Sanity in the Plane of Scyphozia.</description>
+		</sheet>
+	</element>
+	<element name="Waferborne" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_WAFERBORNE">
+		<description>
+			<p>You have a swimming speed equal to your walking speed, and can hold your breath twice as long as humans.</p>
+		</description>
+		<sheet>
+			<description>You have a swimming speed equal to your walking speed, and can hold your breath twice as long as humans.</description>
+		</sheet>
+	</element>
+	<element name="Uncanny Eyes" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_UNCANNY_EYES">
+		<description>
+			<p>You have advantage on saving throws made against effects that would blind you.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws made against effects that would blind you.</description>
+		</sheet>
+	</element>
+	<element name="Ganymedian" type="Language" source="Batav's Additions" id="ID_LANGUAGE_GANYMEDIAN">
+		<description>
+			<p>Typically spoken by Ganymedes.</p>
+		</description>
+		<setters>
+			<set name="speakers">Ganymedes</set>
+			<set name="script">Ganymedian</set>
+		</setters>
+	</element>
+	
+	<!--Gremor-->
+    <element name="Gremor" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_GREMOR">
+        <description>
+            <p>Gremors are humanoid folk who come from deer. They are deeply spiritual and follow Navae, goddess of Nature, Wisdom and Life. They have green or brown skin, usually green hair, and brown, wood-like horns, sharing the same colors as the different types of wood.</p>
+            <h4>GREMOR TRAITS</h4>
+            <p>As an Gremor, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Gremors mature at around age 30, and live to be around 200 years old.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Gremors range from taller to shorter on average, and wider to slimmer on average than humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Navae's Knowledge.</em></strong> You have proficiency in the Animal Handling, Nature and Survival skills.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common, Sylvan and one other standard language of your choice.</p>
+			 <div element="ID_BATAV_RACIAL_TRAIT_NAVAES_GUIDANCE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_FAITH_OF_NAVAE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_SPEAK_WITH_SMALL_BEASTS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Gremor)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Gremor)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Gremor)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_NAVAES_GUIDANCE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_FAITH_OF_NAVAE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_SPEAK_WITH_SMALL_BEASTS" />
+        </rules>
+    </element>
+	<element name="Navae's Guidance" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_NAVAES_GUIDANCE">
+		<description>
+			<p>You always know the direction you are facing, and you know how far away the nearest town is, as well as the direction it is in.</p>
+		</description>
+		<sheet>
+			<description>You always know the direction you are facing, and you know how far away the nearest town is, as well as the direction it is in.</description>
+		</sheet>
+	</element>
+	<element name="Faith of Navae" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_FAITH_OF_NAVAE">
+		<description>
+			<p>You have advantage on Religion checks made to recall or uncover knowledge about Navae.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Religion checks made to recall or uncover knowledge about Navae.</description>
+		</sheet>
+	</element>
+	<element name="Speak with Small Beasts" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SPEAK_WITH_SMALL_BEASTS">
+		<description>
+			<p>Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.</p>
+		</description>
+		<sheet>
+			<description>Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.</description>
+		</sheet>
+	</element>
+
+	<!--Khan-->
+    <element name="Khan" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_KHAN">
+        <description>
+            <p>Khans are known to be very physically strong and capable. They are usually employed in hard labor fields, as it is very easy for a Khan to get hired in one. When a Khan reaches maturity, they or one of their relatives craft their own headpiece that they wear, that is usually a signal as to what they chose to do with their life. It is said that Khans take after monkeys, being very versatile. They usually have golden blond, silver/white, or black hair, sometimes having dark red instead, and sun-tanned skin.</p>
+            <h4>KHAN TRAITS</h4>
+            <p>As an Khan, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2, and your Constitution score ncreases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Khans mature at the same rate as humans, and age to about 100.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Khans are bulkier than humans, and are usually about an inch taller on average.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Athletics skill.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and one other standard language of your choice.</p>
+            <p class="indent"><strong><em></em></strong> </p>
+            <p class="indent"></p>
+			 <div element="" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Khan)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Khan)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Khan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Khan)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAVAGE_ATTACKS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE" />
+        </rules>
+    </element>
+
+	<!--Tiran-->
+    <element name="Tiran" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_TIRAN">
+        <description>
+            <p>Tirans take after birds, and have feathery wings which they can retract that allow them to fly., Not much is known about them, other than that they like being upon tall places, feeling a bit more naturally comfortable there. They have feathers in their hair, usually two right above the forehead, rings in their eyes, and their colors can vary. Their hair and skin colors resemble those of different types of birds.</p>
+            <h4>TIRAN TRAITS</h4>
+            <p>As an Tiran, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Tirans mature at around age 5, and live to be about 50.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Iirans are a bit slimmer on average than humans, due to having to make up space for their feathery wings. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> You have proficiency in the Nature skill.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and Sylvan.</p>
+			 <div element="ID_BATAV_RACIAL_TRAIT_FEATHERY_WINGS" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_SKYS_SAFETY" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Tiran)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Tiran)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_FEATHERY_WINGS" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_SKYS_SAFETY" />
+        </rules>
+    </element>
+	<element name="Feathery Wings" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_FEATHERY_WINGS">
+		<description>
+			<p>As an action, you can let your wings out, granting you a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor. This speed lasts until you use another action to retract your wings.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can let your wings out, granting you a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor. This speed lasts until you use another action to retract your wings.</description>
+		</sheet>
+	</element>
+	<element name="Sky's Safety" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_SKYS_SAFETY">
+		<description>
+			<p>You can cast the <i>Feather Fall</i> spell once per Long Rest without material components.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Feather Fall spell once per Long Rest without material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+		</rules>
+	</element>
+	
+	<!--Vesperian-->
+    <element name="Vesperian" type="Race" source="Batav's Additions" id="ID_BATAV_RACE_VESPERIAN">
+        <description>
+            <p>Vesperians share many traits with beetles, and inhabit the Greathive. Their ancestors, the Hivekin, developed Lifeweave and created the Greathive. Since the Cantaclysm, the Hivekin race was split into two: The Ganymedes, who ventured into Scyphozia to face tragedy head-on, and the Vesperians, who stayed at the Greathive and stuck to the idea that they could use Lifeweave to grow the Greathive faster than the Tides could sink it. Vesperians are never seen without their masks, and have used Lifewegve to evolve their bodies to be stronger and more durable.</p>
+            <p>They usually have either dark green or dark, desaturated brown skin, and dark green or black hair.</p>
+            <h4>VESPERIAN TRAITS</h4>
+            <p>As an Vesperian, you have these special traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and your Intelligence score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Vesperians have lifespans identical to Ganymedes, maturing at around age 80, and living for up to 600 years.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Yesperians have just about the same proportions as humans, if not an inch taler. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Vesperian.</em></strong> Vesperians, like Ganymedes, have developed a secret language that only their own people know. You can speak, read and write Vesperian.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common, Vesperian and one other standard language of your choice.</p>
+			 <div element="ID_BATAV_RACIAL_TRAIT_IMPROVED_FORTITUDE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_LIFEWEAVE" />
+			 <div element="ID_BATAV_RACIAL_TRAIT_LIFEWEAVING_COUNTERMEASURES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Vesperian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Vesperian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Language (Vesperian)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_2024PHB_OPTION_2024_CHARACTER_CREATION" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_IMPROVED_FORTITUDE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_LIFEWEAVE" />
+			<grant type="Racial Trait" id="ID_BATAV_RACIAL_TRAIT_LIFEWEAVING_COUNTERMEASURES" />
+			<grant type="Language" id="ID_LANGUAGE_VESPERIAN" />
+        </rules>
+    </element>
+	<element name="Improved Fortitude" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_IMPROVED_FORTITUDE">
+		<description>
+			<p>Whenever you finish a Long Rest you gain a number of Temporary Hit Points equal to your Constitution Modifier plus your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a Long Rest you gain a number of Temporary Hit Points equal to your Constitution Modifier plus your Proficiency Bonus.</description>
+		</sheet>
+	</element>
+	<element name="Lifeweave" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LIFEWEAVE">
+		<description>
+			<p>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components.</p>
+		</description>
+		<sheet>
+			<description>You know the Cure Wounds spell and can cast it once per Long Rest without expending a spell siot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+		</rules>
+	</element>
+	<element name="Lifeweaving Countermeasures" type="Racial Trait" source="Batav's Additions" id="ID_BATAV_RACIAL_TRAIT_LIFEWEAVING_COUNTERMEASURES">
+		<description>
+			<p>Vesperians are put through a ritual when they are born, altering their bodies permanently with Life weave magic. You have resistance to Necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to Necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Vesperian" type="Language" source="Batav's Additions" id="ID_LANGUAGE_VESPERIAN">
+		<description>
+			<p>Typically spoken by Vesperians.</p>
+		</description>
+		<setters>
+			<set name="speakers">Vesperians</set>
+			<set name="script">Vesperian</set>
+		</setters>
+	</element>
+
+
+</elements>
