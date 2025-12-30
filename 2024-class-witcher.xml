@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witcher</name>
+		<description>The Witcher class by johnofbohemia.</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/irc58o/5e_WITCHER_class_v20_a_simple_robust_and_faithful/">johnofbohemia</author>
+		<update version="0.0.1">
+			<file name="class-witcher.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/class-witcher.xml" />
+		</update>
+	</info>
+
+	<element name="Witcher" type="Class" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_WITCHER">
+		<description>
+			<p>"Indeed, there is nothing more repulsive than these monsters that defy nature and are known by the name of witcher, as they are the offspring of foul sorcery and witchcraft. They are unscrupulous scoundrels without conscience and virtue, veritable creatures from hell capable only of taking lives. They have no place amongst decent and honest folk..." - Monstrum, or a Portrayal of Witchers</p>
+			<p>Professional monster slayers for hire, witchers are individuals who have undergone intense training and dangerous mutations to make them both capable and versatile fighters against a vast array of inhuman opponents.</p>
+			<p>Quick Build. You can make a witcher quickly by following these suggestions. First, Dexterity or Strength should be your highest ability score, followed by Wisdom. Second, choose the outlander background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a witcher, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per witcher level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per witcher level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> light armor, medium armor</li>
+				<li><strong>Weapons:</strong> simple and martial weapons</li>
+				<li><strong>Tools:</strong> Alchemist's supplies</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong> Choose three from Acrobatics, Arcana, Athletics, Insight, Investigation, Nature, Perception, and Survival</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment:</p>
+			<ul>
+				<li>(a) a longsword and a silvered longsword or (b) a silvered martial weapon</li>
+				<li>(a) scalemail or (b) studded leather armor</li>
+				<li>(a) an explorer's pack or (b) a dungeoneer's pack</li>
+				<li>(a) a hand crossbow or (b) a simple weapon</li>
+				<li>alchemist's supplies</li>
+			</ul>
+			<h5 class="caption">THE WITCHER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-level">Level</td><td class="col-prof">Prof. Bonus</td><td class="left">Features</td><td class="col-10">Signs known / Focus Cap</td><td class="col-10">Mutated Movement</td></tr>
+				</thead>
+				<tr><td>1</td><td>+2</td><td class="left">Alchemy, Mutations</td>								<td>2</td><td>+5 ft.</td></tr>
+				<tr><td>2</td><td>+2</td><td class="left">Focus, Signs</td>										<td>2</td><td>+5 ft.</td></tr>
+				<tr><td>3</td><td>+2</td><td class="left">Witcher School</td>									<td>2</td><td>+5 ft.</td></tr>
+				<tr><td>4</td><td>+2</td><td class="left">Ability Score Improvement</td>						<td>2</td><td>+5 ft.</td></tr>
+				<tr><td>5</td><td>+3</td><td class="left">Extra Attack</td>										<td>3</td><td>+5 ft.</td></tr>
+				<tr><td>6</td><td>+3</td><td class="left">Studious Eye, Meditation</td>							<td>3</td><td>+5 ft.</td></tr>
+				<tr><td>7</td><td>+3</td><td class="left">Witcher School Feature, Evasion</td>					<td>3</td><td>+5 ft.</td></tr>
+				<tr><td>8</td><td>+3</td><td class="left">Ability Score Improvement</td>						<td>3</td><td>+5 ft.</td></tr>
+				<tr><td>9</td><td>+4</td><td class="left">Empowered Signs</td>									<td>4</td><td>+5 ft.</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Witcher School Feature, Mutations Improvement</td>	<td>4</td><td>+10 ft.</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Battle Signs, Focus Improvement</td>					<td>4</td><td>+10 ft.</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td>						<td>4</td><td>+10 ft.</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Quick Wits, Studious Eye Improvement</td>			<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Witcher School Feature</td>							<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Foil</td>											<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td>						<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Alchemy Expertise</td>								<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Mutations Improvement</td>							<td>5</td><td>+10 ft.</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Ability Score Improvement</td>						<td>5</td><td>+15 ft.</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Adrenaline Rush</td>									<td>5</td><td>+15 ft.</td></tr>
+			</table>
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_EXTRA_ATTACK" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_STUDIOUS_EYE" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_MEDITATION" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_EVASION" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_EMPOWERED_SIGNS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_BATTLE_SIGNS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_QUICK_WITS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_FOIL" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY_EXPERTISE" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_EPIC_BOON" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ADRENALINE_RUSH" />
+		</description>
+		<sheet display="false">
+			<description>Professional monster slayers for hire, witchers are individuals who have undergone intense training and dangerous mutations to make them both capable and versatile fighters against a vast array of inhuman opponents.</description>
+		</sheet>
+		<setters>
+			<set name="short">Professional monster slayers for hire, witchers are individuals who have undergone intense training and dangerous mutations to make them both capable and versatile fighters against a vast array of inhuman opponents.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024BATAV_MULTICLASS_WITCHER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_2024BATAV_MULTICLASS_WITCHER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+			<select type="Proficiency" name="Skill Proficiency (Witcher)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_2024BATAV_MULTICLASS_WITCHER" />
+
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY" level="1" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS" level="1" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS" level="2" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS" level="2" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_STUDIOUS_EYE" level="5" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MEDITATION" level="6" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EMPOWERED_SIGNS" level="9" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_BATTLE_SIGNS" level="11" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_QUICK_WITS" level="13" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_FOIL" level="15" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY_EXPERTISE" level="17" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ADRENALINE_RUSH" level="20" />
+		</rules>
+		<multiclass id="ID_2024BATAV_MULTICLASS_WITCHER">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>([str:13]||[dex:13],[wis:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, simple weapons, martial weapons, one skill from the class's skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+				<select type="Proficiency" name="Skill Proficiency (Witcher)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Alchemy" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY">
+		<description>
+			<p><em>1st-level witcher feature</em></p>
+			<p>You have been trained in the specialized alchemy used by witchers to prepare themselves for combat. During a short or long rest, you can use Alchemist's supplies to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate recipe, a list of which are found at the end of this class description. You can carry 2 alchemy products at any given time, and only you can use the products you create.</p>
+			<p>The number of recipes you know is equal to your proficiency bonus + your Wisdom modifier. At the DM's discretion, other recipes may be available for purchase or found in the world.</p>
+		</description>
+		<sheet>
+			<description>During a short or long rest, you can use Alchemist's supplies to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate recipe. You can carry 2 alchemy products at any given time, and only you can use the products you create.
+			You know {{alchemy:recipes}} recipes.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemy:cap" value="2" />
+			<stat name="alchemy:recipes" value="proficiency" />
+			<stat name="alchemy:recipes" value="wisdom:modifier" />
+			<select type="Archetype" name="witcher Subclass" supports="Witcher School" /><!--
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="4" level="1"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="4"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="5"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="9"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="12"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="13"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="17"/>
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="19"/>-->
+		</rules>
+	</element>
+	<element name="Mutations" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS">
+		<description>
+			<p><em>1st-level witcher feature</em></p>
+			<p>As a witcher, you have undergone mutations to your body including the perilous Trial of the Grasses.</p>
+			<p>Starting at 1st level, you gain the following benefits:</p>
+			<ul>
+				<li>Your walking speed is increased by 5 feet. At 10th level, this bonus increases to 10 feet. At 18th level, this bonus increases to 20 feet, and you gain a climbing and swimming speed equal to your walking speed.</li>
+				<li>You have darkvision, up to a range of 30 feet. At 10th level, this range increases to 60 feet. At 18th level, this range increases to 120 feet, and you also gain blindsight to a range of 30 feet.</li>
+				<li>You have advantage on Wisdom (Perception) and Wisdom (Survival) checks based on smell.</li>
+				<li>You are immune to natural diseases.</li>
+				<li>You are completely sterile - you can have no children through natural means.</li>
+				<li>Your lifespan is extended dramatically - you age at a rate five times slower than regular members of your race.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				Your walking speed is increased by {{mutations:speed}} feet.
+				You have darkvision, up to a range of {{mutations:darkvision}} feet.
+				You have advantage on Wisdom (Perception) and Wisdom (Survival) checks based on smell.
+				You are immune to natural diseases.
+				You are completely sterile - you can have no children through natural means.
+				Your lifespan is extended dramatically - you age at a rate five times slower than regular members of your race.
+			</description>
+			<description level="18">
+				Your walking speed is increased by {{mutations:speed}} feet, and you gain a climbing and swimming speed equal to your walking speed.
+				You have darkvision, up to a range of {{mutations:darkvision}} feet, and you also gain blindsight to a range of 30 feet.
+				You have advantage on Wisdom (Perception) and Wisdom (Survival) checks based on smell.
+				You are immune to natural diseases.
+				You are completely sterile - you can have no children through natural means.
+				Your lifespan is extended dramatically - you age at a rate five times slower than regular members of your race.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="mutations:speed" value="5" bonus="mutations:speed" level="1" />
+			<stat name="mutations:speed" value="10" bonus="mutations:speed" level="10" />
+			<stat name="mutations:speed" value="20" bonus="mutations:speed" level="18" />
+			<stat name="speed" value="mutations:speed" />
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="mutations:darkvision" value="30" bonus="mutations:darkvision" level="1" />
+			<stat name="mutations:darkvision" value="60" bonus="mutations:darkvision" level="10" />
+			<stat name="mutations:darkvision" value="120" bonus="mutations:darkvision" level="18" />
+			<stat name="darkvision:range" value="mutations:darkvision" bonus="base" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Witcher's Focus" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS">
+		<description>
+			<p><em>2nd-level witcher feature</em></p>
+			<p>You have learned the art of reading your opponent and the battlefield, allowing you to enhance your attacks and use powerful abilities. Your focus is set to 1 when you roll initiative, and you gain 1 focus each time you successfully hit with a weapon attack, up to your focus cap, which is detailed on the witcher class table. You lose all focus after combat ends.</p>
+			<p>When you make a weapon attack, you can spend 2 focus to grant yourself advantage on that attack; if you do so, that attack cannot generate focus.</p>
+			<p>Starting at 11th level, your focus is set to 3 when you roll initiative instead of 1.</p>
+		</description>
+		<sheet>
+			<description>You have 1 Focus which you regain every minute when not in initiative. 
+			Your focus is set to {{witcher:focus:initiative}} when you roll initiative, and you gain 1 focus each time you successfully hit with a weapon attack, up to {{witcher:focus:cap}}. You lose all focus after combat ends.</description>
+		</sheet>
+		<rules>
+			<stat name="witcher:focus:initiative" value="1" bonus="base" level="2" />
+			<stat name="witcher:focus:initiative" value="3" bonus="base" level="11" />
+			<stat name="witcher:focus:cap" value="2" bonus="base" level="2" />
+			<stat name="witcher:focus:cap" value="3" bonus="base" level="5" />
+			<stat name="witcher:focus:cap" value="4" bonus="base" level="9" />
+			<stat name="witcher:focus:cap" value="5" bonus="base" level="13" />
+		</rules>
+	</element>
+	<element name="Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS">
+		<description>
+			<p><em>2nd-level witcher feature</em></p>
+			<p>Starting at 2nd level, you are able to channel your focus to cast a few simple but practical magic hexes used by witchers called signs. You can cast a sign in place of a weapon attack when you take the Attack action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.</p>
+			<p>Signs are considered 1st level evocation spells with somatic components for the purposes of other magical effects, and are not considered weapon attacks.</p>
+			<p>You learn two signs at 2nd level, and another at 5th, 9th, and 13th level.</p>
+			<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+		</description>
+		<sheet>
+			<description>You know {{witcher:signs:count}} Signs and can cast one in place of a weapon attack when you take the Attack action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.
+			Signs are considered 1st level evocation spells with somatic components your save DC is {{witcher:signs:dc}}.</description>
+			<description level="13">You know {{witcher:signs:count}} Signs and can cast one when you take the Attack action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.
+			Signs are considered 1st level evocation spells with somatic components your save DC is {{witcher:signs:dc}}.</description>
+		</sheet>
+		<spellcasting name="Witcher" ability="Wisdom">
+			<list>Witcher</list>
+		</spellcasting>
+		<rules>
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="2" number="2" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="5" number="2" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="9" number="2" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="15" number="2" spellcasting="Witcher" />
+			<stat name="witcher:signs:count" value="2" bonus="base" level="2" />
+			<stat name="witcher:signs:count" value="3" bonus="base" level="5" />
+			<stat name="witcher:signs:count" value="4" bonus="base" level="9" />
+			<stat name="witcher:signs:count" value="5" bonus="base" level="13" />
+			<stat name="witcher:signs:dc" value="8" />
+			<stat name="witcher:signs:dc" value="proficiency" />
+			<stat name="witcher:signs:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Witcher Subclass" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS">
+		<description>
+			<p><em>3rd-level witcher feature</em></p>
+			<p>At 3rd level, you choose a witcher school whose techniques and style you wish to employ. Choose between the Wolf, Viper, Bear, Cat, or Griffin schools, detailed at the end of this class description. The school you choose grants you features at 3rd level, then again at 7th, 10th, and 14th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="witcher School" supports="Witcher School" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ABILITY_SCORE_IMPROVEMENT">
+		<description>
+			<p><em>4th-level witcher feature</em></p>
+			<p>When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Witcher 4)" supports="Improvement Option,Witcher,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Witcher 8)" supports="Improvement Option,Witcher,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Witcher 12)" supports="Improvement Option,Witcher,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Witcher 16)" supports="Improvement Option,Witcher,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Witcher 19)" supports="Improvement Option,Witcher,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EXTRA_ATTACK">
+		<description>
+			<p><em>5th-level witcher feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Studious Eye" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_STUDIOUS_EYE">
+		<description>
+			<p><em>6th-level witcher feature</em></p>
+			<p>You have learned to identify certain traits and characteristics in creatures you fight. By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn one aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities. At 13th level you may learn two aspects of your choice instead.</p>
+			<p>Additionally, choose one of Intelligence (Investigation), Wisdom (Perception), Wisdom (Insight), or Wisdom (Survival) that you are proficient in; your proficiency bonus is doubled for any ability check that uses the chosen skill. At 13th level, you can choose another proficiency from the list.</p>
+		</description>
+		<sheet>
+			<description>By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn  aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities.</description>
+		</sheet>
+		<rules>
+			<stat name="witcher:signs:count" value="1" level="6" />
+			<stat name="witcher:signs:count" value="2" level="13" />
+			<select type="Class Feature" name="Expertise (Witcher)" level="2" number="1" supports="ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_SURVIVAL"/>
+			<select type="Class Feature" name="Expertise (Witcher)" level="13" number="1" supports="ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_SURVIVAL"/>
+		</rules>
+	</element>
+	<element name="Meditation" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MEDITATION">
+		<description>
+			<p><em>6th-level witcher feature</em></p>
+			<p>At 6th level, you can manipulate your metabolism to deeply meditate and stave off both hunger and exhaustion. You can enter a trance-like state for any number of hours. During this time, you accumulate hunger and thirst ten times slower than normal, and do not require sleep. After 6 hours of largely uninterrupted meditation, you receive the benefits of a long rest, as well as those of a lesser restoration spell.</p>
+			<p>While meditating you cannot see and are less aware of your surroundings. You have disadvantage on any Wisdom (Perception) checks but are otherwise conscious.</p>
+		</description>
+		<sheet>
+			<description> You can enter a trance-like state for any number of hours. During this time, you accumulate hunger and thirst ten times slower than normal, and do not require sleep. After 6 hours of largely uninterrupted meditation, you receive the benefits of a long rest, as well as those of a lesser restoration spell. You have disadvantage on any Wisdom (Perception) checks but are otherwise conscious.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EVASION">
+		<description>
+			<p><em>7th-level witcher feature</em></p>
+			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell.</p>
+			<p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>You take no damage on a successful DEX save that would normally deal half damage, and half damage on a failed save.</description>
+		</sheet>
+	</element>
+	<element name="Empowered Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EMPOWERED_SIGNS">
+		<description>
+			<p><em>9th-level witcher feature</em></p>
+			<p>You can use new, more powerful variants of signs for an enhanced effect. By consuming 2 additional focus when you cast it, you can cast an alternative form of each sign as detailed in their descriptions.</p>
+		</description>
+		<sheet>
+			<description>By consuming 2 additional focus when you cast a Sign, you can cast its empowered form.</description>
+		</sheet>
+	</element>
+	<element name="Battle Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_BATTLE_SIGNS">
+		<description>
+			<p><em>11th-level witcher feature</em></p>
+			<p>You can incorporate signs more fluidly into your assault. When you take the Attack action on your turn, you can cast a sign without forgoing any of your weapon attacks. Additionally, at the end of each of your turns, if you haven't cast a sign this turn, you gain 1 focus.</p>
+		</description>
+		<sheet>
+			<description>At the end of each of your turns, if you haven't cast a sign this turn, you gain 1 focus.</description>
+		</sheet>
+	</element>
+	<element name="Quick Wits" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_QUICK_WITS">
+		<description>
+			<p><em>13th-level witcher feature</em></p>
+			<p>You are quick to act and ready to leap into combat at an opportune time. You have advantage on initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on initiative rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+	<element name="Foil" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_FOIL">
+		<description>
+			<p><em>15th-level witcher feature</em></p>
+			<p>You are capable of foiling the plans of casters and monsters alike. When a creature forces you or a friendly creature to make a saving throw, you can use your reaction to make a melee weapon attack against it. If your attack successfully hits, any creature affected automatically succeeds on their saving throw. Once you use this feature, you cannot use it again until you complete a short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When a creature forces you or a friendly creature to make a saving throw, you can use your reaction to make a melee weapon attack against it. If your attack successfully hits, any creature affected automatically succeeds on their saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Alchemy Expertise" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY_EXPERTISE">
+		<description>
+			<p><em>18th-level witcher feature</em></p>
+			<p>You have mastered efficiently using materials and recycling components in your alchemical crafts. You ignore crafting components when creating Alchemy products. Additionally, you can carry 3 products at a time, instead of 2.</p>
+			<p>When you gain this feature, you learn 4 new Alchemy recipes of your choice.</p>
+		</description>
+		<sheet>
+			<description>You ignore crafting components when creating Alchemy products.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemy:cap" value="1" />
+			<stat name="alchemy:recipes" value="4" /><!--
+			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="4"/>-->
+		</rules>
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EPIC_BOON">
+		<compendium display="false" />
+		<description>
+			<p><em>19th-level witcher feature</em></p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.</p>
+		</description>
+		<sheet display="false"></sheet>
+	</element>
+	<element name="Adrenaline Rush" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ADRENALINE_RUSH">
+		<description>
+			<p><em>20th-level witcher feature</em></p>
+			<p>You can utilize your adrenaline to burst into a rush of action. At the end of your turn, if you have 5 focus available, you can choose to immediately take another turn; at the end of that turn, you lose all focus.</p>
+			<p>Once you use this feature, you cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At the end of your turn, if you have 5 focus available, you can choose to immediately take another turn; at the end of that turn, you lose all focus.</description>
+		</sheet>
+	</element>
+	
+<!-- Subclasses -->
+	<element name="Wolf School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_WOLF_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>Based in Kaer Morhen, the Wolf school is perhaps the most renowned and populous school remaining, although it is still home to few students. The school focuses on mastering the basic witcher techniques, complementing them with new maneuvers to deal with any kind of monstrous prey.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" level="14" />
+		</rules>
+	</element>
+	<element name="Spins and Pirouettes" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES">
+		<description>
+			<p><em>3rd-level Warrior of Mercy feature</em></p>
+			<p>You can nimbly leap across the battlefield to engage opponents. Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage.</p>
+			<p>Additionally you can carry one extra Alchemical Product.</p>
+		</description>
+		<sheet>
+			<description>Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage. Additionally you can carry one extra Alchemical Product.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemy:cap" value="1" />
+		</rules>
+	</element>
+	<element name="Arrow Deflection" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION">
+		<description>
+			<p><em>7th-level Warrior of Mercy feature</em></p>
+			<p>You have learned to defend yourself from projectiles by parrying them. When a creature makes a ranged weapon attack against you, you can use your reaction and spend 1 focus to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature makes a ranged weapon attack against you, you can use your reaction and spend 1 focus to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses.</description>
+		</sheet>
+	</element>
+	<element name="Battle Trance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE">
+		<description>
+			<p><em>10th-level Warrior of Mercy feature</em></p>
+			<p>Your focus is sharpened by the danger of combat. You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</p>
+		</description>
+		<sheet>
+			<description>You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</description>
+		</sheet>
+	</element>
+	<element name="Aggressive Maneuvers" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS">
+		<description>
+			<p><em>14th-level Warrior of Mercy feature</em></p>
+			<p>You can use your focus to execute especially aggressive attacks. You learn the following maneuvers, which you can use as an action by expending 3 focus.</p>
+			<p><strong>Whirl.</strong> You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.</p>
+			<p><strong>Rend.</strong> You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</p>
+		</description>
+		<sheet action="Attack Action">
+			<description>You learn the following maneuvers, which you can use by replacing your attacks on the Attack Action and expending 3 focus.
+			Whirl. You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.
+			Rend. You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</description>
+		</sheet>
+	</element>
+	
+	<element name="Viper School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_VIPER_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>Based in an unknown location and possibly dissolved, the Viper school is a secretive organization, its students few and scattered. The school is known for doing whatever needs to be done for a contract, specializing in hit and run tactics some may call dirty fighting.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" level="14" />
+		</rules>
+	</element>
+	<element name="Twin Fangs" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS">
+		<description>
+			<p><em>3rd-level Warrior of Shadow feature</em></p>
+			<p>You can adopt the traditional two-weapon fighting technique of the Viper School. You can ignore the somatic requirement of signs while using two-weapon fighting; additionally, you gain the Two Weapon Fighting fighting style.</p>
+		</description>
+		<sheet>
+			<description>You can ignore the somatic requirement of signs while using two-weapon fighting.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
+		</rules>
+	</element>
+	<element name="Slippery" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY">
+		<description>
+			<p><em>7th-level Warrior of Shadow feature</em></p>
+			<p>You are hard to keep in place and adept at escaping sticky situations. You can expend 1 focus to Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus">
+			<description>Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</description>
+		</sheet>
+	</element>
+	<element name="Tolerance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE">
+		<description>
+			<p><em>10th-level Warrior of Shadow feature</em></p>
+			<p>You have become accustomed to metabolizing toxic materials. You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Killing Strike" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE">
+		<description>
+			<p><em>14th-level Warrior of Shadow feature</em></p>
+			<p>You are an expert at opportunistically striking vulnerable enemies; When score a critical hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When score a critical hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Bear School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_BEAR_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>Honorable and stout, the witchers of the Bear school focus on holding their ground rather than dancing around their foes. Through their unique training, strength, and tenacity, Bear school witchers can stand up to powerful warriors and beasts alike.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_HEAVY_GEAR_TRAINING" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_VITALIC_BLOWS" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_THICK_SKIN" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_URSINE_TENACITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_HEAVY_GEAR_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_VITALIC_BLOWS" level="6" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_THICK_SKIN" level="11" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_URSINE_TENACITY" level="17" />
+		</rules>
+	</element>
+	<element name="Heavy Gear Training" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_HEAVY_GEAR_TRAINING">
+		<description>
+			<p><em>3rd-level Bear School feature</em></p>
+			<p>You can ignore the somatic requirement of signs while using weapons with the two-handed property. Additionally, you gain proficiency with heavy armor and learn the <i>Great Weapon Fighting</i> Style.</p>
+		</description>
+		<sheet>
+			<description>You can ignore the somatic requirement of signs while using weapons with the two-handed property.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
+		</rules>
+	</element>
+	<element name="Vitalic Blows" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_VITALIC_BLOWS">
+		<description>
+			<p><em>7th-level Bear School feature</em></p>
+			<p>You can imbue your strikes with your unnatural vigor; you have a pool of d6 dice equal to your Wisdom modifier. When you hit with a melee weapon attack, you can expend 1 focus to spend a die from the pool and add it to your damage of that attack. Alternatively you may spend your hit dice. Starting at 14th level, you can choose to expend 2 dice instead. When you use this feature as part of the Attack action, you can make a Shove attack as a bonus action for the rest of your turn.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}d6/Long rest">
+			<description>When you hit with a melee weapon attack, you can expend 1 focus to spend a die from the pool and add it to your damage of that attack. Alternatively you may spend your hit dice. When you use this feature as part of the Attack action, you can make a Shove attack as a bonus action for the rest of your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="vitalic:dice:times" value="1" bonus="base" />
+			<stat name="vitalic:dice:times" value="2" bonus="base" level="14" />
+		</rules>
+	</element>
+	<element name="Thick Skin" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_THICK_SKIN">
+		<description>
+			<p><em>10th-level Bear School feature</em></p>
+			<p>You have developed natural defenses on your body to defend you from the elements; you are resistant to adverse effects due to extreme weather and temperatures, and have resistance to fire and cold damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to adverse effects due to extreme weather and temperatures.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Ursine Tenacity" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_URSINE_TENACITY">
+		<description>
+			<p><em>14th-level Bear School feature</em></p>
+			<p>Your ability to withstand damage and resist malignant effects has been improved through intense conditioning. You gain proficiency in Constitution and Strength saving throws; additionally, when you fail a saving throw at which you are proficient, you can choose to succeed instead. Once this feature is used, it cannot be used again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you fail a saving throw at which you are proficient, you can choose to succeed instead.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Cat School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_CAT_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>The only school known to accept contracts on humans, the Cat school has largely become ostracized by their fellow witchers for this breach of their honor code. The school's effectiveness, however, cannot be doubted. Aggressive and flexible, the school focuses on landing many strikes to exploit weaknesses while avoiding damage through mobility.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPROVED_CRITICAL" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TUMBLE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPECCABLE_INSTINCT" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_DEADLY_FLURRY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPROVED_CRITICAL" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TUMBLE" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPECCABLE_INSTINCT" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_DEADLY_FLURRY" level="14" />
+		</rules>
+	</element>
+	<element name="Improved Critical" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPROVED_CRITICAL">
+		<description>
+			<p><em>3rd-level Cat School feature</em></p>
+			<p>You critical strike on a roll of 19 or 20 on the d20. Additionally, whenever you critically strike you gain focus up to your cap.</p>
+		</description>
+		<sheet>
+			<description>You critical strike on a roll of 19 or 20 on the d20. Additionally, whenever you critically strike you gain focus up to your cap.</description>
+		</sheet>
+	</element>
+	<element name="Tumble" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TUMBLE">
+		<description>
+			<p><em>7th-level Cat School feature</em></p>
+			<p>You can quickly respond to attacks by tumbling out of harm's way. When you would be hit by a melee weapon attack, you can use your reaction to spend 1 focus and move 5 feet directly away from your attacker. If you do, the creature must roll the attack again, potentially missing.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you would be hit by a melee weapon attack, you can use your reaction to spend 1 focus and move 5 feet directly away from your attacker. If you do, the creature must roll the attack again, potentially missing.</description>
+		</sheet>
+	</element>
+	<element name="Impeccable Instinct" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_IMPECCABLE_INSTINCT">
+		<description>
+			<p><em>10th-level Cat School feature</em></p>
+			<p>Your instincts prevent you from being caught flatfooted. You can add your proficiency bonus to initiative rolls, and cannot be surprised. Additionally, when you make a Dexterity saving throw, you can expend 2 focus to grant yourself advantage.</p>
+		</description>
+		<sheet>
+			<description>You cannot be surprised. Additionally, when you make a Dexterity saving throw, you can expend 2 focus to grant yourself advantage.</description>
+		</sheet>
+        <rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Deadly Flurry" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_DEADLY_FLURRY">
+		<description>
+			<p><em>14th-level Cat School feature</em></p>
+			<p>You can use your focus to unleash a flurry of blows. When you take the attack action, you can expend 3 focus to make two additional weapon attacks as part of that action. Once you use this feature, you cannot use it again until you complete a long rest or critically strike with a weapon attack.</p>
+		</description>
+		<sheet action="3 Focus" usage="1/Long Rest">
+			<description>When you take the attack action, you can expend 3 focus to make two additional weapon attacks as part of that action. You regain this ability if you critically strike with a weapon attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Griffin School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_GRIFFIN_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>With honor and dignity, members of the Griffin school pride themselves on dispatching enemies and fulfilling contracts with utmost efficiency. Witchers of the Griffin school focus on enhancing their utilitarian magical spells and weaving them into their combat techniques.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOTAL_FOCUS" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SIGN_INTENSITY" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_OPULENCE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ELEMENTAL_FLOW" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOTAL_FOCUS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SIGN_INTENSITY" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_OPULENCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ELEMENTAL_FLOW" level="14" />
+		</rules>
+	</element>
+	<element name="Total Focus" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOTAL_FOCUS">
+		<description>
+			<p><em>3rd-level Cat School feature</em></p>
+			<p>You can close out all irrelevant sensory information to take in the battlefield. As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. Additionally, your focus cap increases by 1.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. 
+            Additionally, your focus cap increases by 1.</description>
+		</sheet>
+	</element>
+	<element name="Sign Intensity" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SIGN_INTENSITY">
+		<description>
+			<p><em>7th-level Cat School feature</em></p>
+			<p>You can channel additional energy into your signs to grant them new applications. When you cast a sign, you can expend 1 additional focus to add an extra effect as listed below:</p>
+            <p><strong>Igni: </strong>Creatures that fail their saving throw against your Igni sign drop any weapons or held items that are made of metal or flammable materials. Creatures resistant to fire damage are unaffected by this.</p>
+            <p><strong>Quen: </strong>A creature that triggers your Quen shield with a melee attack is pushed back 5 feet. If the attack's damage is reduced to zero, the attacker is also knocked prone.</p>
+            <p><strong>Yrden: </strong>Hostile creatures take 1d12 force damage when they start their turns inside or enter the circle.</p>
+            <p><strong>Aard: </strong>Creatures that fail their saving throw against your Aard sign also take 1d10 cold damage and have their movement reduced by half until the end of their next turn.</p>
+            <p><strong>Axii: </strong>A creature that fails its saving throw against your Axii sign has disadvantage on all saves to maintain its concentration on a spell until the end of its next turn.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you would be hit by a melee weapon attack, you can use your reaction to spend 1 focus and move 5 feet directly away from your attacker. If you do, the creature must roll the attack again, potentially missing.</description>
+		</sheet>
+	</element>
+	<element name="Opulence" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_OPULENCE">
+		<description>
+			<p><em>10th-level Cat School feature</em></p>
+			<p>You can channel the royal pride of a griffin to command an air of authority. You gain proficiency in the Persuasion skill. Additionally, when you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage.</p>
+		</description>
+		<sheet>
+			<description>When you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage.</description>
+		</sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Elemental Flow" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ELEMENTAL_FLOW">
+		<description>
+			<p><em>14th-level Cat School feature</em></p>
+			<p>Your mastery of signs allows you to use the energy they release to charge your weapon with arcane power. After you cast a sign, you may charge a weapon that you are holding provided it is not already charged with this feature. The next time you hit with a weapon attack using that weapon, that attack deals an additional 1d6 fire, lightning, or cold (your choice) damage and generates an additional 1 focus. If unused, this effect fades after one minute.</p>
+		</description>
+		<sheet>
+			<description>After you cast a sign, you may charge a weapon that you are holding provided it is not already charged with this feature. The next time you hit with a weapon attack using that weapon, that attack deals an additional 1d6 fire, lightning, or cold (your choice) damage and generates an additional 1 focus. If unused, this effect fades after one minute.</description>
+		</sheet>
+	</element>
+	
+	<!--Signs-->
+	<element name="Igni" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_IGNI">
+		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You blast flames at a creature within 15 feet. It must make a Dexterity saving throw, taking 2d6 fire damage on a failed save or half that on a successful save. </p>
+			<p class="indent"><b><i>Empowered.</i></b> When empowered, all creatures in a 15 foot cone are affected instead.</p>
+			<p class="indent"><b><i>Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (3d6), 11 (4d6), and 17 (5d6).</p>
+			<p>You can also cast the Control Flames cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">15 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+		<rules>
+			<grant id="ID_POTA_SPELL_CONTROLFLAMES" spellcasting="Witcher" />
+		</rules>
+	</element>
+	<element name="Quen" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_QUEN">
+		<supports>Witcher</supports>
+		<description>
+			<p>You place a protective shield on yourself. For the next minute, the first time you take damage from a weapon attack, that damage is reduced by 1d8 + your Wisdom modifier.</p>
+			<p class="indent"><b><i>Empowered.</i></b> When empowered, you can cast this as a reaction to being attacked.</p>
+			<p class="indent"><b><i>Upgrade.</i></b> This reduction increases by 1d8 at level 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Yrden" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_YRDEN">
+		<supports>Witcher</supports>
+		<description>
+			<p>You place down a magical circle with a radius of 10 feet around you that lasts one minute. Inside the circle is difficult terrain for hostile creatures, and enemies resistant to only Bludgeoning/Piercing/Slashing damage lose this ability.</p>
+			<p class="indent"><b><i>Empowered.</i></b> When empowered, all ranged attacks made by hostile creatures into the circle from without are made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Aard" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_AARD">
+		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You blow a powerful burst of air at a creature within 15 feet. It must make a Strength saving throw or be pushed 10 feet away and knocked prone.</p>
+			<p class="indent"><b><i>Empowered.</i></b> When empowered, all creatures in a 5 foot radius sphere around you are affected instead.</p>
+			<p>You can also cast the Gust cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">15 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+		<rules>
+			<grant id="ID_POTA_SPELL_GUST" spellcasting="Witcher" />
+		</rules>
+	</element>
+	<element name="Axii" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_AXII">
+		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to cloud the mind of a creature within 15 feet. It must make a Wisdom saving throw; on a failed save, the creature has disadvantage on weapon attacks it makes until the end of its next turn. A creature immune to being charmed automatically succeeds on its save.</p>
+			<p class="indent"><b><i>Empowered.</i></b> When empowered, the creature is instead stunned until the end of its next turn.</p>
+			<p>You can also cast the Friends cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">15 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+		<rules>
+			<grant id="ID_2024PHB_SPELL_FRIENDS" spellcasting="Witcher" />
+		</rules>
+	</element>
+
+	<!--Alchemical Recipes-->
+	
+	<element name="Swallow" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_SWALLOW">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>The brain of a creature with the monstrosity or abberation type, various herbs worth 10gp, 5gp of alcohol.</p>
+			<p>A light red, sweet liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, you recover 4 + your Constitution modifier (min 0) hp at the start of each of your turns.</p>
+			<p>Starting at 9th level, you can double the max health reduction and healing of this potion when crafting it.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Thunderbolt" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_THUNDERBOLT">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Flesh or bones of a creature with the undead type, various herbs worth 10gp, 5gp of alcohol.</p>
+			<p>A transparent green, sour liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your weapon attacks deal an additional 1d4 damage.</p>
+			<p>Starting at 9th level, you can double the max health reduction and and increase the attack bonus of this potion to 1d8 when crafting it.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Petri's Philter" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_PETRIS_PHILTER">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Dust from the remains of a creature that has resistance or immunity to nonmagical damage, various herbs worth 10gp, 5gp of alcohol.</p>
+			<p>An opaque white, tasteless liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your signs' effects act as if you were 6 levels higher, and your Sign Save DC is increased by 2.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Tawny Owl" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_TAWNY_OWL">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Blood of a creature with the beast type, various herbs worth 10gp, 5gp of alcohol.</p>
+			<p>A bitter, deep purple liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, you gain 1 focus at the start of each of your turns.</p>
+			<p>Starting at 9th level, you can double the max health reduction and focus generation of this potion when crafting it.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Blizzard" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_BLIZZARD">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Remains of a creature with the elemental type, various herbs worth 10gp, 5gp of alcohol.</p>
+			<p>A refreshing and cold, clear blue liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your AC increases by 1.</p>
+			<p>Starting at 9th level, you can double the max health reduction and AC bonus of this potion when crafting it.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Sword Oil" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_SWORD_OIL">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Remains of a creature of the desired type, various herbs worth 5gp.</p>
+			<p>You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional 1d4 damage of the weapon's type. Applying another oil replaces any oils previously applied.</p>
+			<p>This bonus damage increases to 1d6 at 9th level.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Dancing Star" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_DANCING_STAR">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Salts worth 10gp</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates dealing 2d6 fire damage to each creature within a 10 foot radius, or half as much damage on a successful DC 14 Dex save. The bomb creates a 10 foot radius patch of fire, dealing 1d6 fire damage to creatures that enter it or start their turn in it. The fire lasts 1 minute or until extinguished.</p>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Devil's Puffball" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_DEVILS_PUFFBALL">
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Salts worth 5gp, herbs worth 5gp</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates releasing poisonous gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take 2d8 poison damage, or half as much on a successful DC 14 Con save. The gas disperses after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Dimeritium Bomb" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_DIMETERIUM_BOMB">	
+		<supports>Alchemical Recipe</supports>	
+		<description>
+			<p><em>Ingredients: </em>Salts worth 5gp, dimeritium dust worth 150gp</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates releasing grains of magic-nullifying dimeritium into a cloud of radius 10 feet. Creatures inside the cloud cannot cast spells, and magic items inside the cloud temporarily lose their magical properties. Any ongoing magical effects from spells of 6th level or lower are dispelled within the cloud. The cloud disperses after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Moondust" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_MOONDUST">		
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Salts worth 5gp, 10gp of Quicksilver</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates releasing finely powdered silver into a cloud of radius 10 feet. Creatures inside the cloud cannot transform, and shapechangers affected by this revert to their normal form. The dust disperses after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Northern Wind" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_NORTHERN_WIND">		
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Salts worth 5gp, a pearl worth 5gp, acidic solution worth 5gp</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates releasing freezing cold gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take 1d8 cold damage, or half as much on a successful DC 14 Con save. Creatures that fail their save have their movement reduced by half until the end of their turn. The gas disperses after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Samum" type="Magic Item" source="Batav's Additions 2024" id="ID_2024BATAV_ITEM_SAMUM">		
+		<supports>Alchemical Recipe</supports>
+		<description>
+			<p><em>Ingredients: </em>Salts worth 5gp, herbs worth 5gp</p>
+			<p>When lobbed up to 30 feet as an action, the bomb detonates in a bright flash. Creatures within 10 feet of the explosion take 1d8 radiant damage and must make a DC 14 Con save or be blinded until the end of their next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Witcher's Recipes</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Bomb</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Feature Replacement Grants
+	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_MUTATIONS" />
+	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_ALCHEMY" />
+	<element name="Ki Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_KI" />
+	<element name="Unarmored Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_SIGNS" />
+	<element name="Witcher School Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_MONASTIC_TRADITION" />
+	<element name="Deflect Missiles Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_DEFLECT_MISSILES" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_EXTRA_ATTACK" />
+	<element name="Stunning Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_STUDIOUS_EYE" />
+	<element name="Ki-Empowered Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_KI_MEDITATION" />
+	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_EVASION" />
+	<element name="Stillness of Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_STILLNESS_OF_MIND" />
+	<element name="Purity of Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_PURITY_OF_BODY" />
+	<element name="Tongue of the Sun and Moon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_TONGUE_OF_THE_SUN_AND_MOON" />
+	<element name="Diamond Soul Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_DIAMOND_SOUL" />
+	<element name="Timeless Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_TIMELESS_BODY" />
+	<element name="Empty Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_EMPTY_BODY" />
+	<element name="Perfect Self Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WITCHER_PERFECT_SELF" /> -->
+</elements>
