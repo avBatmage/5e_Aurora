@@ -46,7 +46,7 @@
 				<thead>
 					<tr><td class="col-level">Level</td><td class="col-prof">Prof. Bonus</td><td class="left">Features</td><td class="col-10">Signs known / Focus Cap</td><td class="col-10">Mutated Movement</td></tr>
 				</thead>
-				<tr><td>1</td><td>+2</td><td class="left">Alchemy, Mutations</td>								<td>2</td><td>+5 ft.</td></tr>
+				<tr><td>1</td><td>+2</td><td class="left">Alchemy, Mutations, Weapon Mastery</td>				<td>2</td><td>+5 ft.</td></tr>
 				<tr><td>2</td><td>+2</td><td class="left">Focus, Signs</td>										<td>2</td><td>+5 ft.</td></tr>
 				<tr><td>3</td><td>+2</td><td class="left">Witcher School</td>									<td>2</td><td>+5 ft.</td></tr>
 				<tr><td>4</td><td>+2</td><td class="left">Ability Score Improvement</td>						<td>2</td><td>+5 ft.</td></tr>
@@ -69,6 +69,7 @@
 			</table>
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS" />
+			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS" />
@@ -104,6 +105,7 @@
 
 			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY" level="1" />
 			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS" level="1" />
+			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY" level="1"/>
 			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS" level="2" />
 			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS" level="2" />
 			<grant type="Class Feature" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS" level="3" />
@@ -139,7 +141,7 @@
 	</element>
 	<element name="Alchemy" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY">
 		<description>
-			<p><em>1st-level witcher feature</em></p>
+			<p><em>1st-level Witcher feature</em></p>
 			<p>You have been trained in the specialized alchemy used by witchers to prepare themselves for combat. During a short or long rest, you can use Alchemist's supplies to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate recipe, a list of which are found at the end of this class description. You can carry 2 alchemy products at any given time, and only you can use the products you create.</p>
 			<p>The number of recipes you know is equal to your proficiency bonus + your Wisdom modifier. At the DM's discretion, other recipes may be available for purchase or found in the world.</p>
 		</description>
@@ -164,7 +166,7 @@
 	</element>
 	<element name="Mutations" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MUTATIONS">
 		<description>
-			<p><em>1st-level witcher feature</em></p>
+			<p><em>1st-level Witcher feature</em></p>
 			<p>As a witcher, you have undergone mutations to your body including the perilous Trial of the Grasses.</p>
 			<p>Starting at 1st level, you gain the following benefits:</p>
 			<ul>
@@ -208,9 +210,19 @@
 			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
+	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+		<description>
+			<p><em>1st-level Witcher feature</em></p>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
+			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2"/>
+		</rules>
+	</element>
 	<element name="Witcher's Focus" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHERS_FOCUS">
 		<description>
-			<p><em>2nd-level witcher feature</em></p>
+			<p><em>2nd-level Witcher feature</em></p>
 			<p>You have learned the art of reading your opponent and the battlefield, allowing you to enhance your attacks and use powerful abilities. Your focus is set to 1 when you roll initiative, and you gain 1 focus each time you successfully hit with a weapon attack, up to your focus cap, which is detailed on the witcher class table. You lose all focus after combat ends.</p>
 			<p>When you make a weapon attack, you can spend 2 focus to grant yourself advantage on that attack; if you do so, that attack cannot generate focus.</p>
 			<p>Starting at 11th level, your focus is set to 3 when you roll initiative instead of 1.</p>
@@ -230,7 +242,7 @@
 	</element>
 	<element name="Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_SIGNS">
 		<description>
-			<p><em>2nd-level witcher feature</em></p>
+			<p><em>2nd-level Witcher feature</em></p>
 			<p>Starting at 2nd level, you are able to channel your focus to cast a few simple but practical magic hexes used by witchers called signs. You can cast a sign in place of a weapon attack when you take the Attack action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.</p>
 			<p>Signs are considered 1st level evocation spells with somatic components for the purposes of other magical effects, and are not considered weapon attacks.</p>
 			<p>You learn two signs at 2nd level, and another at 5th, 9th, and 13th level.</p>
@@ -261,7 +273,7 @@
 	</element>
 	<element name="Witcher Subclass" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WITCHER_SUBCLASS">
 		<description>
-			<p><em>3rd-level witcher feature</em></p>
+			<p><em>3rd-level Witcher feature</em></p>
 			<p>At 3rd level, you choose a witcher school whose techniques and style you wish to employ. Choose between the Wolf, Viper, Bear, Cat, or Griffin schools, detailed at the end of this class description. The school you choose grants you features at 3rd level, then again at 7th, 10th, and 14th level.</p>
 		</description>
 		<sheet display="false" />
@@ -271,7 +283,7 @@
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ABILITY_SCORE_IMPROVEMENT">
 		<description>
-			<p><em>4th-level witcher feature</em></p>
+			<p><em>4th-level Witcher feature</em></p>
 			<p>When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
@@ -285,7 +297,7 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EXTRA_ATTACK">
 		<description>
-			<p><em>5th-level witcher feature</em></p>
+			<p><em>5th-level Witcher feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
@@ -297,7 +309,7 @@
 	</element>
 	<element name="Studious Eye" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_STUDIOUS_EYE">
 		<description>
-			<p><em>6th-level witcher feature</em></p>
+			<p><em>6th-level Witcher feature</em></p>
 			<p>You have learned to identify certain traits and characteristics in creatures you fight. By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn one aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities. At 13th level you may learn two aspects of your choice instead.</p>
 			<p>Additionally, choose one of Intelligence (Investigation), Wisdom (Perception), Wisdom (Insight), or Wisdom (Survival) that you are proficient in; your proficiency bonus is doubled for any ability check that uses the chosen skill. At 13th level, you can choose another proficiency from the list.</p>
 		</description>
@@ -313,7 +325,7 @@
 	</element>
 	<element name="Meditation" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_MEDITATION">
 		<description>
-			<p><em>6th-level witcher feature</em></p>
+			<p><em>6th-level Witcher feature</em></p>
 			<p>At 6th level, you can manipulate your metabolism to deeply meditate and stave off both hunger and exhaustion. You can enter a trance-like state for any number of hours. During this time, you accumulate hunger and thirst ten times slower than normal, and do not require sleep. After 6 hours of largely uninterrupted meditation, you receive the benefits of a long rest, as well as those of a lesser restoration spell.</p>
 			<p>While meditating you cannot see and are less aware of your surroundings. You have disadvantage on any Wisdom (Perception) checks but are otherwise conscious.</p>
 		</description>
@@ -323,7 +335,7 @@
 	</element>
 	<element name="Evasion" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EVASION">
 		<description>
-			<p><em>7th-level witcher feature</em></p>
+			<p><em>7th-level Witcher feature</em></p>
 			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell.</p>
 			<p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 		</description>
@@ -333,7 +345,7 @@
 	</element>
 	<element name="Empowered Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EMPOWERED_SIGNS">
 		<description>
-			<p><em>9th-level witcher feature</em></p>
+			<p><em>9th-level Witcher feature</em></p>
 			<p>You can use new, more powerful variants of signs for an enhanced effect. By consuming 2 additional focus when you cast it, you can cast an alternative form of each sign as detailed in their descriptions.</p>
 		</description>
 		<sheet>
@@ -342,7 +354,7 @@
 	</element>
 	<element name="Battle Signs" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_BATTLE_SIGNS">
 		<description>
-			<p><em>11th-level witcher feature</em></p>
+			<p><em>11th-level Witcher feature</em></p>
 			<p>You can incorporate signs more fluidly into your assault. When you take the Attack action on your turn, you can cast a sign without forgoing any of your weapon attacks. Additionally, at the end of each of your turns, if you haven't cast a sign this turn, you gain 1 focus.</p>
 		</description>
 		<sheet>
@@ -351,7 +363,7 @@
 	</element>
 	<element name="Quick Wits" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_QUICK_WITS">
 		<description>
-			<p><em>13th-level witcher feature</em></p>
+			<p><em>13th-level Witcher feature</em></p>
 			<p>You are quick to act and ready to leap into combat at an opportune time. You have advantage on initiative rolls.</p>
 		</description>
 		<sheet>
@@ -363,7 +375,7 @@
 	</element>
 	<element name="Foil" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_FOIL">
 		<description>
-			<p><em>15th-level witcher feature</em></p>
+			<p><em>15th-level Witcher feature</em></p>
 			<p>You are capable of foiling the plans of casters and monsters alike. When a creature forces you or a friendly creature to make a saving throw, you can use your reaction to make a melee weapon attack against it. If your attack successfully hits, any creature affected automatically succeeds on their saving throw. Once you use this feature, you cannot use it again until you complete a short rest.</p>
 		</description>
 		<sheet usage="1/Short Rest">
@@ -372,7 +384,7 @@
 	</element>
 	<element name="Alchemy Expertise" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY_EXPERTISE">
 		<description>
-			<p><em>18th-level witcher feature</em></p>
+			<p><em>18th-level Witcher feature</em></p>
 			<p>You have mastered efficiently using materials and recycling components in your alchemical crafts. You ignore crafting components when creating Alchemy products. Additionally, you can carry 3 products at a time, instead of 2.</p>
 			<p>When you gain this feature, you learn 4 new Alchemy recipes of your choice.</p>
 		</description>
@@ -388,14 +400,14 @@
 	<element name="Epic Boon" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_EPIC_BOON">
 		<compendium display="false" />
 		<description>
-			<p><em>19th-level witcher feature</em></p>
+			<p><em>19th-level Witcher feature</em></p>
 			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.</p>
 		</description>
 		<sheet display="false"></sheet>
 	</element>
 	<element name="Adrenaline Rush" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_ADRENALINE_RUSH">
 		<description>
-			<p><em>20th-level witcher feature</em></p>
+			<p><em>20th-level Witcher feature</em></p>
 			<p>You can utilize your adrenaline to burst into a rush of action. At the end of your turn, if you have 5 focus available, you can choose to immediately take another turn; at the end of that turn, you lose all focus.</p>
 			<p>Once you use this feature, you cannot use it again until you complete a long rest.</p>
 		</description>
