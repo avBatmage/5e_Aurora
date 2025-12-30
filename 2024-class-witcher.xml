@@ -146,7 +146,7 @@
 			<p>The number of recipes you know is equal to your proficiency bonus + your Wisdom modifier. At the DM's discretion, other recipes may be available for purchase or found in the world.</p>
 		</description>
 		<sheet>
-			<description>During a short or long rest, you can use Alchemist's supplies to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate recipe. You can carry 2 alchemy products at any given time, and only you can use the products you create.
+			<description>During a short or long rest, you can use Alchemist's supplies to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate recipe. You can carry {{alchemy:cap}} alchemy products at any given time, and only you can use the products you create.
 			You know {{alchemy:recipes}} recipes.</description>
 		</sheet>
 		<rules>
@@ -258,9 +258,9 @@
 		</spellcasting>
 		<rules>
 			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="2" number="2" spellcasting="Witcher" />
-			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="5" number="2" spellcasting="Witcher" />
-			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="9" number="2" spellcasting="Witcher" />
-			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="15" number="2" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="5" number="1" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="9" number="1" spellcasting="Witcher" />
+			<select type="Spell" name="Sign (witcher)" supports="$(spellcasting:list), 1" level="15" number="1" spellcasting="Witcher" />
 			<stat name="witcher:signs:count" value="2" bonus="base" level="2" />
 			<stat name="witcher:signs:count" value="3" bonus="base" level="5" />
 			<stat name="witcher:signs:count" value="4" bonus="base" level="9" />
@@ -313,12 +313,12 @@
 			<p>Additionally, choose one of Intelligence (Investigation), Wisdom (Perception), Wisdom (Insight), or Wisdom (Survival) that you are proficient in; your proficiency bonus is doubled for any ability check that uses the chosen skill. At 13th level, you can choose another proficiency from the list.</p>
 		</description>
 		<sheet>
-			<description>By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn  aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities.</description>
+			<description>By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn {{witcher:studious eye}} aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities.</description>
 		</sheet>
 		<rules>
-			<stat name="witcher:signs:count" value="1" level="6" />
-			<stat name="witcher:signs:count" value="2" level="13" />
-			<select type="Class Feature" name="Expertise (Witcher)" level="2" number="1" supports="ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_SURVIVAL"/>
+			<stat name="witcher:studious eye" value="1" level="6" />
+			<stat name="witcher:studious eye" value="2" level="13" />
+			<select type="Class Feature" name="Expertise (Witcher)" level="6" number="1" supports="ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_SURVIVAL"/>
 			<select type="Class Feature" name="Expertise (Witcher)" level="13" number="1" supports="ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_SURVIVAL"/>
 		</rules>
 	</element>
@@ -572,12 +572,17 @@
 			<p><em>7th-level Bear School feature</em></p>
 			<p>You can imbue your strikes with your unnatural vigor; you have a pool of d6 dice equal to your Wisdom modifier. When you hit with a melee weapon attack, you can expend 1 focus to spend a die from the pool and add it to your damage of that attack. Alternatively you may spend your hit dice. Starting at 14th level, you can choose to expend 2 dice instead. When you use this feature as part of the Attack action, you can make a Shove attack as a bonus action for the rest of your turn.</p>
 		</description>
-		<sheet usage="{{wisdom:modifier}}d6/Long rest">
+		<sheet usage="{{vitalic:dice:count}}d6/Long rest">
 			<description>When you hit with a melee weapon attack, you can expend 1 focus to spend a die from the pool and add it to your damage of that attack. Alternatively you may spend your hit dice. When you use this feature as part of the Attack action, you can make a Shove attack as a bonus action for the rest of your turn.</description>
 		</sheet>
 		<rules>
 			<stat name="vitalic:dice:times" value="1" bonus="base" />
 			<stat name="vitalic:dice:times" value="2" bonus="base" level="14" />
+			<stat name="vitalic:dice:count" value="2" />
+			<stat name="vitalic:dice:count" value="1" level="5" />
+			<stat name="vitalic:dice:count" value="1" level="9" />
+			<stat name="vitalic:dice:count" value="1" level="13" />
+			<stat name="vitalic:dice:count" value="1" level="17" />
 		</rules>
 	</element>
 	<element name="Thick Skin" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_THICK_SKIN">
@@ -690,6 +695,9 @@
 			<description>As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. 
             Additionally, your focus cap increases by 1.</description>
 		</sheet>
+		<rules>
+			<stat name="witcher:focus:cap" value="1" />
+		</rules>
 	</element>
 	<element name="Sign Intensity" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SIGN_INTENSITY">
 		<description>
@@ -701,8 +709,14 @@
             <p><strong>Aard: </strong>Creatures that fail their saving throw against your Aard sign also take 1d10 cold damage and have their movement reduced by half until the end of their next turn.</p>
             <p><strong>Axii: </strong>A creature that fails its saving throw against your Axii sign has disadvantage on all saves to maintain its concentration on a spell until the end of its next turn.</p>
 		</description>
-		<sheet action="Reaction">
-			<description>When you would be hit by a melee weapon attack, you can use your reaction to spend 1 focus and move 5 feet directly away from your attacker. If you do, the creature must roll the attack again, potentially missing.</description>
+		<sheet>
+			<description>You can channel additional energy into your signs to grant them new applications. When you cast a sign, you can expend 1 additional focus to add an extra effect as listed below:
+			Igni: Creatures that fail their saving throw against your Igni sign drop any weapons or held items that are made of metal or flammable materials. Creatures resistant to fire damage are unaffected by this.
+			Quen: A creature that triggers your Quen shield with a melee attack is pushed back 5 feet. If the attack's damage is reduced to zero, the attacker is also knocked prone.
+            Yrden: Hostile creatures take 1d12 force damage when they start their turns inside or enter the circle.
+            Aard: Creatures that fail their saving throw against your Aard sign also take 1d10 cold damage and have their movement reduced by half until the end of their next turn.
+            Axii: A creature that fails its saving throw against your Axii sign has disadvantage on all saves to maintain its concentration on a spell until the end of its next turn.
+			</description>
 		</sheet>
 	</element>
 	<element name="Opulence" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_OPULENCE">
@@ -856,7 +870,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -871,7 +884,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -885,7 +897,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -900,7 +911,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -915,7 +925,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -929,8 +938,7 @@
 		<setters>
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
-			<set name="type">Potion</set>
-			<set name="rarity">Common</set>
+			<set name="type">Oil</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -945,7 +953,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Bomb</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -959,7 +966,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Bomb</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -973,7 +979,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Bomb</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -987,7 +992,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Bomb</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -1001,7 +1005,6 @@
 			<set name="category">Witcher's Recipes</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Bomb</set>
-			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
