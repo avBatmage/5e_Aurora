@@ -152,8 +152,7 @@
 		<rules>
 			<stat name="alchemy:cap" value="2" />
 			<stat name="alchemy:recipes" value="proficiency" />
-			<stat name="alchemy:recipes" value="wisdom:modifier" />
-			<select type="Archetype" name="witcher Subclass" supports="Witcher School" /><!--
+			<stat name="alchemy:recipes" value="wisdom:modifier" /><!--
 			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="4" level="1"/>
 			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="4"/>
 			<select type="Class Feature" name="Alchemical Recipe" supports="Alchemical Recipe" number="1" level="5"/>
