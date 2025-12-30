@@ -210,7 +210,7 @@
 			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY">
 		<description>
 			<p><em>1st-level Witcher feature</em></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
