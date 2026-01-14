@@ -135,7 +135,6 @@
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
-				<select type="Proficiency" name="Skill Proficiency (Witcher)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
 			</rules>
 		</multiclass>
 	</element>
@@ -205,8 +204,8 @@
 			<stat name="mutations:darkvision" value="60" bonus="mutations:darkvision" level="10" />
 			<stat name="mutations:darkvision" value="120" bonus="mutations:darkvision" level="18" />
 			<stat name="darkvision:range" value="mutations:darkvision" bonus="base" />
-			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
-			<stat name="blindsight:range" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" level="18" />
+			<stat name="blindsight:range" value="30" bonus="base" level="18" />
 		</rules>
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY">
