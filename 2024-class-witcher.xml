@@ -4,7 +4,7 @@
 		<name>Witcher</name>
 		<description>The Witcher class by johnofbohemia.</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/irc58o/5e_WITCHER_class_v20_a_simple_robust_and_faithful/">johnofbohemia</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-class-witcher.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-witcher.xml" />
 		</update>
 	</info>
@@ -85,7 +85,7 @@
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ALCHEMY_EXPERTISE" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_EPIC_BOON" />
 			<div element="ID_2024BATAV_CLASS_FEATURE_WITCHER_ADRENALINE_RUSH" />
-		</description>
+		</description> 
 		<sheet display="false">
 			<description>Professional monster slayers for hire, witchers are individuals who have undergone intense training and dangerous mutations to make them both capable and versatile fighters against a vast array of inhuman opponents.</description>
 		</sheet>
@@ -208,7 +208,7 @@
 			<stat name="blindsight:range" value="30" bonus="base" level="18" />
 		</rules>
 	</element>
-	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY">
+	<element name="Weapon Mastery" type="Class Feature" source="Batav's Additions 2024" id="ID_2024BATAV_CLASS_FEATURE_WITCHER_WEAPON_MASTERY">
 		<description>
 			<p><em>1st-level Witcher feature</em></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
@@ -415,128 +415,6 @@
 	</element>
 	
 <!-- Subclasses -->
-	<element name="Wolf School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_WOLF_SCHOOL">
-		<supports>Witcher School</supports>
-		<description>
-			<p>Based in Kaer Morhen, the Wolf school is perhaps the most renowned and populous school remaining, although it is still home to few students. The school focuses on mastering the basic witcher techniques, complementing them with new maneuvers to deal with any kind of monstrous prey.</p>
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" level="3" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" level="7" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" level="10" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" level="14" />
-		</rules>
-	</element>
-	<element name="Spins and Pirouettes" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES">
-		<description>
-			<p><em>3rd-level Warrior of Mercy feature</em></p>
-			<p>You can nimbly leap across the battlefield to engage opponents. Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage.</p>
-			<p>Additionally you can carry one extra Alchemical Product.</p>
-		</description>
-		<sheet>
-			<description>Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage. Additionally you can carry one extra Alchemical Product.</description>
-		</sheet>
-		<rules>
-			<stat name="alchemy:cap" value="1" />
-		</rules>
-	</element>
-	<element name="Arrow Deflection" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION">
-		<description>
-			<p><em>7th-level Warrior of Mercy feature</em></p>
-			<p>You have learned to defend yourself from projectiles by parrying them. When a creature makes a ranged weapon attack against you, you can use your reaction and spend 1 focus to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses.</p>
-		</description>
-		<sheet action="Reaction">
-			<description>When a creature makes a ranged weapon attack against you, you can use your reaction and spend 1 focus to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses.</description>
-		</sheet>
-	</element>
-	<element name="Battle Trance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE">
-		<description>
-			<p><em>10th-level Warrior of Mercy feature</em></p>
-			<p>Your focus is sharpened by the danger of combat. You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</p>
-		</description>
-		<sheet>
-			<description>You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</description>
-		</sheet>
-	</element>
-	<element name="Aggressive Maneuvers" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS">
-		<description>
-			<p><em>14th-level Warrior of Mercy feature</em></p>
-			<p>You can use your focus to execute especially aggressive attacks. You learn the following maneuvers, which you can use as an action by expending 3 focus.</p>
-			<p><strong>Whirl.</strong> You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.</p>
-			<p><strong>Rend.</strong> You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</p>
-		</description>
-		<sheet action="Attack Action">
-			<description>You learn the following maneuvers, which you can use by replacing your attacks on the Attack Action and expending 3 focus.
-			Whirl. You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.
-			Rend. You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</description>
-		</sheet>
-	</element>
-	
-	<element name="Viper School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_VIPER_SCHOOL">
-		<supports>Witcher School</supports>
-		<description>
-			<p>Based in an unknown location and possibly dissolved, the Viper school is a secretive organization, its students few and scattered. The school is known for doing whatever needs to be done for a contract, specializing in hit and run tactics some may call dirty fighting.</p>
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" />
-			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" level="3" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" level="7" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" level="10" />
-			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" level="14" />
-		</rules>
-	</element>
-	<element name="Twin Fangs" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS">
-		<description>
-			<p><em>3rd-level Warrior of Shadow feature</em></p>
-			<p>You can adopt the traditional two-weapon fighting technique of the Viper School. You can ignore the somatic requirement of signs while using two-weapon fighting; additionally, you gain the Two Weapon Fighting fighting style.</p>
-		</description>
-		<sheet>
-			<description>You can ignore the somatic requirement of signs while using two-weapon fighting.</description>
-		</sheet>
-		<rules>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
-		</rules>
-	</element>
-	<element name="Slippery" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY">
-		<description>
-			<p><em>7th-level Warrior of Shadow feature</em></p>
-			<p>You are hard to keep in place and adept at escaping sticky situations. You can expend 1 focus to Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</p>
-		</description>
-		<sheet action="Bonus Action" usage="1 Focus">
-			<description>Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</description>
-		</sheet>
-	</element>
-	<element name="Tolerance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE">
-		<description>
-			<p><em>10th-level Warrior of Shadow feature</em></p>
-			<p>You have become accustomed to metabolizing toxic materials. You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</p>
-		</description>
-		<sheet>
-			<description>You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</description>
-		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-		</rules>
-	</element>
-	<element name="Killing Strike" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE">
-		<description>
-			<p><em>14th-level Warrior of Shadow feature</em></p>
-			<p>You are an expert at opportunistically striking vulnerable enemies; When score a critical hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</p>
-		</description>
-		<sheet>
-			<description>When score a critical hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</description>
-		</sheet>
-	</element>
-
 	<element name="Bear School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_BEAR_SCHOOL">
 		<supports>Witcher School</supports>
 		<description>
@@ -564,6 +442,7 @@
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 		</rules>
 	</element>
 	<element name="Vitalic Blows" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_VITALIC_BLOWS">
@@ -610,7 +489,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
-
+	
 	<element name="Cat School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_CAT_SCHOOL">
 		<supports>Witcher School</supports>
 		<description>
@@ -687,11 +566,11 @@
 	</element>
 	<element name="Total Focus" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOTAL_FOCUS">
 		<description>
-			<p><em>3rd-level Cat School feature</em></p>
+			<p><em>3rd-level Griffin School feature</em></p>
 			<p>You can close out all irrelevant sensory information to take in the battlefield. As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. Additionally, your focus cap increases by 1.</p>
 		</description>
 		<sheet>
-			<description>As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. 
+			<description>As a bonus action, you can focus on a creature to mark it; the marked creature has disadvantage on saves against all your signs. You can mark a new creature after the target dies or by removing the mark as an action.
             Additionally, your focus cap increases by 1.</description>
 		</sheet>
 		<rules>
@@ -700,7 +579,7 @@
 	</element>
 	<element name="Sign Intensity" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SIGN_INTENSITY">
 		<description>
-			<p><em>7th-level Cat School feature</em></p>
+			<p><em>7th-level Griffin School feature</em></p>
 			<p>You can channel additional energy into your signs to grant them new applications. When you cast a sign, you can expend 1 additional focus to add an extra effect as listed below:</p>
             <p><strong>Igni: </strong>Creatures that fail their saving throw against your Igni sign drop any weapons or held items that are made of metal or flammable materials. Creatures resistant to fire damage are unaffected by this.</p>
             <p><strong>Quen: </strong>A creature that triggers your Quen shield with a melee attack is pushed back 5 feet. If the attack's damage is reduced to zero, the attacker is also knocked prone.</p>
@@ -709,7 +588,7 @@
             <p><strong>Axii: </strong>A creature that fails its saving throw against your Axii sign has disadvantage on all saves to maintain its concentration on a spell until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description>You can channel additional energy into your signs to grant them new applications. When you cast a sign, you can expend 1 additional focus to add an extra effect as listed below:
+			<description>When you cast a sign, you can expend 1 additional focus to add an extra effect:
 			Igni: Creatures that fail their saving throw against your Igni sign drop any weapons or held items that are made of metal or flammable materials. Creatures resistant to fire damage are unaffected by this.
 			Quen: A creature that triggers your Quen shield with a melee attack is pushed back 5 feet. If the attack's damage is reduced to zero, the attacker is also knocked prone.
             Yrden: Hostile creatures take 1d12 force damage when they start their turns inside or enter the circle.
@@ -720,11 +599,11 @@
 	</element>
 	<element name="Opulence" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_OPULENCE">
 		<description>
-			<p><em>10th-level Cat School feature</em></p>
-			<p>You can channel the royal pride of a griffin to command an air of authority. You gain proficiency in the Persuasion skill. Additionally, when you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage.</p>
+			<p><em>10th-level Griffin School feature</em></p>
+			<p>You can channel the royal pride of a griffin to command an air of authority. You gain proficiency in the Persuasion skill. Additionally, when you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage. Additionally the first time a creature fails it's saving throw or takes damage from your signs on your turn, you regain 1 Focus.</p>
 		</description>
 		<sheet>
-			<description>When you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage.</description>
+			<description>When you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage. Additionally the first time a creature fails it's saving throw or takes damage from your signs on your turn, you regain 1 Focus.</description>
 		</sheet>
         <rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
@@ -732,7 +611,7 @@
 	</element>
 	<element name="Elemental Flow" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ELEMENTAL_FLOW">
 		<description>
-			<p><em>14th-level Cat School feature</em></p>
+			<p><em>14th-level Griffin School feature</em></p>
 			<p>Your mastery of signs allows you to use the energy they release to charge your weapon with arcane power. After you cast a sign, you may charge a weapon that you are holding provided it is not already charged with this feature. The next time you hit with a weapon attack using that weapon, that attack deals an additional 1d6 fire, lightning, or cold (your choice) damage and generates an additional 1 focus. If unused, this effect fades after one minute.</p>
 		</description>
 		<sheet>
@@ -740,8 +619,130 @@
 		</sheet>
 	</element>
 	
+	<element name="Viper School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_VIPER_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>Based in an unknown location and possibly dissolved, the Viper school is a secretive organization, its students few and scattered. The school is known for doing whatever needs to be done for a contract, specializing in hit and run tactics some may call dirty fighting.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE" level="14" />
+		</rules>
+	</element>
+	<element name="Twin Fangs" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TWIN_FANGS">
+		<description>
+			<p><em>3rd-level Viper School feature</em></p>
+			<p>You can adopt the traditional two-weapon fighting technique of the Viper School. You can ignore the somatic requirement of signs while using two-weapon fighting; additionally, you gain the Two Weapon Fighting fighting style.</p>
+		</description>
+		<sheet>
+			<description>You can ignore the somatic requirement of signs while using two-weapon fighting.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
+		</rules>
+	</element>
+	<element name="Slippery" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SLIPPERY">
+		<description>
+			<p><em>7th-level Viper School feature</em></p>
+			<p>You are hard to keep in place and adept at escaping sticky situations. You can expend 1 focus to Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus">
+			<description>Disengage or Dash as a bonus action; if you do, you can also remove the restrained or grappled condition from yourself.</description>
+		</sheet>
+	</element>
+	<element name="Tolerance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_TOLERANCE">
+		<description>
+			<p><em>10th-level Viper School feature</em></p>
+			<p>You have become accustomed to metabolizing toxic materials. You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when you consume a potion, the max hp reduction you suffer is halved.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Killing Strike" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_KILLING_STRIKE">
+		<description>
+			<p><em>14th-level Viper School feature</em></p>
+			<p>You are an expert at opportunistically striking vulnerable enemies; When score a hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you hit with a melee weapon attack against a creature, you can spend 1 Focus to make them succeed on a Constitution Saving throw against your Sign save DC or become Blinded or Poisoned (Your choice) until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Wolf School" type="Archetype" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_WITCHER_WOLF_SCHOOL">
+		<supports>Witcher School</supports>
+		<description>
+			<p>Based in Kaer Morhen, the Wolf school is perhaps the most renowned and populous school remaining, although it is still home to few students. The school focuses on mastering the basic witcher techniques, complementing them with new maneuvers to deal with any kind of monstrous prey.</p>
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" />
+			<div element="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES" level="3" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION" level="7" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS" level="14" />
+		</rules>
+	</element>
+	<element name="Spins and Pirouettes" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_SPINS_AND_PIROUETTES">
+		<description>
+			<p><em>3rd-level Wolf School feature</em></p>
+			<p>You can nimbly leap across the battlefield to engage opponents. Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage.</p>
+			<p>Additionally you can carry one extra Alchemical Product.</p>
+		</description>
+		<sheet>
+			<description>Immediately before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage. Additionally you can carry one extra Alchemical Product.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemy:cap" value="1" />
+		</rules>
+	</element>
+	<element name="Arrow Deflection" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_ARROW_DEFLECTION">
+		<description>
+			<p><em>7th-level Wolf School feature</em></p>
+			<p>You have learned to defend yourself from projectiles and close attacks by parrying them. When a creature makes a weapon attack against you, you can use your reaction and spend 1 focus if it's ranged or 2 focus for melee to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses. </p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature makes a weapon attack against you, you can use your reaction and spend 1 focus against ranged or 2 focus for melee to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses.</description>
+		</sheet>
+	</element>
+	<element name="Battle Trance" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_BATTLE_TRANCE">
+		<description>
+			<p><em>10th-level Wolf School feature</em></p>
+			<p>Your focus is sharpened by the danger of combat. You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</p>
+		</description>
+		<sheet>
+			<description>You gain 1 focus whenever a creature misses you with a weapon attack or you succeed on a save.</description>
+		</sheet>
+	</element>
+	<element name="Aggressive Maneuvers" type="Archetype Feature" source="Batav's Additions 2024" id="ID_2024BATAV_ARCHETYPE_FEATURE_WITCHER_AGGRESSIVE_MANEUVERS">
+		<description>
+			<p><em>14th-level Wolf School feature</em></p>
+			<p>You can use your focus to execute especially aggressive attacks. You learn the following maneuvers, which you can use as an action by expending 3 focus.</p>
+			<p><strong>Whirl.</strong> You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.</p>
+			<p><strong>Rend.</strong> You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</p>
+		</description>
+		<sheet action="Attack Action">
+			<description>You learn the following maneuvers, which you can use by replacing your attacks on the Attack Action and expending 3 focus.
+			Whirl. You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet.
+			Rend. You take a heavy swing at a creature's weakspot. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack.</description>
+		</sheet>
+	</element>
+	
 	<!--Signs-->
-	<element name="Igni" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_IGNI">
+	<element name="Igni" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_IGNI">
 		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You blast flames at a creature within 15 feet. It must make a Dexterity saving throw, taking 2d6 fire damage on a failed save or half that on a successful save. </p>
@@ -766,7 +767,7 @@
 			<grant id="ID_POTA_SPELL_CONTROLFLAMES" spellcasting="Witcher" />
 		</rules>
 	</element>
-	<element name="Quen" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_QUEN">
+	<element name="Quen" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_QUEN">
 		<supports>Witcher</supports>
 		<description>
 			<p>You place a protective shield on yourself. For the next minute, the first time you take damage from a weapon attack, that damage is reduced by 1d8 + your Wisdom modifier.</p>
@@ -787,7 +788,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Yrden" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_YRDEN">
+	<element name="Yrden" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_YRDEN">
 		<supports>Witcher</supports>
 		<description>
 			<p>You place down a magical circle with a radius of 10 feet around you that lasts one minute. Inside the circle is difficult terrain for hostile creatures, and enemies resistant to only Bludgeoning/Piercing/Slashing damage lose this ability.</p>
@@ -807,7 +808,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Aard" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_AARD">
+	<element name="Aard" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_AARD">
 		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You blow a powerful burst of air at a creature within 15 feet. It must make a Strength saving throw or be pushed 10 feet away and knocked prone.</p>
@@ -831,7 +832,7 @@
 			<grant id="ID_POTA_SPELL_GUST" spellcasting="Witcher" />
 		</rules>
 	</element>
-	<element name="Axii" type="Spell" source="2024 Player's Handbook" id="ID_2024BATAV_SPELL_AXII">
+	<element name="Axii" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_AXII">
 		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You attempt to cloud the mind of a creature within 15 feet. It must make a Wisdom saving throw; on a failed save, the creature has disadvantage on weapon attacks it makes until the end of its next turn. A creature immune to being charmed automatically succeeds on its save.</p>
