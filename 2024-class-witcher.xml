@@ -743,6 +743,7 @@
 	
 	<!--Signs-->
 	<element name="Igni" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_IGNI">
+		<requirements>ID_2024BATAV_CLASS_WITCHER</requirements>
 		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You blast flames at a creature within 15 feet. It must make a Dexterity saving throw, taking 2d6 fire damage on a failed save or half that on a successful save. </p>
@@ -768,6 +769,7 @@
 		</rules>
 	</element>
 	<element name="Quen" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_QUEN">
+		<requirements>ID_2024BATAV_CLASS_WITCHER</requirements>
 		<supports>Witcher</supports>
 		<description>
 			<p>You place a protective shield on yourself. For the next minute, the first time you take damage from a weapon attack, that damage is reduced by 1d8 + your Wisdom modifier.</p>
@@ -789,6 +791,7 @@
 		</setters>
 	</element>
 	<element name="Yrden" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_YRDEN">
+		<requirements>ID_2024BATAV_CLASS_WITCHER</requirements>
 		<supports>Witcher</supports>
 		<description>
 			<p>You place down a magical circle with a radius of 10 feet around you that lasts one minute. Inside the circle is difficult terrain for hostile creatures, and enemies resistant to only Bludgeoning/Piercing/Slashing damage lose this ability.</p>
@@ -809,7 +812,8 @@
 		</setters>
 	</element>
 	<element name="Aard" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_AARD">
-		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
+		<requirements>ID_2024BATAV_CLASS_WITCHER</requirements>
+		<supports>Witcher, Spell Saving Throw</supports>
 		<description>
 			<p>You blow a powerful burst of air at a creature within 15 feet. It must make a Strength saving throw or be pushed 10 feet away and knocked prone.</p>
 			<p class="indent"><b><i>Empowered.</i></b> When empowered, all creatures in a 5 foot radius sphere around you are affected instead.</p>
@@ -833,7 +837,8 @@
 		</rules>
 	</element>
 	<element name="Axii" type="Spell" source="Batav's Additions 2024" id="ID_2024BATAV_SPELL_AXII">
-		<supports>Witcher, Damaging Spell, Spell Saving Throw</supports>
+		<requirements>ID_2024BATAV_CLASS_WITCHER</requirements>
+		<supports>Witcher, Spell Saving Throw</supports>
 		<description>
 			<p>You attempt to cloud the mind of a creature within 15 feet. It must make a Wisdom saving throw; on a failed save, the creature has disadvantage on weapon attacks it makes until the end of its next turn. A creature immune to being charmed automatically succeeds on its save.</p>
 			<p class="indent"><b><i>Empowered.</i></b> When empowered, the creature is instead stunned until the end of its next turn.</p>
