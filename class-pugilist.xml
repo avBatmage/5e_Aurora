@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pugilist</name>
+		<description>A Streetfighter with swagger to spare</description>
+		<author url="https://www.dndbeyond.com/sources/dnd/tpc/the-pugilist-class">Benjamin Huffman</author>
+		<update version="0.0.2">
+			<file name="class-pugilist.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-pugilist.xml" />
+		</update>
+	</info>
+
+	<element name="2024 Pugilist Class" type="Source" source="Core" id="ID_SVAC_2024PUGL_SOURCE_2024_PUGILIST_CLASS">
+		<description>
+			<p>Pugilists live a rough and tumble life that leaves them full of determination and recklessness, either from overconfidence or desperation. In a fight, they channel this strength of character to dig deep and snatch victory from the jaws of defeat, even when outarmed and outnumbered. Even when they ultimately fail, Pugilists go down swinging.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">2024PUGL</set>
+			<set name="url">https://www.dndbeyond.com/sources/dnd/tpc/the-pugilist-class</set>
+			<set name="image">https://media.dndbeyond.com/compendium-images/tpc/sV16bhP8u5G1ls4t/00-001.the-pugilist.jpg</set>
+			<set name="author" url="https://www.sterlingvermin.com/">Benjamin Huffman, Sterling Vermin Co.</set>
+			<set name="third-party">true</set>
+			<set name="release">20260203</set>
+		</setters>
+	</element>
+
+	<element name="Pugilist" type="Class" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_PUGILIST">
+		<description>
+			<p>Pugilists live a rough and tumble life that leaves them full of determination and recklessness, either from overconfidence or desperation. In a fight, they channel this strength of character to dig deep and snatch victory from the jaws of defeat, even when outarmed and outnumbered. Even when they ultimately fail, Pugilists go down swinging.</p>
+			<p class="indent">Pugilists tap into their inner strength in the form of moxie. This is not an esoteric or mystical energy that flows through the multiverse, but the result of self-confidence and determination forged over a lifetime of hardship with a never-say-die attitude. Anyone can be taught how to fist fight but accessing the strength and resilience of the Pugilist can’t. The secret of mastering moxie doesn’t come from disciplined study or rigorous training, it comes from years of wanting and needing.</p>
+			<p class="indent">In back alleys, underground fight clubs, and poorer quarters, Pugilists don’t have time to consider the lofty ideals of philosophy or ponder the mysteries of the universe. They spend their days chasing down their next meal or, if they’re fortunate enough to have that, their next drink, bedfellow, or flophouse. For Pugilists, becoming an adventurer might be the only way out of whatever miserable situation they’ve been stuck in since infancy. For others, getting lost out in the world is an escape from the tangled web of debt or enemies they’ve piled up. But some Pugilists are happy just with the promise of ample opportunities to bloody their knuckles.</p>
+			<h4>CREATING A PUGILIST</h4>
+			<p>As you build your pugilist, consider how you came to be a bare knuckle brawler. Did you learn to fight to defend yourself? Was scraping the natural result of your nose for trouble? Or did you learn to fight as a way of intimidating and controlling others? Were you fighting for the entertainment, or did you fight because you had to? Did you try to become a more traditional martial artist but just couldn't hack it? Pugilists are a rowdy bunch that like to brag about how they learned to fight, so you better have a good story to tell.</p>
+			<p class="indent">What events in your life gave you the sheer determination and will that pugilists call on? Did you spend every day hustling on the street to make ends meet? Were you forgotten and ignored by your family? Were you an outsider in your community who had to constantly struggle against the ignorant stereotypes the people there had of you? The most important element of the pugilist is that they are driven. Once you have decided what events made you into the pugilist you are today, decide how that may shape the actions you take in the future.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a pugilist quickly by following these suggestions. First, make Strength your highest ability score, followed by Constitution. Second, choose the criminal or urchin background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a pugilist, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<p>
+				<span class="emphasis">Hit Dice:</span>1d10 per pugilist level<br />
+				<span class="emphasis">Hit Points at 1st Level:</span>10 + your Constitution modifier<br />
+				<span class="emphasis">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per pugilist level after 1st<br />
+			</p>
+			<h5>PROFICIENCIES</h5>
+			<p>
+				<span class="emphasis">Armor:</span>Light armor<br />
+				<span class="emphasis">Weapons:</span>Simple and Improvised weapons<br />
+				<span class="emphasis">Tools:</span>Choose one type of Gaming Set<br />
+			</p>
+			<p>
+				<span class="emphasis">Saving Throws:</span>Strength, Constitution<br />
+				<span class="emphasis">Skills:</span>Choose two skills from Acrobatics, Athletics, Deception, Intimidation, Perception, Sleight of Hand, and Stealth<br />
+			</p>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background. Choose A or B:</p>
+			<p class="indent"><i>(a)</i> Club, Handaxe, Gaming Set (chosen for the tool proficiency above), Dungeoneer’s Pack, and 31 GP; or <i>(b)</i> 50 GP</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-level">Level</td><td class="col-prof">Prof. Bonus</td><td class="left">Features</td><td class="col-10">Fisticuffs</td><td class="col-10">Moxie Points</td></tr>
+				</thead>
+				<tr><td>1</td><td>+2</td><td class="left">Fisticuffs, Iron Chin</td>                    	<td>1d8</td><td>-</td></tr>
+				<tr><td>2</td><td>+2</td><td class="left">Moxie, Bloodied But Unbowed, Swagger Streak</td>	<td>1d8</td><td>2</td></tr>
+				<tr><td>3</td><td>+2</td><td class="left">Heavy Hitter, Pugilist Subclass</td>         		<td>1d8</td><td>2</td></tr>
+				<tr><td>4</td><td>+2</td><td class="left">Ability Score Improvement, Dig Deep</td>      	<td>1d8</td><td>3</td></tr>
+				<tr><td>5</td><td>+3</td><td class="left">Extra Attack, Haymaker</td>                   	<td>1d10</td><td>3</td></tr>
+				<tr><td>6</td><td>+3</td><td class="left">Moxie-Fueled Fists, Subclass feature</td>   		<td>1d10</td><td>4</td></tr>
+				<tr><td>7</td><td>+3</td><td class="left">Down But Not Out</td>             				<td>1d10</td><td>4</td></tr>
+				<tr><td>8</td><td>+3</td><td class="left">Ability Score Improvement</td>                	<td>1d10</td><td>5</td></tr>
+				<tr><td>9</td><td>+4</td><td class="left">School of Hard Knocks</td>                    	<td>1d10</td><td>5</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Herculean, Shake It Off</td>                 	<td>1d10</td><td>6</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td>                        	<td>1d12</td><td>6</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td>               	<td>1d12</td><td>7</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Dig Deeper</td>                           		<td>1d12</td><td>7</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Unbreakable</td>                             	<td>1d12</td><td>8</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Pugnacious</td>                              	<td>1d12</td><td>8</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td>               	<td>1d12</td><td>9</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Subclass Feature</td>                        	<td>2d6</td><td>9</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Fighting Spirit</td>                         	<td>2d6</td><td>10</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td>                               	<td>2d6</td><td>11</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Peak Physical Condition</td>                 	<td>2d6</td><td>12</td></tr>
+			</table>
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FISTICUFFS" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_IRON_CHIN" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HEAVY_HITTER" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEP" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HAYMAKER" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FIST" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HERCULEAN" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEPER" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_UNBREAKABLE" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGNACIOUS" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT" />
+			<div element="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION" />
+		</description>
+		<sheet display="false">
+			<description>A streetfighter with swagger to spare.</description>
+		</sheet>
+		<setters>
+			<set name="short">A streetfighter with swagger to spare.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MULTICLASS_PUGILIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_PUGILIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MULTICLASS_PUGILIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_PUGILIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Pugilist)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_MULTICLASS_PUGILIST"/>
+			<select type="Proficiency" name="Tool Proficiency (Pugilist)" supports="Gaming Set" />
+
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FISTICUFFS" level="1"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_IRON_CHIN" level="1"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE" level="2"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED" level="2"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK" level="2"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HEAVY_HITTER" level="3"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEP" level="4"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HAYMAKER" level="5"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FIST" level="6"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT" level="7"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS" level="9"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HERCULEAN" level="10"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF" level="10"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEPER" level="13"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_UNBREAKABLE" level="14"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGNACIOUS" level="15"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT" level="18"/>
+			<grant type="Class Feature" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION" level="20"/>
+		</rules>
+		<multiclass id="ID_2024PUGL_MULTICLASS_PUGILIST">
+			<prerequisite>Strength 13 and Constitution 13</prerequisite>
+			<requirements>(([str:13],[con:13]),!(ID_DMSG_PUGL_CLASS_PUGILIST||ID_MULTICLASS_PUGILIST))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Improvised weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Fisticuffs" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FISTICUFFS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_FISTICUFFS</requirements>
+		<description>
+			<p><em>1st-level Pugilist feature</em></p>
+			<p>Your years of fighting in back alleys and taverns have given you mastery over combat styles that use Unarmed Strikes and Pugilist weapons, which are the following:</p>
+			<ul>
+				<li>Simple Melee weapons </li>
+				<li>Improvised weapons</li>
+			</ul>
+			<p>You gain the following benefits while you are unarmed or wielding only Pugilist weapons and you are wearing Light or no armor and are not wielding a Shield.</p>
+			<p><strong>Bonus Unarmed Strike.</strong> You can make an Unarmed Strike as a Bonus Action.</p>
+			<p><strong>Fisticuffs Die.</strong> You can roll 1d8 in place of the normal damage of your Unarmed Strike or Pugilist weapons. This die changes as you gain Pugilist levels, as shown in the Fisticuffs column of the Pugilist Features table.</p>
+			<p><strong>Improved Improvisation.</strong> Your talent for turning everything into a weapon allows you to use the mastery properties of improvised weapons. All improvised weapons count as having the Sap mastery property for you.</p>
+		</description>
+		<sheet>
+			<description>Your Fisticuff die is {{fisticuff:num}}d{{fisticuff:size}}. Unarmed strikes and pugilist weapons can use the Fisticuff die in place of the normal damage and you can make one unarmed strike as a bonus action. Additionally all improvised weapons count as having the Sap mastery property for you.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="fisticuff:num" value="1" bonus="base" level="1" />
+			<stat name="fisticuff:num" value="2" bonus="base" level="17" />
+			<stat name="fisticuff:size" value="6" bonus="base" level="1" />
+			<stat name="fisticuff:size" value="2" bonus="single" level="1" />
+			<stat name="fisticuff:size" value="4" bonus="single" level="5" />
+			<stat name="fisticuff:size" value="6" bonus="single" level="11" />
+			<stat name="fisticuff:size" value="-6" bonus="double" level="17" />
+			<stat name="fisticuff:die" value="{{fisticuff:num}}d{{fisticuff:size}}"/>
+			<select type="Class Feature" name="Improvised Weapon" supports="Pugilist Improvised weapons Sap" default="ID_SVAC_2024PUGL_CLASS_FEATURE_FISTICUFFS_IMPROVISED_PUGILISTWEAPONS_SAP" />
+		</rules>
+	</element>
+	<element name="Improvised weapons (Sap)" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_FISTICUFFS_IMPROVISED_PUGILISTWEAPONS_SAP">
+		<compendium display="false" />
+		<supports>Pugilist Improvised weapons Sap</supports>
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Iron Chin" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_IRON_CHIN">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_IRON_CHIN</requirements>
+		<description>
+			<p><em>1st-level Pugilist feature</em></p>
+			<p>While you are wearing Light or no armor and not wielding a Shield, your base Armor Class equals 12 plus your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing Light or no armor and not wielding a Shield, your base Armor Class equals {{ac:unarmored defense pugilist}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense pugilist:base" value="12" />
+			<stat name="ac:unarmored defense pugilist:constitution" value="constitution:modifier" />
+			<stat name="ac:unarmored defense pugilist:armored:enhancement" value="ac:armored:enhancement" />
+			<stat name="ac:unarmored defense pugilist" value="ac:unarmored defense pugilist:base" />
+			<stat name="ac:unarmored defense pugilist" value="ac:unarmored defense pugilist:constitution" />
+			<stat name="ac:unarmored defense pugilist" value="ac:unarmored defense pugilist:armored:enhancement" />
+			<stat name="ac:calculation" value="ac:unarmored defense pugilist" bonus="calculation" equipped="![armor:heavy],![armor:medium],[shield:none]" alt="Iron Chin (Pugilist)" />
+		</rules>
+	</element>
+
+	<element name="Moxie" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE</requirements>
+		<description>
+			<p><em>2nd-level Pugilist feature</em></p>
+			<p>Your experiences of beating the odds have given you a moxie you can channel in the midst of battle. This swagger is represented by a number of Moxie Points. Your Pugilist level determines the maximum number of points you have, as shown in the Moxie Points column of the Pugilist Features table.</p>
+			<p class="indent">You can spend these points to enhance or fuel certain Pugilist features. You start knowing three such features: Brace Up, One-Two Punch, and Stick and Move, each of which is detailed below.</p>
+			<p class="indent">When you expend a Moxie Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.</p>
+			<h5>BRACE UP</h5>
+			<p>You can use a Bonus Action and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of Temporary Hit Points equal to the number rolled plus your Pugilist level and your Constitution modifier. These Temporary Hit Points vanish if any remain after 10 minutes.</p>
+			<h5>THE OLD ONE-TWO</h5>
+			<p>You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
+			<h5>STICK AND MOVE</h5>
+			<p>You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action.</p>
+		</description>
+		<sheet>
+			<description>You have {{moxie:points}} moxie points and regain all used points on a short rest. </description>
+		</sheet>
+		<rules>
+			<stat name="moxie:points" value="2" level="2" />
+			<stat name="moxie:points" value="1" level="4" />
+			<stat name="moxie:points" value="1" level="6" />
+			<stat name="moxie:points" value="1" level="8" />
+			<stat name="moxie:points" value="1" level="10" />
+			<stat name="moxie:points" value="1" level="12" />
+			<stat name="moxie:points" value="1" level="14" />
+			<stat name="moxie:points" value="1" level="16" />
+			<stat name="moxie:points" value="1" level="18" />
+			<stat name="moxie:points" value="2" level="20" />
+			<select type="Class Feature" name="Brace Up" supports="Pugilist Brace Up" default="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP" requirements="!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP" />
+			<select type="Class Feature" name="The Old One-Two" supports="Pugilist The Old One-Two" default="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_THE_OLD_ONE_TWO" requirements="!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_THE_OLD_ONE_TWO" />
+			<select type="Class Feature" name="Stick and Move" supports="Pugilist Stick and Move" default="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE" requirements="!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE" />
+		</rules>
+	</element>
+	<element name="Brace Up" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP">
+		<compendium display="false" />
+		<supports>Pugilist Brace Up</supports>
+		<description>
+			<p>You can use a bonus action and spend 1 moxie point to brace for attacks. Roll your fisticuffs die + your pugilist level + your Constitution modifier and gain that many temporary hit points</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You gain {{fisticuff:num}}d{{fisticuff:size}} + {{brace:up}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="brace:up" value="level:pugilist" />
+			<stat name="brace:up" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="The Old One-Two" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_THE_OLD_ONE_TWO">
+		<compendium display="false" />
+		<supports>Pugilist The Old One-Two</supports>
+		<description>
+			<p>You can spend 1 moxie point to make two unarmed strikes as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You can make two Unarmed Strikes.</description>
+		</sheet>
+	</element>
+	<element name="Stick and Move" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE">
+		<compendium display="false" />
+		<supports>Pugilist Stick and Move</supports>
+		<description>
+			<p>You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You can make an Unarmed Strike and take the Dash or Disengage action.</description>
+		</sheet>
+	</element>
+
+	<element name="Bloodied But Unbowed" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_BLOODIED_BUT_UNBOWED</requirements>
+		<description>
+			<p><em>2nd-level Pugilist feature</em></p>
+			<p>When you take damage, you can take a Reaction to regain all your expended Moxie Points. If you are Bloodied when you take this Reaction, you also gain Temporary Hit Points equal to four times your Pugilist level. These Temporary Hit Points vanish if any remain when you finish a Short Rest.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When you take damage, you can take a Reaction to regain all your expended Moxie Points. If you are Bloodied you also gain {{bloodied:health}} Temporary Hit Points which last until you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="bloodied:health" value="level:pugilist"/>
+			<stat name="bloodied:health" value="level:pugilist"/>
+			<stat name="bloodied:health" value="level:pugilist"/>
+			<stat name="bloodied:health" value="level:pugilist"/>
+		</rules>
+	</element>
+
+	<element name="Swagger Streak" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWAGGER_STREAK</requirements>
+		<description>
+			<p><em>2nd-level Pugilist feature</em></p>
+			<p>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a Moxie Point to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can’t use this feature again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1 Moxie" >
+			<description>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a Moxie Point to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can’t use this feature again until you finish a Short or Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Heavy Hitter" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HEAVY_HITTER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HEAVY_HITTER</requirements>
+		<description>
+			<p><em>3rd-level Pugilist feature</em></p>
+			<p>When you hit a creature with an Unarmed Strike, you can use both the Damage and your choice of the Grapple or Shove option.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an Unarmed Strike, you can use both the Damage and your choice of the Grapple or Shove option.</description>
+		</sheet>
+	</element>
+
+	<element name="Pugilist Subclass" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PUGILIST_SUBCLASS</requirements>
+		<description>
+			<p><em>3rd-level Pugilist feature</em></p>
+			<p>You gain a Pugilist subclass of your choice. A subclass is a specialization that grants you features at certain Pugilist levels. For the rest of your career, you gain each of your subclass’s features that are of your Pugilist level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Pugilist Subclass" supports="Fight Club||Pugilist Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p><em>4th-level Pugilist feature</em></p>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Pugilist 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 16)" level="16" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Dig Deep" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEP">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEP</requirements>
+		<description>
+			<p><em>4th-level Pugilist feature</em></p>
+			<p>You can use a Bonus Action to dig deep. For 10 minutes, you have Resistance to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of Exhaustion levels less than 6.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest unless you gain 1 Exhaustion level (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>For 10 minutes, you have Resistance to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of Exhaustion levels less than 6. You can restore your use of it by gaining 1 Exhaustion level (no action required by you).</description>
+		</sheet>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_EXTRAATTACK</requirements>
+		<description>
+			<p><em>5th-level Pugilist feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Haymaker" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HAYMAKER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAYMAKER</requirements>
+		<description>
+			<p><em>5th-level Pugilist feature</em></p>
+			<p>When you make an attack with an Unarmed Strike or Pugilist weapon, you can expend 1 Moxie Point to swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack.</p>
+		</description>
+		<sheet usage="1 Moxie">
+			<description>When you make an attack with an Unarmed Strike or Pugilist weapon, you can expend 1 Moxie Point to swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Moxie-Fueled Fist" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FIST">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIEFIST</requirements>
+		<description>
+			<p><em>6th-level Pugilist feature</em></p>
+			<p>Whenever you deal damage with your Unarmed Strike or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal damage with your Unarmed Strike or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+
+	<element name="Down But Not Out" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOWNNOTOUT</requirements>
+		<description>
+			<p><em>7th-level Pugilist feature</em></p>
+			<p>When you use your Bloodied But Unbowed while you are Bloodied, you can add a bonus to the damage of your Unarmed Strikes and attacks with Pugilist weapons for the next minute. This bonus equals your Constitution modifier plus the number of levels of Exhaustion you have.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you use your Bloodied But Unbowed while you are Bloodied, you can add {{constitution:modifier}} + your Exhaustion level as bonus damage to your Unarmed Strikes and attacks with Pugilist weapons for the next minute.</description>
+		</sheet>
+	</element>
+
+	<element name="School of Hard Knocks" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HARDKNOCK</requirements>
+		<description>
+			<p><em>9th-level Pugilist feature</em></p>
+			<p>Once per turn, you can deal an extra 1d12 damage when you hit with an Unarmed Strike or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or Unarmed Strike. You can forgo this extra damage to apply one of the following effects.</p>
+			<p><strong>Endanger.</strong> The next time the creature is hit by an attack, the attack deals the maximum result of the attack’s damage dice rather than rolling.</p>
+			<p><strong>Provoke.</strong> The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit with an Unarmed Strike or attack with a Pugilist weapon, you can deal an extra 1d12 or instead apply one of the following effects. </description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Endanger" supports="Pugilist Endanger" default="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS_ENDANGER" />
+			<select type="Class Feature" name="Provoke" supports="Pugilist Provoke" default="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS_PROVOKE" />
+		</rules>
+	</element>
+	<element name="Endanger" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS_ENDANGER">
+		<supports>Pugilist Endanger</supports>
+		<description>
+			<p><strong>Endanger.</strong> The next time the creature is hit by an attack, the attack deals the maximum result of the attack’s damage dice rather than rolling.</p>
+		</description>
+		<sheet>
+			<description>The next time the creature is hit by an attack, the attack deals the maximum result of the attack’s damage dice rather than rolling.</description>
+		</sheet>
+	</element>
+	<element name="Provoke" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS_PROVOKE">
+		<supports>Pugilist Provoke</supports>
+		<description>
+			<p><strong>Provoke.</strong> The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Herculean" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_HERCULEAN">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HERCULEAN</requirements>
+		<description>
+			<p><em>10th-level Pugilist feature</em></p>
+			<p>You gain the following benefits.</p>
+			<ul class="unstyled">
+				<li><strong>Heavy Lifter.</strong> Your Strength score is doubled when determining your carrying capacity.</li>
+				<li><strong>Pillar Breaker.</strong> When you hit an object with an Unarmed Strike, the hit is a Critical Hit.</li>
+				<li><strong>Unmatched Athlete.</strong> Your jump distance is doubled.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you hit an object with an Unarmed Strike, the hit is a Critical Hit. Also your jump distance is doubled.</description>
+		</sheet>
+		<rules>
+  			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_DOUBLED" />
+		</rules>
+	</element>
+
+	<element name="Shake It Off" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SHAKEOFF</requirements>
+		<description>
+			<p><em>10th-level Pugilist feature</em></p>
+			<p>At the start of each of your turns (no action required), you can remove one Exhaustion level on yourself or end one of the following conditions on yourself: Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, Restrained, or Stunned.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At the start of your turn, you can remove one Exhaustion level on yourself or end one of the following conditions on yourself: Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, Restrained, or Stunned.
+			You can restore your use of it by taking 1 Exhaustion level.</description>
+		</sheet>
+	</element>
+
+	<element name="Dig Deeper" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_DIG_DEEPER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEPER</requirements>
+		<description>
+			<p><em>13th-level Pugilist feature</em></p>
+			<p>You can use a Bonus Action to dig deeper. For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest. Starting at level 20, you can use it twice before a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{dig deeeper:uses}}/Long rest">
+			<description>For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once.</description>
+		</sheet>
+		<rules>
+			<stat name="dig deeeper:uses" value="1" />
+			<stat name="dig deeeper:uses" value="1" level="20" />
+		</rules>
+	</element>
+
+	<element name="Unbreakable" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_UNBREAKABLE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_UNBREAKABLE</requirements>
+		<description>
+			<p><em>14th-level Pugilist feature</em></p>
+			<p>You have Advantage on Strength, Dexterity, and Constitution saving throws.</p>
+			<p>Additionally, whenever you make a saving throw and fail, you can expend 1 Moxie Point to reroll it, and you must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Strength, Dexterity, and Constitution saving throws. Additionally, whenever you make a saving throw and fail, you can expend 1 Moxie Point to reroll it, and you must use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Pugnacious" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PUGNACIOUS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PUGNACIOUS</requirements>
+		<description>
+			<p><em>15th-level Pugilist feature</em></p>
+			<p>When you roll Initiative, you can remove one level of Exhaustion on yourself and regain your uses of Down But Not Out, Dig Deep, and Shake It Off.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you roll Initiative, you can remove one level of Exhaustion on yourself and regain your uses of Down But Not Out, Dig Deep, and Shake It Off.</description>
+		</sheet>
+	</element>
+
+	<element name="Fighting Spirit" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_FIGHTINGSPIRIT</requirements>
+		<description>
+			<p><em>18th-level Pugilist feature</em></p>
+			<p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit point instead. When you do, you gain Temporary Hit Points equal to half of your maximum Hit Points, regain all your expended Moxie Points, and have Resistance to all damage except Force for the next minute.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit point instead. When you do, you gain Temporary Hit Points equal to half of your maximum Hit Points, regain all your expended Moxie Points, and have Resistance to all damage except Force for the next minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Peak Physical Condition" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PEAKCONDITION</requirements>
+		<description>
+			<p><em>20th-level Pugilist feature</em></p>
+			<p>Your strength and resilience are the stuff of legends. You gain the following benefits.</p>
+			<ul class="unstyled">
+				<li><strong>Hale and Hearty.</strong> Your Strength and Constitution scores increase by 2, to a maximum of 23.</li>
+				<li><strong>Sleep It Off.</strong> When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion.</li>
+				<li><strong>Vim and Vigor.</strong> When you finish a Short Rest, you regain Hit Points equal to twice your Pugilist level.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion. &#13;
+			When you finish a Short Rest, you regain {{peak physical:hp}} Hit Points.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="2"/>
+			<stat name="constitution" value="2"/>
+			<stat name="strength:max" value="3" />
+			<stat name="constitution:max" value="3" />
+			<stat name="peak physical:hp" value="level:pugilist" />
+			<stat name="peak physical:hp" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<!-- Dog & Hound Archetype -->
+	<element name="Dog And Hound" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_DOG_AND_HOUND">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Fight Side by Side with a Brawler’s Best Friend.</em></p>
+			<p>Pugilists know what it’s like to be an underdog, so it’s no surprise some form a battleforged bond with a canine companion. They’re used to being disappointed by friends that walk on two legs but a friend on four is as loyal as they come. When a fight breaks out, this duo’s bite is even worse than its bark.</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN"/>
+			<div class="reference">
+				<div element="ID_SVAC_2024PUGL_INFORMATION_COMPANION_PUGILIST_BESTFRIEND" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description>Fight Side by Side with a Brawler’s Best Friend</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Brawler's Best Friend" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND</requirements>
+		<description>
+			<p><em>3rd-level Dog and Hound feature</em></p>
+			<p>You summon and form a bond with a wild or stray dog, which draws strength from your bottomless well of resilience using the Hound stat block.</p>
+			<p class="indent">The hound is Friendly to you and your allies and obeys your commands. It flees if you die.</p>
+			<p class="indent"><strong>The Hound in Combat.</strong>In combat, the hound acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn’t limited to the Dodge action.</p>
+			<p class="indent"><strong>Restoring or Replacing the Hound.</strong>If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its Hit Points restored.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</p>
+		</description>
+		<sheet>
+			<description>You have formed a bond with a dog, The hound is Friendly to you and your allies and obeys your commands. It flees if you die.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Brawler's Best Friend" supports="Pugilist Hound" default="ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_HOUND" />
+			<select type="Archetype Feature" name="The Hound in Combat" supports="Pugilist The Hound in Combat" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND_THE_HOUND_IN_COMBAT" />
+			<select type="Archetype Feature" name="Restoring or Replacing the Hound" supports="Pugilist Restoring or Replacing the Hound" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND_RESTORERING_OR_REPLACING_THE_HOUND" />
+		</rules>
+	</element>
+	<element name="The Hound in Combat" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND_THE_HOUND_IN_COMBAT">
+		<compendium display="false" />
+		<supports>Pugilist The Hound in Combat</supports>
+		<description>
+			<p class="indent"><strong>The Hound in Combat.</strong>In combat, the hound acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn’t limited to the Dodge action.</p>
+		</description>
+		<sheet>
+			<description>It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn’t limited to the Dodge action.</description>
+		</sheet>
+	</element>
+	<element name="Restoring or Replacing the Hound" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND_RESTORERING_OR_REPLACING_THE_HOUND">
+		<compendium display="false" />
+		<supports>Pugilist Restoring or Replacing the Hound</supports>
+		<description>
+			<p class="indent"><strong>Restoring or Replacing the Hound.</strong>If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its Hit Points restored.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</p>
+		</description>
+		<sheet>
+			<description>If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its Hit Points restored. &#13;
+			Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</description>
+		</sheet>
+	</element>
+	<element name="Hound" type="Companion" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_HOUND">
+		<supports>Pugilist Hound</supports>
+		<description>
+			<p></p>
+        </description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 plus your Constitution modifier</set>
+			<set name="hp">5 plus five times your Pugilist level (the hound has a number of Hit Dice [d8s] equal to your Pugilist level)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">13</set>
+			<set name="senses">darkvision 60 ft.; passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">None (XP O; PB equals your Proficiency Bonus)</set>
+			<set name="traits">ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_TRAIT_HOUND_PACK_BOND</set>
+			<set name="actions">ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_ACTION_HOUND_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hd" value="8" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_TRAIT_HOUND_PACK_BOND" />
+		</rules>
+	</element>
+	<element name="Pack Bond" type="Companion Trait" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_TRAIT_HOUND_PACK_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:initiative" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:acrobatics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:animal handling:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:history:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:investigation:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:nature:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:performance:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:religion:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Beast's Strike" type="Companion Action" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_COMPANION_PUGILIST_BESTFRIEND_ACTION_HOUND_BITE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your Constitution modifier plus your PB, reach 5 ft. Hit: 2d4 + 2 plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and PB) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 feet away from the hound.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: + your Constitution modifier + your PB, reach 5ft. Hit: 2d4 + 2 + your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and PB) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 feet away from the hound.</description>
+		</sheet>
+	</element>
+	<element name="Hound" type="Information" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_INFORMATION_COMPANION_PUGILIST_BESTFRIEND">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Beast, Neutral</em></p>
+			<ul class="unstyled">
+				<li><strong>AC</strong> 12 plus your Constitution modifier</li>
+				<li><strong>HP</strong> 5 plus five times your Pugilist level (the hound has a number of Hit Dice [d8s] equal to your Pugilist level)</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:2px;margin-bottom:10px">
+				<tr style="font-size:8px"><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td></tr>
+				<tr><td><b>STR</b></td><td>14</td><td>+2</td><td>+2</td><td><b>DEX</b></td><td>14</td><td>+2</td><td>+2</td><td><b>CON</b></td><td>15</td><td>+3</td><td>+3</td></tr>
+				<tr><td><b>INT</b></td><td>3</td><td>-4</td><td>-4</td><td><b>WIS</b></td><td>12</td><td>+1</td><td>+1</td><td><b>CHA</b></td><td>13</td><td>+1</td><td>+1</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Senses</strong> Darkvision 60 ft.; Passive Perception 11</li>
+				<li><strong>Languages</strong> Understands the languages you know</li>
+				<li><strong>CR</strong> None (XP 0; PB equals your Proficiency Bonus)</li>
+			</ul>
+			<h4 style="margin-top:5px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Pack Bond.</em></strong> Add your Proficiency Bonus to any ability check or saving throw the beast makes.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Beast's Strike.</strong> Melee Attack Roll:</em> Bonus equals your Constitution modifier plus your PB, reach 5 ft. <em>Hit:</em> 2d4 + 2 plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and PB) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 feet away from the hound.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Mutt With Moxie" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE</requirements>
+		<description>
+			<p><em>3rd-level Dog and Hound feature</em></p>
+			<p>You share everything with your faithful hound: food, shelter, even moxie. When you use abilities granted by your Moxie feature, your hound gains a benefit as well.</p>
+			<p class="indent"><strong>Brace Up.</strong> When you gain Temporary Hit Points from your Brace Up ability, your hound gains the same number of Temporary Hit Points.</p>
+			<p class="indent"><strong>The Old One-Two.</strong> When you use your One-Two Punch ability, your hound can make one or both attacks instead of you.</p>
+			<p class="indent"><strong>Stick and Move.</strong> When you use your Stick and Move ability, your hound can take your choice of the Dash, Disengage, or Help action.</p>
+		</description>
+		<sheet diplay="false">
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP" />
+			<grant type="Grants" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_THE_OLD_ONE_TWO" />
+			<grant type="Grants" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE" />
+			<select type="Class Feature" name="Brace Up" supports="Pugilist Hound Brace Up" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_BRACE_UP" />
+			<select type="Class Feature" name="The Old One-Two" supports="Pugilist Hound The Old One-Two" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_THE_OLD_ONE_TWO" />
+			<select type="Class Feature" name="Stick and Move" supports="Pugilist Hound Stick and Move" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_STICK_AND_MOVE" />
+		</rules>
+	</element>
+	<element name="Brace Up" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_BRACE_UP">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_BRACE_UP</requirements>
+		<compendium display="false" />
+		<supports>Pugilist Hound Brace Up</supports>
+		<description>
+			<p>You can use a bonus action and spend 1 moxie point to brace for attacks. Roll your fisticuffs die + your pugilist level + your Constitution modifier and you and your hound that many temporary hit points</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You and your hound gain {{fisticuff:num}}d{{fisticuff:size}} + {{brace:up}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="brace:up" value="level:pugilist" />
+			<stat name="brace:up" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="The Old One-Two" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_THE_OLD_ONE_TWO">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_THE_OLD_ONE_TWO</requirements>
+		<compendium display="false" />
+		<supports>Pugilist Hound The Old One-Two</supports>
+		<description>
+			<p>You can spend 1 moxie point to make two unarmed strikes as a bonus action. Your hound can make one or both of these attacks.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You can make two unarmed strikes. Your hound can make one or both of these attacks.</description>
+		</sheet>
+	</element>
+	<element name="Stick and Move" type="Class Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_DOG_STICK_AND_MOVE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_STICK_AND_MOVE</requirements>
+		<compendium display="false" />
+		<supports>Pugilist Hound Stick and Move</supports>
+		<description>
+			<p>You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action. Your hound can take your choice of the Dash, Disengage, or Help action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Moxie">
+			<description>You can make an Unarmed Strike and take the Dash or Disengage action. Your hound can take your choice of the Dash, Disengage, or Help action.</description>
+		</sheet>
+	</element>
+
+	<element name="Coordinated Attack" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK</requirements>
+		<description>
+			<p><em>6th-level Dog and Hound feature</em></p>
+			<p>When you make an attack against a creature and your hound is within 5 feet of it, your hound can take a Reaction to give your attack Advantage. On a hit, you deal an extra 3d4 damage.</p>
+			<p>Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack against a creature and your hound is within 5 feet of it, your hound can take a Reaction to give your attack Advantage. On a hit, you deal an extra 3d4 damage. &#13;
+			Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+
+	<element name="Hound's Best Friend" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND</requirements>
+		<description>
+			<p><em>11th-level Dog and Hound feature</em></p>
+			<p>When a creature deals damage to your hound with an attack, you can take a Reaction to move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature deals damage to your hound with an attack, you can move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Off The Chain" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN</requirements>
+		<description>
+			<p><em>17th-level Dog and Hound feature</em></p>
+			<p>When your hound takes damage that causes it to become Bloodied or takes damage while it is Bloodied, you can take a Reaction to let your hound off the chain. When you do so, the hound gains Temporary Hit Points equal to five times your Pugilist level and, for the next minute, its Speed increases by 15 feet and you can command it to use its Bite without taking a Bonus Action.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest" >
+			<description>When your hound takes damage that causes it to become Bloodied or takes damage while it is Bloodied, you can let your hound off the chain. The hound gains {{off the chain:thp}} Temporary Hit Points and, for the next minute, its Speed increases by 15 feet and you can command it to use its Bite without taking a Bonus Action. &#13;
+			You can restore your use of it by expending 3 Moxie Points (no action required).</description>
+		</sheet>
+		<rules>
+			<stat name="off the chain:thp" value="level:pugilist"/>
+			<stat name="off the chain:thp" value="level:pugilist"/>
+			<stat name="off the chain:thp" value="level:pugilist"/>
+			<stat name="off the chain:thp" value="level:pugilist"/>
+			<stat name="off the chain:thp" value="level:pugilist"/>
+		</rules>
+	</element>
+
+	<!-- Hand of Dread Archetype -->
+	<element name="Hand of Dread" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_HAND_OF_DREAD">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Dabble With Dread Powers</em></p>
+			<p>In your darkest hour, you pleaded for the strength to take what you wanted from the world and a dread power took notice. At first, you may have relished the cathartic rush that came with channeling your eldritch might to claim what you felt you deserved, but this pact came with strings attached. In times of distress you hear the entity whispering in the back of your mind, urging you to indulge your most base impulses.</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA"/>
+		</description>
+		<sheet display="false">
+			<description>Dabble With Dread Powers</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Black Magic" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC</requirements>
+		<description>
+			<p><em>3rd-level Hand of Dread feature</em></p>
+			<p>As a result of your relationship with your dread power, you gain the following benefits.</p>
+			<p class="indent"><strong>Two Cantrips.</strong> You learn two cantrips of your choice from the Warlock spell list. Constitution is your spellcasting ability for your Black Magic spells.</p>
+			<p class="indent"><strong>Level 1 Spell.</strong> Choose a level 1 spell from the Warlock spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p class="indent"><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose with this feature with a different spell of the same level from the Warlock spell list.</p>
+		</description>
+		<sheet>
+			<description>You learn 2 cantrips and a level 1 spell from the Warlock spell list which you can cast without a spell slot once per long rest. Constitution is your spellcasting modifier for these spells. </description>
+		</sheet>
+		<spellcasting name="Hand of Dread" ability="Constitution" allowReplace="true">
+			<list>Warlock</list>
+		</spellcasting>
+		<rules>
+			<select type="Spell" name="Cantrip (Hand of Dread)" supports="$(spellcasting:list),0" number="2" spellcasting="Hand of Dread" />
+			<select type="Spell" name="Spellcasting (Hand of Dread)" supports="$(spellcasting:list),1" spellcasting="Hand of Dread"/>
+		</rules>
+	</element>
+
+	<element name="Dread Hand" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DREAD_HAND</requirements>
+		<description>
+			<p><em>3rd-level Hand of Dread feature</em></p>
+			<p>When you take the Attack action on your turn, you can manifest the evidence of your foul pledge to otherworldly powers. When you do, one of your limbs transmogrifies into a monstrous appearance reminiscent of your dread power and you gain the benefits below for 1 minute. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong>Revenging Strike.</strong>When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach.</p>
+			<p class="indent"><strong>Unslakeable Bloodlust.</strong>When you hit a target with an Unarmed Strike, you can roll the attack’s damage dice twice and use either roll against the target.</p>
+			<p class="indent"><strong>Whirlwind of Violence.</strong>The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you take the Attack action on your turn, you can have one of your limbs transmogrify into a monstrous appearance reminiscent of your dread power and you gain the following benefits for 1 minute.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Revenging Strike" supports="Pugilist Revenging Strike" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_REVENGING_STRIKE" />
+			<select type="Archetype Feature" name="Unslakeable Bloodlust" supports="Pugilist Unslakeable Bloodlust" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_UNSLAKEABLE_BLOODLUST" />
+			<select type="Archetype Feature" name="Whirlwind of Violence" supports="Pugilist Whirlwind of Violence" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_WHIRLWIND_OF_VIOLENCE" />
+		</rules>
+	</element>
+	<element name="Revenging Strike" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_REVENGING_STRIKE">
+		<compendium display="false" />
+		<supports>Pugilist Revenging Strike</supports>
+		<description>
+			<p class="indent"><strong>Revenging Strike.</strong>When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach.</p>
+		</description>
+		<sheet>
+			<description>When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach.</description>
+		</sheet>
+	</element>
+	<element name="Unslakeable Bloodlust" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_UNSLAKEABLE_BLOODLUST">
+		<compendium display="false" />
+		<supports>Pugilist Unslakeable Bloodlust</supports>
+		<description>
+			<p class="indent"><strong>Unslakeable Bloodlust.</strong>When you hit a target with an Unarmed Strike, you can roll the attack’s damage dice twice and use either roll against the target.</p>
+		</description>
+		<sheet>
+			<description>When you hit a target with an Unarmed Strike, you can roll the attack’s damage dice twice and use either roll against the target.</description>
+		</sheet>
+	</element>
+	<element name="Whirlwind of Violence" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND_WHIRLWIND_OF_VIOLENCE">
+		<compendium display="false" />
+		<supports>Pugilist Whirlwind of Violence</supports>
+		<description>
+			<p class="indent"><strong>Whirlwind of Violence.</strong>The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result.</p>
+		</description>
+		<sheet>
+			<description>The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result.</description>
+		</sheet>
+	</element>
+
+	<element name="Deal With The Devil" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL</requirements>
+		<description>
+			<p><em>6th-level Hand of Dread feature</em></p>
+			<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p>
+			<p class="indent"><strong>Cloak of Shadows.</strong>You can cast Invisibility once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+			<p class="indent"><strong>Mask of Many Faces.</strong>You can cast Disguise Self without expending a spell slot.</p>
+			<p class="indent"><strong>Otherworldly Walk.</strong>You can cast Misty Step once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Deal With the Devil" supports="Deal with the Devil"/>
+		</rules>
+	</element>
+	<element name="Cloak of Shadows" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_CLOAKOFSHADOWS">
+		<supports>Deal with the Devil</supports>
+		<description>
+			<p>You can cast Invisibility once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can cast Invisibility once without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Mask of Many Faces" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_MASKOFMANYFACES">
+		<supports>Deal with the Devil</supports>
+		<description>
+			<p>You can cast Disguise Self without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Disguise Self without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Otherworldly Walk" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_OTHERWORDLYWALK">
+		<supports>Deal with the Devil</supports>
+		<description>
+			<p>You can cast Misty Step once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can cast Misty Step once without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+		</rules>
+	</element>
+
+	<element name="Grotesque Growth" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH</requirements>
+		<description>
+			<p><em>11th-level Hand of Dread feature</em></p>
+			<p>When you use your Dread Hand feature, you gain the benefits of the Enlarge effect of the Enlarge/Reduce spell and have a 10-foot reach.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you use your Dread Hand feature, you can gain the benefits of the Enlarge effect of the Enlarge/Reduce spell and have a 10-foot reach. You can take a level of Exhaustion to restore your use of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Fountain of Viscera" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA</requirements>
+		<description>
+			<p><em>17th-level Hand of Dread feature</em></p>
+			<p>You can take a Magic action and expend 6 Moxie Points to attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a Dexterity saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead.</p>
+			<p class="indent">If this damage reduces the target to 0 Hit Points, it immediately dies as you rip a hole through it, creating a stomach-turning fountain of viscera. When this happens, each creature of your choice within a 30-foot Emanation originating from you must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the Wisdom saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success.</p>
+			<p class="indent">Once you use this feature, you must finish a Long Rest before you can use it again.</p>
+		</description>
+		<sheet action="Magic Action" usage="6 Moxie-1/Long Rest">
+			<description>You attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a DC {{fountain of viscera:save}} Dexterity saving throw. On a failure, it takes 100 Piercing damage. On a success, it takes 50 Piercing damage instead. &#13;
+			If this reduces the target to 0 Hit Points, it immediately dies as you rip a hole through it, creating a stomach-turning fountain of viscera. Each creature of your choice within a 30-foot Emanation originating from you must succeed on a DC {{fountain of viscera:save}} Wisdom saving throw or have the Frightened condition for 1 minute. A creature can re-attempt the saving throw to end the frightened condition at the end of each of its turns.</description>
+		</sheet>
+		<rules>
+			<stat name="fountain of viscera:save" value="8" />
+			<stat name="fountain of viscera:save" value="proficiency" />
+			<stat name="fountain of viscera:save" value="strength:modifier" />
+		</rules>
+	</element>
+
+	<!-- Piss & Vinegar Archetype -->
+	<element name="Piss and Vinegar" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_PISS_AND_VINEGAR">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Throw Barbs and Hands</em></p>
+			<p>Some Pugilists revel in their reputations as heels, happily playing up their bad behavior for notoriety. Despised by their enemies for their obscene curses and dirty tricks, these Pugilists take pride in their ability to provoke and willingness to win fights at any cost.</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS"/>
+		</description>
+		<sheet display="false">
+			<description>Pugilists in the Salt &amp; Vinegar fight club revel in their reputations as heels.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS" level="17"/>
+		</rules>
+	</element>
+	<element name="Bad Attitude" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE</requirements>
+		<description>
+			<p><em>3rd-level Piss and Vinegar feature</em></p>
+			<p>You gain proficiency in the Intimidation skill if you don’t have it already. Additionally, you gain a bonus to checks using this skill equal to your Strength modifier (minimum bonus of +1).</p>
+		</description>
+		<sheet display="false">
+			<description>You have a +{{strength:modifier}} additional bonus to your Intimidation checks</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		    <stat name="intimidation:misc" value="strength:modifier" />
+		</rules>
+	</element>
+
+	<element name="Salty Salute" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE</requirements>
+		<description>
+			<p><em>3rd-level Piss and Vinegar feature</em></p>
+			<p>You have mastered the art of the enraging insult. As a Bonus Action, you can provoke a creature within 60 feet that can see or hear you. That creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</p>
+			<p class="indent">Salt and Vinegar save DC = 8 + your proficiency bonus + your Constitution modifier</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can provoke a creature within 60 feet that can see or hear you. That creature must succeed on a DC {{piss vinegar:save}} Wisdom saving throw or take {{fisticuff:num}}d{{fisticuff:size}} + {{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="piss vinegar:save" value="8"/>
+			<stat name="piss vinegar:save" value="proficiency" />
+			<stat name="piss vinegar:save" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Dirty Tricks" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS</requirements>
+		<description>
+			<p><em>6th-level Piss and Vinegar feature</em></p>
+			<p>You have a few tricks up your sleeve to even the odds when the going gets tough. You can use one of the following Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can’t use that trick again until you finish a Short or Long Rest.</p>
+			<p class="indent"><Strong>Heelstomper.</Strong> When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+			<p class="indent"><Strong>Low Blow.</Strong> When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</p>
+			<p class="indent"><Strong>Pocket Sand.</Strong> As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn.</p>
+		</description>
+		<sheet action="1/Turn" usage="1/Short Rest Each"/>
+		<rules>
+			<select type="Archetype Feature" name="Heelstomper" supports="Pugilist Heelstomper" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_HEELSTOMPER" />
+			<select type="Archetype Feature" name="Low Blow" supports="Pugilist Low Blow" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_LOWBLOW" />
+			<select type="Archetype Feature" name="Pocket Sand" supports="Pugilist Pocket Sand" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_POCKETSAND" />
+		</rules>
+	</element>
+	<element name="Heelstomper" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_HEELSTOMPER">
+		<compendium display="false" />
+		<supports>Pugilist Heelstomper</supports>
+		<description>
+			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a DC {{piss vinegar:save}} Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</description>
+		</sheet>
+	</element>
+	<element name="Low Blow" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_LOWBLOW">
+		<compendium display="false" />
+		<supports>Pugilist Low Blow</supports>
+		<description>
+			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a DC {{piss vinegar:save}} Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Pocket Sand" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_POCKETSAND">
+		<compendium display="false" />
+		<supports>Pugilist Pocket Sand</supports>
+		<description>
+			<p>As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a DC {{piss vinegar:save}} Constitution saving throw or have the Blinded condition until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Mean Old Cuss" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS</requirements>
+		<description>
+			<p><em>11th-level Piss and Vinegar feature</em></p>
+			<p>You can offend every creature in the room with the flick of a wrist and a few curt words. As a Bonus Action, you can choose a number of targets within 30 feet of yourself that can see or hear you up to your level in this class. Each chosen creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</p>
+			<p>Once you use this feature, you must finish a Short or Long Rest before you use it again. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can choose a up to {{level:pugilist}} targets within 30 feet of yourself that can see or hear you. Each chosen creature must succeed on a Wisdom saving throw or take {{fisticuff:num}}d{{fisticuff:size}} + {{constitution:modifier}} Psychic damage equal and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.
+				You can restore your use of it by expending 3 Moxie Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Dirtier Tricks" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS</requirements>
+		<description>
+			<p><em>17th-level Piss and Vinegar feature</em></p>
+			<p>You gain the following additional Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can’t use that trick again until you finish a Short or Long Rest.</p>
+			<p class="indent"><Strong>Rabbit Punch.</Strong> When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</p>
+			<p class="indent"><Strong>Sucker Punch.</Strong> When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack’s damage dice three times and add them together, instead of twice as normal.</p>
+		</description>
+		<sheet action="1/Turn" usage="1/Short Rest Each"/>
+		<rules>
+			<select type="Archetype Feature" name="Rabbit Punch" supports="Pugilist Rabbit Punch" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_RABBITPUNCH" />
+			<select type="Archetype Feature" name="Sucker Punch" supports="Pugilist Sucker Punch" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_SUCKERPUNCH" />
+		</rules>
+	</element>
+	<element name="Rabbit Punch" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_RABBITPUNCH">
+		<compendium display="false" />
+		<supports>Pugilist Rabbit Punch</supports>
+		<description>
+			<p>When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Sucker Punch" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_SUCKERPUNCH">
+		<compendium display="false" />
+		<supports>Pugilist Sucker Punch</supports>
+		<description>
+			<p>When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack’s damage dice three times and add them together, instead of twice as normal.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack’s damage dice three times and add them together, instead of twice as normal.</description>
+		</sheet>
+	</element>
+
+	<!-- Squared Circle Archetype -->
+	<element name="Squared Circle" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_SQUARED_CIRCLE">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Drop and Lock Your Foes</em></p>
+			<p>Pugilists who fight in the Squared Circle know the fastest way to win a fight is to force a submission. These wrestlers focus on controlling their most powerful opponents with chokeholds and arm bars, forcing the enemy to fight on the Pugilist’s terms.</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MEAT_SHIELD"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_HEAVYWIEGHT"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_CLEAN_FINISH"/>
+		</description>
+		<sheet display="false">
+			<description>Pugilists who fight in the Squared Circle know you don't have to knock an opponent senseless to get them to submit.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MEAT_SHIELD" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_HEAVYWIEGHT" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_CLEAN_FINISH" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Groundwork" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_GROUNDWORK</requirements>
+		<description>
+			<p><em>3rd-level Squared Circle feature</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong>Compression Lock.</strong> When you start your turn with one or more creatures Grappled, you can deal Bludgeoning damage to each creature you have Grappled (no action required). The damage equals one roll of your Fisticuffs die plus your Strength modifier.</p>
+			<p class="indent"><strong>Inescapable.</strong> When a creature makes a saving throw or ability check against your grapple or shove DC, you can expend 1 Moxie Point to give that roll Disadvantage.</p>
+			<p class="indent"><strong>Stop and Drop.</strong> When you hit a creature with an Unarmed Strike and don’t use a mastery property as part of the attack, you can use both the Grapple and Shove option.</p>
+		</description>
+		<sheet/>
+		<rules>
+			<select type="Archetype Feature" name="Compression Lock" supports="Pugilist Compression Lock" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_COMPRESSION" />
+			<select type="Archetype Feature" name="Inescapable" supports="Pugilist Inescapable" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_INESCAPABLE" />
+			<select type="Archetype Feature" name="Stop and Drop" supports="Pugilist Stop and Drop" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_STOP_AND_DROP" />
+		</rules>
+	</element>
+	<element name="Compression Lock" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_COMPRESSION">
+		<compendium display="false" />
+		<supports>Pugilist Compression Lock</supports>
+		<description>
+			<p>When you start your turn with one or more creatures Grappled, you can deal Bludgeoning damage to each creature you have Grappled (no action required). The damage equals one roll of your Fisticuffs die plus your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>At the start of your turn you can deal {{fisticuff:num}}d{{fisticuff:size}} + {{strength:modifier}} Bludgeoning damage to each creature you have Grappled (no action required).</description>
+		</sheet>
+	</element>
+	<element name="Inescapable" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_INESCAPABLE">
+		<compendium display="false" />
+		<supports>Pugilist Inescapable</supports>
+		<description>
+			<p> When a creature makes a saving throw or ability check against your grapple or shove DC, you can expend 1 Moxie Point to give that roll Disadvantage.</p>
+		</description>
+		<sheet usage="1 Moxie">
+			<description>When a creature makes a saving throw or ability check against your grapple or shove DC, you can expend 1 Moxie Point to give that roll Disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Stop and Drop" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_GROUNDWORK_STOP_AND_DROP">
+		<compendium display="false" />
+		<supports>Pugilist Stop and Drop</supports>
+		<description>
+			<p>When you hit a creature with an Unarmed Strike and don’t use a mastery property as part of the attack, you can use both the Grapple and Shove option.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an Unarmed Strike and don’t use a mastery property as part of the attack, you can use both the Grapple and Shove option.</description>
+		</sheet>
+	</element>
+
+	<element name="Muscle Mass" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS</requirements>
+		<description>
+			<p><em>3rd-level Squared Circle feature</em></p>
+			<p>Choose the Acrobatics or Athletics skill. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Muscle Mass" supports="Muscle Mass" />
+		</rules>
+	</element>
+	<element name="Acrobatics" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS_ACROBATICS">
+		<compendium display="false" />
+		<supports>Muscle Mass</supports>
+		<description>
+			<p>If you lack proficiency in Acrobatics, you gain proficiency in it, and if you already have proficiency in Acrobatics, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ACROBATICS" />
+		</rules>
+	</element>
+	<element name="Athletics" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS_ATHLETICS">
+		<compendium display="false" />
+		<supports>Muscle Mass</supports>
+		<description>
+			<p>If you lack proficiency in Athletics, you gain proficiency in it, and if you already have proficiency in Athletics, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
+		</rules>
+	</element>
+
+	<element name="Meat Shield" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_MEAT_SHIELD">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_MEAT_SHIELD</requirements>
+		<description>
+			<p><em>6th-level Squared Circle feature</em></p>
+			<p>While you have a creature Grappled, you gain Half Cover against attacks made by creatures you aren’t Grappling. When a creature you aren’t Grappling misses you with an attack roll, you can take a Reaction and expend 1 Moxie Point to force that creature make the same attack with a new attack roll against a creature you are Grappling.</p>
+		</description>
+		<sheet>
+			<description>While you have a creature Grappled, you gain Half Cover against attacks made by creatures you aren’t Grappling. When a creature you aren’t Grappling misses you with an attack roll, you can take a Reaction and expend 1 Moxie Point to force that creature make the same attack with a new attack roll against a creature you are Grappling.</description>
+		</sheet>
+	</element>
+
+	<element name="Heavyweight" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_HEAVYWIEGHT">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_HEAVYWIEGHT</requirements>
+		<description>
+			<p><em>11th-level Squared Circle feature</em></p>
+			<p>When you use the Grapple or Shove option of your Unarmed Strike, you count as being one size larger. Additionally, you don’t have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+		</description>
+		<sheet>
+			<description>When you use the Grapple or Shove option of your Unarmed Strike, you count as being one size larger. Additionally, you don’t have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Clean Finish" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SQUARED_CIRCLE_CLEAN_FINISH">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_CLEAN_FINISH</requirements>
+		<description>
+			<p><em>17th-level Squared Circle feature</em></p>
+			<p>When a creature ends its turn Grappled by you, you can take a Reaction to force it to make a Constitution saving throw against your grapple’s escape DC or have the Incapacitated condition until the end of its next turn. If the creature is Bloodied and already Incapacitated by this feature, its Hit Points are reduced to 0 instead.</p>
+			<p>Once you use this feature to reduce a creature to 0 Hit Points, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature ends its turn Grappled by you, you can take a Reaction to force it to make a Constitution saving throw against your grapple’s escape DC or have the Incapacitated condition until the end of its next turn. If the creature is Bloodied and already Incapacitated by this feature, its Hit Points are reduced to 0 instead. &#13;
+			Once you use this feature to reduce a creature to 0 Hit Points, you can’t use it again until you finish a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<!-- Street Saint Archetype -->
+	<element name="Street Saint" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_STREET_SAINT">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Devote Yourself to Prayer and Pummeling</em></p>
+			<p>Pugilists in the Bloodhound Bruisers fight club are notorious for looking for trouble and finding it every time. Members of this fight club are highly observant of character traits and physical evidence and can form an almost supernatural connection to the cities they live in. Most use these abilities to become urban defenders of the downtrodden but others lend their talents to less savory organizations</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS"/>
+		</description>
+		<sheet display="false">
+			<description>Pugilists in the Bloodhound Bruisers fight club are notorious for looking for trouble and finding it every time.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY</requirements>
+		<description>
+			<p><em>3rd-level Street Saint feature</em></p>
+			<p>You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with two such effects: Fists of Faith and Grace of the Gods. Each time you use this subclass’s Channel Divinity, you choose which effect from this subclass to create.</p>
+			<p>Once you use this subclass’s Channel Divinity, you can’t use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong>Fists of Faith.</strong>As a Bonus Action, you can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</p>
+			<p class="indent"><strong>Grace of the Gods.</strong>As a Bonus Action, you beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can channel divine energy directly from the Outer Planes, using it to fuel magical effects.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Fists of Faith" supports="Pugilist Fists of Faith" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_FISTS_OF_FAITH" />
+			<select type="Archetype Feature" name="Grace of the Gods" supports="Pugilist Grace of the Gods" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_GRACE_OF_THE_GODS" />
+		</rules>
+	</element>
+	<element name="Fists of Faith" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_FISTS_OF_FAITH">
+		<compendium display="false" />
+		<supports>Pugilist Fists of Faith</supports>
+		<description>
+			<p class="indent"><strong>Fists of Faith.</strong>As a Bonus Action, you can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</p>
+		</description>
+		<sheet>
+			<description>You can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</description>
+		</sheet>
+	</element>
+	<element name="Grace of the Gods" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_GRACE_OF_THE_GODS">
+		<compendium display="false" />
+		<supports>Pugilist Grace of the Gods</supports>
+		<description>
+			<p class="indent"><strong>Grace of the Gods.</strong>As a Bonus Action, you beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</p>
+		</description>
+		<sheet>
+			<description>You beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</description>
+		</sheet>
+	</element>
+
+	<element name="Lay On Hands" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_LAY_ON_HANDS</requirements>
+		<description>
+			<p><em>3rd-level Street Saint feature</em></p>
+			<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to three times your Pugilist level.</p>
+			<p>As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>
+			<p>You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don’t also restore Hit Points to the creature.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{pugilist:lay on hands:hp}}/Short Rest">
+			<description>You can touch a creature and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool. &#13;
+				You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don’t also restore Hit Points to the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="pugilist:lay on hands:hp" value="level:pugilist" />
+			<stat name="pugilist:lay on hands:hp" value="level:pugilist" />
+			<stat name="pugilist:lay on hands:hp" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<element name="Ravaged But Resolute" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE</requirements>
+		<description>
+			<p><em>6th-level Street Saint feature</em></p>
+			<p>When you use your Bloodied But Unbowed, you can fully replenish your Lay On Hands healing pool.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/long Rest">
+			<description>When you use your Bloodied But Unbowed, you can fully replenish your Lay On Hands healing pool.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura of Resilience" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE</requirements>
+		<description>
+			<p><em>11th-level Street Saint feature</em></p>
+			<p>When you use your Dig Deep, you can radiate a protective, unseeable aura in a 10-foot Emanation that originates from you for the next 10 minutes. The aura is inactive while you have the Incapacitated condition. Your allies within the aura gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+			<p>Once you use this feature, you must finish a Long Rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/long Rest">
+			<description>When you use your Dig Deep, you can radiate a protective, unseeable aura in a 10-foot Emanation that originates from you for the next 10 minutes. The aura is inactive while you have the Incapacitated condition. Your allies within the aura gain Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Hallowed Hands" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_HALLOWED_HANDS</requirements>
+		<description>
+			<p><em>17th-level Street Saint feature</em></p>
+			<p>Once on each of your turns when you hit a creature with an Unarmed Strike or Pugilist weapon, you can expend a number of points from your Lay On Hands healing pool to deal extra Radiant damage to the target, to a maximum of your Pugilist level. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with an Unarmed Strike or Pugilist weapon, you can expend a number of points from your Lay On Hands healing pool to deal up to {{level:pugilist}} extra Radiant damage to the target. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead.</description>
+		</sheet>
+	</element>
+
+	<!-- Sweet Science Archetype -->
+	<element name="Sweet Science" type="Archetype" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_PUGILIST_SWEET_SCIENCE">
+		<supports>Pugilist Subclass</supports>
+		<description>
+			<p><em>Float Like a Butterfly, Sting Like a Bee</em></p>
+			<p>Pugilists who practice the Sweet Science hit hard, fast, and often. These Pugilists sometimes battle for the entertainment of the upper classes, but just as often duke it out in back alleys and bars where their next breath depends on a knockout.</p>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_BARE_KNUCKLE_BOXER"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_CROSS_COUNTER"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_MAKER"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_BREAKER"/>
+			<div element="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT"/>
+		</description>
+		<sheet display="false">
+			<description>Pugilists who practice the Sweet Science hit hard, fast, and often.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_BARE_KNUCKLE_BOXER" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_CROSS_COUNTER" level="3"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_MAKER" level="6"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_BREAKER" level="11"/>
+			<grant type="Archetype Feature" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Bare Knuckle Boxer" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_BARE_KNUCKLE_BOXER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_BARE_KNUCKLE_BOXER</requirements>
+		<description>
+			<p><em>3rd-level Sweet Science feature</em></p>
+			<p>Your attack rolls with Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet>
+			<description>Your attack rolls with Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</description>
+		</sheet>
+	</element>
+
+	<element name="Cross Counter" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_CROSS_COUNTER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_CROSS_COUNTER</requirements>
+		<description>
+			<p><em>3rd-level Sweet Science feature</em></p>
+			<p>You can block the brunt of an attack and launch one of your own in the same fluid motion. When you take damage from a melee attack, you can take a Reaction and expend 1 Moxie Point to reduce the damage dealt to you by that attack by 1d10 plus your Strength modifier and Pugilist level.</p>
+			<p class="indent">If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Moxie">
+			<description>When you take damage from a melee attack, you can reduce the damage dealt to you by that attack by 1d10 + {{cross counter:damage}}. If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction.</description>
+		</sheet>
+		<rules>
+			<stat name="cross counter:damage" value="strength:modifier"/>
+			<stat name="cross counter:damage" value="level:pugilist"/>
+		</rules>
+	</element>
+
+	<element name="Combo Maker" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_MAKER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_COMBO_MAKER</requirements>
+		<description>
+			<p><em>6th-level Sweet Science feature</em></p>
+			<p>When you deal damage with an Unarmed Strike against a creature, instead of also choosing the Grapple or Shove option with your Heavy Hitter, you can give yourself Advantage on attack rolls you make against that target before the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with an Unarmed Strike against a creature, instead of also choosing the Grapple or Shove option with your Heavy Hitter, you can give yourself Advantage on attack rolls you make against that target before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Combo Breaker" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_COMBO_BREAKER">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_COMBO_BREAKER</requirements>
+		<description>
+			<p><em>11th-level Sweet Science feature</em></p>
+			<p>When you use your Cross Counter and reduce the triggering damage to 0, you regain 1 Moxie Point.</p>
+		</description>
+		<sheet>
+			<description>When you use your Cross Counter and reduce the triggering damage to 0, you regain 1 Moxie Point.</description>
+		</sheet>
+	</element>
+
+	<element name="Knock Out" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT">
+		<requirements>!ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_KNOCK_OUT</requirements>
+		<description>
+			<p><em>17th-level Sweet Science feature</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><strong>Coldcock.</strong> When you score a Critical Hit against a creature, it must make a Constitution saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</p>
+			<p class="indent"><strong>Uppercut.</strong> When you hit a creature with an Unarmed Strike you can take a Reaction and expend 1 Moxie Point to make the attack a Critical Hit. Once you take this Reaction, you can’t do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When you score a Critical Hit against a creature, it must make a DC {{knock out:dc}} Constitution saving throw. On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</description>
+		</sheet>
+		<rules>
+			<stat name="knock out:dc" value="8"/>
+			<stat name="knock out:dc" value="proficiency" />
+			<stat name="knock out:dc" value="strength:modifier" />
+			<select type="Archetype Feature" name="Coldcock" supports="Pugilist Coldcock" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT_COLDCOCK" />
+			<select type="Archetype Feature" name="Uppercut" supports="Pugilist Uppercut" default="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT_UPPERCUT" />
+		</rules>
+	</element>
+	<element name="Coldcock" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT_COLDCOCK">
+		<compendium display="false" />
+		<supports>Pugilist Coldcock</supports>
+		<description>
+			<p class="indent"><strong>Coldcock.</strong> When you score a Critical Hit against a creature, it must make a Constitution saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Moxie-1/Short Rest">
+			<description>When you score a Critical Hit against a creature, it must make a DC {{knock out:dc}} Constitution saving throw. On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</description>
+		</sheet>
+	</element>
+	<element name="Uppercut" type="Archetype Feature" source="2024 Pugilist Class" id="ID_SVAC_2024PUGL_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT_UPPERCUT">
+		<compendium display="false" />
+		<supports>Pugilist Uppercut</supports>
+		<description>
+			<p class="indent"><strong>Uppercut.</strong> When you hit a creature with an Unarmed Strike you can take a Reaction and expend 1 Moxie Point to make the attack a Critical Hit. Once you take this Reaction, you can’t do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Moxie-1/Short Rest">
+			<description>When you hit a creature with an Unarmed Strike you can make the attack a Critical Hit.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Fisticuffs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_FISTICUFFS" />
+	<element name="Iron Chin Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_IRON_CHIN" />
+	<element name="Moxie Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE" />
+	<element name="Brace Up Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP" />
+	<element name="The Old One-Two Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_THE_OLD_ONE_TWO" />
+	<element name="Stick and Move Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE" />
+	<element name="Bloodied But Unbowed Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_BLOODIED_BUT_UNBOWED" />
+	<element name="Swagger Streak Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWAGGER_STREAK" />
+	<element name="Heavy Hitter Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HEAVY_HITTER" />
+	<element name="Pugilist Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PUGILIST_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Dig Deep Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEP" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_EXTRA_ATTACK" />
+	<element name="Haymaker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAYMAKER" />
+	<element name="Moxie-Fueled Fists Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_MOXIE_FUELED_FIST" />
+	<element name="Down But Not Out Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOWN_BUT_NOT_OUT" />
+	<element name="School of Hard Knocks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SCHOOL_OF_HARD_KNOCKS" />
+	<element name="Herculean Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HERCULEAN" />
+	<element name="Shake It Off Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SHAKE_IT_OFF" />
+	<element name="Dig Deeper Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEPER" />
+	<element name="Unbreakable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_UNBREAKABLE" />
+	<element name="Pugnacious Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PUGNACIOUS" />
+	<element name="Fighting Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_FIGHTING_SPIRIT" />
+	<element name="Peak Physical Condition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PEAK_PHYSICAL_CONDITION" />
+	<!--Dog and Hound-->
+	<element name="Brawler’s Best Friend Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND" />
+	<element name="Mutt With Moxie Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE" />
+	<element name="Brace Up Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_BRACE_UP" />
+	<element name="The Old One-Two Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_THE_OLD_ONE_TWO" />
+	<element name="Stick and Move Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_STICK_AND_MOVE" />
+	<element name="Coordinated Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK" />
+	<element name="Hound’s Best Friend Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND" />
+	<element name="Off The Chain Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN" />
+	<!--Hand of Dread-->
+	<element name="Black Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC" />
+	<element name="Dread Hand Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DREAD_HAND" />
+	<element name="Deal with the Devil Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL" />
+	<element name="Grotesque Growth Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH" />
+	<element name="Fountain of Viscera Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA" />
+	<!--Piss and Vinegar-->
+	<element name="Bad Attitude Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE" />
+	<element name="Salty Salute Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE" />
+	<element name="Dirty Tricks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS" />
+	<element name="Mean Old Cuss Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS" />
+	<element name="Dirtier Tricks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS" />
+	<!--Street Saint-->
+	<element name="Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY" />
+	<element name="Lay On Hands Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_LAY_ON_HANDS" />
+	<element name="Ravaged But Resolute Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE" />
+	<element name="Aura of Resilience Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE" />
+	<element name="Hallowed Hands Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_HALLOWED_HANDS" />
+	<!--Squared Circle-->
+	<element name="Groundwork Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_GROUNDWORK" />
+	<element name="Muscle Mass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_MUSCLE_MASS" />
+	<element name="Meat Shield Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_MEAT_SHIELD" />
+	<element name="Heavyweight Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_HEAVYWIEGHT" />
+	<element name="Clean Finish Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SQUARED_CIRCLE_CLEAN_FINISH" />
+	<!--Sweet Science-->
+	<element name="Bare Knuckle Boxer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_BARE_KNUCKLE_BOXER" />
+	<element name="Cross Counter Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_CROSS_COUNTER" />
+	<element name="Combo Maker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_COMBO_MAKER" />
+	<element name="Combo Breaker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_COMBO_BREAKER" />
+	<element name="Knock Out Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_2024PUGL_FEATURE_REPLACEMENT_PUGILIST_SWEET_SCIENCE_KNOCK_OUT" />
+</elements>
